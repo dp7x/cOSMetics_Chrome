@@ -21,7 +21,7 @@
     "message": "Esta función permite guardar fondos personalizados adicionales al que ofrece iD.<br>Añade aquí los fondos con un nombre y una plantilla de URL. En iD, abre la <strong>Configuración del fondo</strong> (icono de capas) y después <strong>Editar fondo personalizado</strong> (tres puntos). Elige una capa guardada en el panel para mostrarla en el mapa.<br><strong>Atención:</strong> asegúrate de que los fondos utilizados estén autorizados para la cartografía en OpenStreetMap."
   },
   "commentDescription": {
-    "message": "Esta función sugiere un comentario para tus conjuntos de cambios cuando no sabes qué escribir. Analiza tus modificaciones y propone una descripción de las principales.<br>Al guardar en iD, pulsa <strong>Sugerir</strong> para generar un comentario basado en las modificaciones y la zona actual. Revísalo y corrígelo antes de subirlo, o sustitúyelo si no lo consideras adecuado.<br><br>Para sugerencias o comentarios, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">contacta conmigo en OpenStreetMap</a>."
+    "message": "<strong>OSMradamus</strong> — Esta función sugiere un comentario para tus conjuntos de cambios cuando no sabes qué escribir. Analiza tus modificaciones y propone una descripción de las principales.<br>Al guardar en iD, pulsa <strong>OSMradamus</strong> para generar un comentario basado en las modificaciones y la zona actual. Revísalo y corrígelo antes de subirlo, o sustitúyelo si no lo consideras adecuado.<br><br>Para sugerencias o comentarios, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">contacta conmigo en OpenStreetMap</a>."
   },
   "commentsInEnglish": {
     "message": "Comentarios en inglés"
@@ -66,7 +66,7 @@
     "message": "Cerrar"
   },
   "suggest": {
-    "message": "Sugerir"
+    "message": "OSMradamus"
   },
   "analyzing": {
     "message": "Analizando…"
@@ -372,7 +372,7 @@
     "message": "relaciones"
   },
   "popupSubtitle": {
-    "message": "Fondos personalizados, asistente de edificios y sugerencias de comentarios de conjuntos de cambios"
+    "message": "Fondos personalizados, asistente de edificios y OSMradamus (comment suggester)"
   },
   "overtureMoveHelp": {
     "message": "Arrastra para mover. Doble clic o Inicio para restablecer; las flechas mueven el panel."
@@ -405,7 +405,7 @@
     "message": "Fondos personalizados"
   },
   "sectionComments": {
-    "message": "Comentarios y hashtags"
+    "message": "OSMradamus (comment suggester) · Comentarios y hashtags"
   },
   "sectionGrid": {
     "message": "Cuadrícula de mapeo"

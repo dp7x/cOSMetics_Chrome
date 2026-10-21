@@ -21,7 +21,7 @@
     "message": "This feature lets you save additional custom backgrounds beyond the one provided by iD.<br>Add backgrounds here with a name and a URL template. In iD open <strong>Background settings</strong> (layers icon), then <strong>Edit custom background</strong> (three dots). Choose a saved layer in the panel to display it on the map.<br><strong>Important:</strong> make sure the backgrounds you use are permitted for OpenStreetMap mapping!"
   },
   "commentDescription": {
-    "message": "This feature suggests a comment for your changesets when you are unsure what to write. It analyzes your edits and proposes a description of the main changes.<br>When saving in iD, press <strong>Suggest</strong> to generate a comment based on your edits and the current area. Review and correct it before uploading, or replace it if you find it unsuitable.<br><br>For suggestions or feedback, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">contact me on OpenStreetMap</a>."
+    "message": "<strong>OSMradamus</strong> — This feature suggests a comment for your changesets when you are unsure what to write. It analyzes your edits and proposes a description of the main changes.<br>When saving in iD, press <strong>OSMradamus</strong> to generate a comment based on your edits and the current area. Review and correct it before uploading, or replace it if you find it unsuitable.<br><br>For suggestions or feedback, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">contact me on OpenStreetMap</a>."
   },
   "commentsInEnglish": {
     "message": "Comments in English"
@@ -66,7 +66,7 @@
     "message": "Close"
   },
   "suggest": {
-    "message": "Suggest"
+    "message": "OSMradamus"
   },
   "analyzing": {
     "message": "Analyzing..."
@@ -372,7 +372,7 @@
     "message": "relations"
   },
   "popupSubtitle": {
-    "message": "Custom Layers, Building Assistant & Changeset Comment Suggester"
+    "message": "Custom Layers, Building Assistant & OSMradamus (comment suggester)"
   },
   "overtureMoveHelp": {
     "message": "Drag to move. Double-click or press Home to reset; arrow keys move the panel."
@@ -405,7 +405,7 @@
     "message": "Custom backgrounds"
   },
   "sectionComments": {
-    "message": "Comments and hashtags"
+    "message": "OSMradamus (comment suggester) · Comments and hashtags"
   },
   "sectionGrid": {
     "message": "Mapping grid"

@@ -21,7 +21,7 @@
     "message": "Táto funkcia umožňuje uložiť ďalšie vlastné podkladové mapy nad rámec tej, ktorú poskytuje iD.<br>Pridajte sem podkladové mapy s názvom a šablónou URL. V iD otvorte <strong>Nastavenia podkladovej mapy</strong> (ikona vrstiev) a potom <strong>Upraviť vlastnú podkladovú mapu</strong> (tri bodky). V paneli vyberte uloženú vrstvu a zobrazte ju na mape.<br><strong>Upozornenie:</strong> uistite sa, že použitie vybraných podkladových máp na mapovanie v OpenStreetMap je povolené!"
   },
   "commentDescription": {
-    "message": "Táto funkcia navrhuje komentár k vašim sadám zmien, keď neviete, čo napísať. Analyzuje vaše úpravy a navrhne opis hlavných zmien.<br>Pri ukladaní v iD stlačte <strong>Navrhnúť</strong> a vytvorte komentár na základe úprav a aktuálnej oblasti. Pred odoslaním ho skontrolujte a opravte alebo ho nahraďte, ak nie je vhodný.<br><br>Ak máte návrhy alebo pripomienky, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">kontaktujte ma na OpenStreetMap</a>."
+    "message": "<strong>OSMradamus</strong> — Táto funkcia navrhuje komentár k vašim sadám zmien, keď neviete, čo napísať. Analyzuje vaše úpravy a navrhne opis hlavných zmien.<br>Pri ukladaní v iD stlačte <strong>OSMradamus</strong> a vytvorte komentár na základe úprav a aktuálnej oblasti. Pred odoslaním ho skontrolujte a opravte alebo ho nahraďte, ak nie je vhodný.<br><br>Ak máte návrhy alebo pripomienky, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">kontaktujte ma na OpenStreetMap</a>."
   },
   "commentsInEnglish": {
     "message": "Komentáre v angličtine"
@@ -66,7 +66,7 @@
     "message": "Zavrieť"
   },
   "suggest": {
-    "message": "Navrhnúť"
+    "message": "OSMradamus"
   },
   "analyzing": {
     "message": "Prebieha analýza..."
@@ -372,7 +372,7 @@
     "message": "relations"
   },
   "popupSubtitle": {
-    "message": "Vlastné podkladové mapy, asistent budov a návrhy komentárov k sadám zmien"
+    "message": "Vlastné podkladové mapy, asistent budov a OSMradamus (comment suggester)"
   },
   "overtureMoveHelp": {
     "message": "Presunutím premiestnite panel. Dvojklik alebo Home obnoví polohu; šípky posúvajú panel."
@@ -405,7 +405,7 @@
     "message": "Vlastné pozadia"
   },
   "sectionComments": {
-    "message": "Komentáre a hashtagy"
+    "message": "OSMradamus (comment suggester) · Komentáre a hashtagy"
   },
   "sectionGrid": {
     "message": "Mapovacia mriežka"

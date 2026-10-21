@@ -3,14 +3,14 @@
 
   # cOSMetics for iD
 
-  Custom Layers, Building Assistant & Changeset Comment Suggester
+  Custom Layers, Building Assistant & OSMradamus (comment suggester)
 </div>
 
 <hr>
 
 ## Overview
 
-cOSMetics for iD is a Chrome extension for the OpenStreetMap iD editor. It adds quick access to custom background layers, assists with reviewing and adding individual Overture buildings, and suggests descriptive changeset comments.
+cOSMetics for iD is a Chrome extension for the OpenStreetMap iD editor. It adds quick access to custom background layers, assists with reviewing and adding individual Overture buildings, and suggests descriptive changeset comments with **OSMradamus**.
 
 Developed for Chrome. Firefox compatibility has not been verified.
 
@@ -29,12 +29,12 @@ Developed for Chrome. Firefox compatibility has not been verified.
 * **Individual Addition:** Select an outline and press **A** or click **Add (A)** to create a `building=yes` way with a source tag. The accepted outline disappears from the overlay.
 * **Existing Buildings:** Candidates overlapping OSM buildings already loaded in iD are hidden or blocked. Review every proposed building against imagery and correct its geometry and tags before uploading. Geometries with holes or multiple polygons must be drawn manually.
 
-### 💡 Changeset Comment Suggester
+### 💡 OSMradamus (comment suggester)
 
 * **Automatic Analysis:** Reads the OSMChange file and distinguishes created and modified objects. Only descriptive master tags are used; supplementary information such as `name`, `source` and `leaf_type` is ignored.
 * **Specific Categories:** Common values receive specific names, while other values use the master tag's general category. Moved untagged nodes are classified through their parent ways already loaded in iD; otherwise, the suggestion uses “geometries”.
 * **Smart Area Detection:** Uses iD's location panel or resolves coordinates through Nominatim.
-* **One-Click Generation:** Adds a **Suggest** button to the save dialog, producing comments such as:
+* **One-Click Generation:** Adds a **OSMradamus** button to the save dialog, producing comments such as:
   `Created trees, woods, buildings, farmlands + modified highways in Roma area`
 * **Persistent Hashtag:** Set a hashtag in the popup to prefill iD’s standard hashtag field when you open the save dialog, even if you write the comment manually. It is saved automatically on this device until you clear it. Other hashtags are preserved and duplicates are avoided; the suggested comment contains no appended hashtag.
 * **Sorting:** Shows up to four categories separately for creations and modifications, ordered by object count and then by total geometry points. “Other improvements” is added only when categories are omitted.
@@ -77,10 +77,10 @@ The bundled `dist/overture.js` is included, so no build step is required to inst
 2. At zoom 18 or higher, click **Load area**. Use **Clear layer** to remove the snapshot; disabling the controls also clears it.
 3. Select an outline, press **A** or click **Add (A)**, then check and correct the building before uploading. Each building is added individually; iD's Undo can revert the addition.
 
-### 💡 Using the Comment Suggester
+### 💡 Using OSMradamus
 
 1. Make your edits in iD and click **Save**.
-2. Click **Suggest** to generate a comment from your edits and the current area.
+2. Click **OSMradamus** to generate a comment from your edits and the current area.
 3. Review and edit the comment before uploading.
 
 > **Tip:** Press `Ctrl+Shift+L` in iD to open the location panel and help identify the area name.

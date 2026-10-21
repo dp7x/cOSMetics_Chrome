@@ -21,7 +21,7 @@
     "message": "Mit dieser Funktion kannst du zusätzliche eigene Hintergründe über den von iD vorgesehenen hinaus speichern.<br>Hier Hintergründe mit Namen und URL-Vorlage hinzufügen. In iD <strong>Hintergrundeinstellungen</strong> (Ebenensymbol) öffnen, dann <strong>Eigenen Hintergrund bearbeiten</strong> (drei Punkte). Im Panel eine gespeicherte Ebene auswählen, um sie auf der Karte anzuzeigen.<br><strong>Achtung:</strong> Stelle sicher, dass die verwendeten Hintergründe für die Kartierung in OpenStreetMap zugelassen sind!"
   },
   "commentDescription": {
-    "message": "Diese Funktion schlägt einen Kommentar zu deinen Änderungssätzen vor, wenn du nicht weißt, was du schreiben sollst. Sie analysiert deine Änderungen und schlägt eine Beschreibung der wichtigsten vor.<br>Beim Speichern in iD auf <strong>Vorschlagen</strong> klicken, um einen Kommentar anhand der Änderungen und des aktuellen Gebiets zu erstellen. Vor dem Hochladen prüfen und korrigieren oder ersetzen, wenn er nicht passend ist.<br><br>Bei Vorschlägen oder Rückmeldungen <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">kontaktiere mich auf OpenStreetMap</a>."
+    "message": "<strong>OSMradamus</strong> — Diese Funktion schlägt einen Kommentar zu deinen Änderungssätzen vor, wenn du nicht weißt, was du schreiben sollst. Sie analysiert deine Änderungen und schlägt eine Beschreibung der wichtigsten vor.<br>Beim Speichern in iD auf <strong>OSMradamus</strong> klicken, um einen Kommentar anhand der Änderungen und des aktuellen Gebiets zu erstellen. Vor dem Hochladen prüfen und korrigieren oder ersetzen, wenn er nicht passend ist.<br><br>Bei Vorschlägen oder Rückmeldungen <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">kontaktiere mich auf OpenStreetMap</a>."
   },
   "commentsInEnglish": {
     "message": "Kommentare auf Englisch"
@@ -66,7 +66,7 @@
     "message": "Schließen"
   },
   "suggest": {
-    "message": "Vorschlagen"
+    "message": "OSMradamus"
   },
   "analyzing": {
     "message": "Wird analysiert…"
@@ -372,7 +372,7 @@
     "message": "Relationen"
   },
   "popupSubtitle": {
-    "message": "Eigene Hintergrundebenen, Gebäudeassistent und Vorschläge für Änderungssatzkommentare"
+    "message": "Eigene Hintergrundebenen, Gebäudeassistent und OSMradamus (comment suggester)"
   },
   "overtureMoveHelp": {
     "message": "Zum Verschieben ziehen. Doppelklick oder Home setzt die Position zurück; Pfeiltasten verschieben das Panel."
@@ -405,7 +405,7 @@
     "message": "Benutzerdefinierte Hintergründe"
   },
   "sectionComments": {
-    "message": "Kommentare und Hashtags"
+    "message": "OSMradamus (comment suggester) · Kommentare und Hashtags"
   },
   "sectionGrid": {
     "message": "Kartierungsraster"

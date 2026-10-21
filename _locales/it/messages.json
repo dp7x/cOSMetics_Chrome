@@ -21,7 +21,7 @@
     "message": "Questa funzionalità permette di memorizzare ulteriori sfondi personalizzati rispetto a quello previsto da iD.<br>Aggiungi qui gli sfondi con un nome e un modello di URL. In iD apri <strong>Impostazioni sfondo</strong> (icona dei livelli), poi <strong>Modifica sfondo personalizzato</strong> (tre puntini). Scegli uno dei livelli salvati nel pannello per caricarlo sullo schermo.<br><strong>Attenzione:</strong> assicurati di utilizzare sfondi per i quali sia previsto l’utilizzo su OpenStreetMap!"
   },
   "commentDescription": {
-    "message": "Questa funzionalità è pensata per suggerire un commento ai tuoi changeset quando non sai cosa scrivere. Il sistema analizza le tue modifiche e propone la descrizione di quelle principali.<br>Quando salvi in iD, premi il pulsante <strong>Suggerisci</strong> per generare un commento in base alle modifiche e all’area corrente. Controllalo e correggilo prima di caricarlo, oppure sostituiscilo se non lo trovi idoneo.<br><br>Per suggerimenti o segnalazioni, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">contattami su OpenStreetMap</a>."
+    "message": "<strong>OSMradamus</strong> — Questa funzionalità è pensata per suggerire un commento ai tuoi changeset quando non sai cosa scrivere. Il sistema analizza le tue modifiche e propone la descrizione di quelle principali.<br>Quando salvi in iD, premi il pulsante <strong>OSMradamus</strong> per generare un commento in base alle modifiche e all’area corrente. Controllalo e correggilo prima di caricarlo, oppure sostituiscilo se non lo trovi idoneo.<br><br>Per suggerimenti o segnalazioni, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">contattami su OpenStreetMap</a>."
   },
   "commentsInEnglish": {
     "message": "Commenti in lingua inglese"
@@ -66,7 +66,7 @@
     "message": "Chiudi"
   },
   "suggest": {
-    "message": "Suggerisci"
+    "message": "OSMradamus"
   },
   "analyzing": {
     "message": "Analisi in corso..."
@@ -372,7 +372,7 @@
     "message": "relazioni"
   },
   "popupSubtitle": {
-    "message": "Sfondi personalizzati, assistente edifici e suggerimenti per i commenti dei changeset"
+    "message": "Sfondi personalizzati, assistente edifici e OSMradamus (comment suggester)"
   },
   "overtureMoveHelp": {
     "message": "Trascina per spostare. Doppio clic o Home per ripristinare; le frecce spostano il box."
@@ -405,7 +405,7 @@
     "message": "Sfondi personalizzati"
   },
   "sectionComments": {
-    "message": "Commenti e hashtag"
+    "message": "OSMradamus (comment suggester) · Commenti e hashtag"
   },
   "sectionGrid": {
     "message": "Griglia di mappatura"

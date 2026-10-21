@@ -21,7 +21,7 @@
     "message": "Cette fonctionnalité permet d’enregistrer des fonds personnalisés supplémentaires, en plus de celui prévu par iD.<br>Ajoutez ici des fonds avec un nom et un modèle d’URL. Dans iD, ouvrez les <strong>Paramètres du fond</strong> (icône des couches), puis <strong>Modifier le fond personnalisé</strong> (trois points). Choisissez un fond enregistré dans le panneau pour l’afficher sur la carte.<br><strong>Attention :</strong> assurez-vous que les fonds utilisés sont autorisés pour la cartographie dans OpenStreetMap !"
   },
   "commentDescription": {
-    "message": "Cette fonctionnalité propose un commentaire pour vos groupes de modifications lorsque vous ne savez pas quoi écrire. Elle analyse vos modifications et propose une description des principales.<br>Lors de l’enregistrement dans iD, cliquez sur <strong>Suggérer</strong> pour générer un commentaire à partir des modifications et de la zone actuelle. Vérifiez-le et corrigez-le avant l’envoi, ou remplacez-le si vous ne le trouvez pas adapté.<br><br>Pour toute suggestion ou remarque, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">contactez-moi sur OpenStreetMap</a>."
+    "message": "<strong>OSMradamus</strong> — Cette fonctionnalité propose un commentaire pour vos groupes de modifications lorsque vous ne savez pas quoi écrire. Elle analyse vos modifications et propose une description des principales.<br>Lors de l’enregistrement dans iD, cliquez sur <strong>OSMradamus</strong> pour générer un commentaire à partir des modifications et de la zone actuelle. Vérifiez-le et corrigez-le avant l’envoi, ou remplacez-le si vous ne le trouvez pas adapté.<br><br>Pour toute suggestion ou remarque, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">contactez-moi sur OpenStreetMap</a>."
   },
   "commentsInEnglish": {
     "message": "Commentaires en anglais"
@@ -66,7 +66,7 @@
     "message": "Fermer"
   },
   "suggest": {
-    "message": "Suggérer"
+    "message": "OSMradamus"
   },
   "analyzing": {
     "message": "Analyse en cours…"
@@ -372,7 +372,7 @@
     "message": "relations"
   },
   "popupSubtitle": {
-    "message": "Fonds personnalisés, assistant bâtiments et suggestions de commentaires de groupes de modifications"
+    "message": "Fonds personnalisés, assistant bâtiments et OSMradamus (comment suggester)"
   },
   "overtureMoveHelp": {
     "message": "Faites glisser pour déplacer. Double-clic ou touche Début pour réinitialiser ; les flèches déplacent le panneau."
@@ -405,7 +405,7 @@
     "message": "Fonds personnalisés"
   },
   "sectionComments": {
-    "message": "Commentaires et hashtags"
+    "message": "OSMradamus (comment suggester) · Commentaires et hashtags"
   },
   "sectionGrid": {
     "message": "Grille de cartographie"
