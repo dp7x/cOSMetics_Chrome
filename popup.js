@@ -11,14 +11,6 @@ document.addEventListener('DOMContentLoaded', loadSettings);
 
 document.getElementById('saveButton').addEventListener('click', saveSettings);
 
-const overtureEnabled = document.getElementById('overtureEnabled');
-chrome.storage.sync.get('overtureEnabled', items => {
-    overtureEnabled.checked = items.overtureEnabled === true;
-});
-overtureEnabled.addEventListener('change', () => {
-    chrome.storage.sync.set({ overtureEnabled: overtureEnabled.checked });
-});
-
 const commentsInEnglish = document.getElementById('commentsInEnglish');
 chrome.storage.sync.get('commentsInEnglish', items => {
     commentsInEnglish.checked = items.commentsInEnglish === true;

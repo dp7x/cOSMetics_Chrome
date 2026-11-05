@@ -6,28 +6,28 @@
     "message": "Vlastné podkladové mapy, návrhy komentárov k úpravám a obrysy budov Overture v editore iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 1.90"
+    "message": "cOSMetics for iD 2.01"
   },
   "overtureEnable": {
     "message": "Zobraziť ovládanie budov Overture v iD"
   },
   "overtureEnableHelp": {
-    "message": "Zapnite ho, keď chcete prezerať a pridávať budovy. Voľba sa uloží automaticky."
+    "message": "Ovládanie zapni, keď chceš prezerať a pridávať budovy. Zobrazí sa plávajúci panel s nástrojmi."
   },
   "overtureDescription": {
-    "message": "Táto funkcia umožňuje načítať vrstvu budov z Overture.<br>Po aktivácii pri priblížení 18 alebo vyššom stlačte <strong>Načítať oblasť</strong> a načítajte budovy v zobrazenej oblasti. Vyberte obrys a stlačte <strong>A</strong> alebo <strong>Pridať (A)</strong>.<br><strong>Pred uložením skontrolujte každú budovu:</strong> vytvorené obrysy môžu byť nepresné. Porovnajte ich so snímkami a údajmi OSM a podľa potreby opravte tvar a polohu. Ak posuniete mapu, opätovným stlačením tlačidla načítajte zobrazenú oblasť."
+    "message": "Táto funkcia načíta vrstvu budov z <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>Pri priblížení 18 alebo vyššom stlač <strong>Načítať oblasť</strong>. Vyber obrys a stlač <strong>A</strong> alebo klikni na <strong>Pridať (A)</strong>.<br>Pred uložením skontroluj každú budovu: vytvorené obrysy môžu byť nepresné. Porovnaj ich s ďalšími podkladmi a údajmi OSM a podľa potreby oprav tvar a polohu.<br>Po posunutí mapy opäť stlač tlačidlo na načítanie zobrazenej oblasti."
   },
   "backgroundDescription": {
-    "message": "Táto funkcia umožňuje uložiť ďalšie vlastné podkladové mapy nad rámec tej, ktorú poskytuje iD.<br>Pridajte sem podkladové mapy s názvom a šablónou URL. V iD otvorte <strong>Nastavenia podkladovej mapy</strong> (ikona vrstiev) a potom <strong>Upraviť vlastnú podkladovú mapu</strong> (tri bodky). V paneli vyberte uloženú vrstvu a zobrazte ju na mape.<br><strong>Upozornenie:</strong> uistite sa, že použitie vybraných podkladových máp na mapovanie v OpenStreetMap je povolené!"
+    "message": "Táto funkcia uloží ďalšie vlastné pozadia nad rámec jedného pozadia poskytovaného iD.<br>Zadaj názov a šablónu URL. V iD otvor <strong>Nastavenia pozadia</strong> (ikona vrstiev), potom <strong>Upraviť vlastné pozadie</strong> (tri bodky). V paneli vyber uloženú vrstvu.<br><strong>Pozor:</strong> používaj iba podklady, ktorých podmienky povoľujú použitie pre OpenStreetMap!"
   },
   "commentDescription": {
-    "message": "<strong>OSMradamus</strong> — Táto funkcia navrhuje komentár k vašim sadám zmien, keď neviete, čo napísať. Analyzuje vaše úpravy a navrhne opis hlavných zmien.<br>Pri ukladaní v iD stlačte <strong>OSMradamus</strong> a vytvorte komentár na základe úprav a aktuálnej oblasti. Pred odoslaním ho skontrolujte a opravte alebo ho nahraďte, ak nie je vhodný.<br><br>Ak máte návrhy alebo pripomienky, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">kontaktujte ma na OpenStreetMap</a>."
+    "message": "<strong>OSMradamus</strong> navrhne komentár k sade zmien, keď nevieš, čo napísať. Analyzuje úpravy a opíše tie hlavné.<br>Pri ukladaní v iD klikni na <strong>OSMradamus</strong>. Komentár vychádza z úprav a aktuálnej oblasti. Pred odoslaním ho skontroluj a oprav alebo nahraď, ak nie je vhodný.<br><br>Ak chceš pridať nové pravidlá, vytvor fork repozitára na <a href=\"https://github.com/dp7x/cOSMetics_Chrome\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>."
   },
   "commentsInEnglish": {
     "message": "Komentáre v angličtine"
   },
   "commentsInEnglishHelp": {
-    "message": "Návrhy komentárov budú vždy v angličtine bez ohľadu na jazyk prehliadača."
+    "message": "Navrhovať komentáre vždy v angličtine bez ohľadu na jazyk prehliadača."
   },
   "licensePrefix": {
     "message": "Licencia:"
@@ -282,7 +282,7 @@
     "message": "miestne názvy"
   },
   "overtureHeading": {
-    "message": "Budovy Overture"
+    "message": "Bricks"
   },
   "loadArea": {
     "message": "Načítať oblasť"
@@ -372,7 +372,7 @@
     "message": "relations"
   },
   "popupSubtitle": {
-    "message": "Vlastné podkladové mapy, asistent budov a OSMradamus (comment suggester)"
+    "message": "Mapovacie nástroje pre OpenStreetMap"
   },
   "overtureMoveHelp": {
     "message": "Presunutím premiestnite panel. Dvojklik alebo Home obnoví polohu; šípky posúvajú panel."
@@ -384,7 +384,7 @@
     "message": "Vymazať"
   },
   "hashtagHelp": {
-    "message": "Automaticky sa uloží a vyplní v poli hashtagov iD pri otvorení okna ukladania, kým ho nevymažete. Zadajte ho s # alebo bez neho."
+    "message": "Zadaný hashtag sa automaticky vloží do príslušného poľa pri otvorení ukladania, kým ho nevymažeš. Môžeš ho zadať s # alebo bez neho. Hashtagy sú užitočné pri mapovacích projektoch."
   },
   "hashtagSaved": {
     "message": "Hashtag bol uložený."
@@ -411,7 +411,7 @@
     "message": "Mapovacia mriežka"
   },
   "gridHelp": {
-    "message": "Vytvor mriežku so stredom v aktuálnom zobrazení OpenStreetMap. V iD prejdi do režimu úprav a pretiahni stiahnutý súbor na mapu."
+    "message": "Vytvor mriežku so zvoleným počtom a veľkosťou buniek okolo aktuálneho stredu mapy. Stiahne sa ako GeoJSON a automaticky sa zobrazí, keď je iD pripravený na úpravy. Pred nahradením existujúcich vlastných údajov sa vyžiada potvrdenie. Mriežka pomáha mapovať postupne po zónach alebo rozdeliť oblasť medzi viacerých mapovateľov."
   },
   "gridCount": {
     "message": "Počet buniek na strane (1–10)"
@@ -432,9 +432,471 @@
     "message": "Nedá sa načítať stred mapy. Posuň mapu a skús znova."
   },
   "gridDone": {
-    "message": "Mriežka stiahnutá. Pretiahni súbor na mapu v iD."
+    "message": "Sťahovanie mriežky bolo spustené."
   },
   "gridError": {
     "message": "Mriežku sa nepodarilo vytvoriť. Skús znova."
+  },
+  "captionOverture": {
+    "message": "Asistent pre budovy Overture"
+  },
+  "captionLayers": {
+    "message": "Správa vlastných vrstiev pozadia"
+  },
+  "captionGrid": {
+    "message": "Export mapovacích mriežok do GeoJSON"
+  },
+  "captionComments": {
+    "message": "Návrhy komentárov k sadám zmien"
+  },
+  "captionFixer": {
+    "message": "Kontrola značiek"
+  },
+  "captionSimplify": {
+    "message": "Zjednodušenie geometrie"
+  },
+  "gridOffer": {
+    "message": "Nahradiť vlastné údaje mriežkou?"
+  },
+  "gridReplaceNotice": {
+    "message": "Mriežka nahradí vlastné údaje načítané v iD."
+  },
+  "gridShow": {
+    "message": "Zobraziť v iD"
+  },
+  "gridDismiss": {
+    "message": "Nie, ďakujem"
+  },
+  "gridShown": {
+    "message": "Mriežka je viditeľná v iD."
+  },
+  "gridShowUnavailable": {
+    "message": "iD nie je pripravený. Stiahnutý GeoJSON môžete importovať."
+  },
+  "drawBuilding": {
+    "message": "Kresliť"
+  },
+  "drawCancel": {
+    "message": "Zrušiť"
+  },
+  "drawFirst": {
+    "message": "Klikni na prvý roh."
+  },
+  "drawSecond": {
+    "message": "Kliknutím na protiľahlý roh urči štvorec."
+  },
+  "drawThird": {
+    "message": "Uprav šírku alebo hĺbku a potvrď kliknutím."
+  },
+  "drawCancelled": {
+    "message": "Kreslenie zrušené."
+  },
+  "drawCreated": {
+    "message": "Budova nakreslená."
+  },
+  "drawUnavailable": {
+    "message": "Priblíž mapu a dokonči aktuálnu operáciu v iD."
+  },
+  "drawWallDepth": {
+    "message": "Stena prichytená. Kliknutím zvonka nastav hĺbku."
+  },
+  "drawDescription": {
+    "message": "Pokročilé kreslenie uľahčuje vytváranie budov. Klikni na <strong>Kresliť</strong> alebo stlač <strong>4</strong>: umiestni prvý bod a pohybom myši uprav veľkosť a natočenie štvorca. Umiestni druhý bod a uprav obdĺžnik. Potvrď tretím kliknutím. Pri susediacich budovách sa prvý bod a bočné rohy štvorca prichytia k existujúcim rohom a stenám."
+  },
+  "senseiDescription": {
+    "message": "Sensei pomáha systematicky opravovať vlastné chyby v značkách. Ak si dlhšie používal nesprávnu kombináciu, môžeš nájsť a opraviť dotknuté objekty. Vyhľadaj ich cez <a href=\"https://overpass-turbo.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">Overpass Turbo</a>, exportuj GeoJSON a súbor načítaj do Sensei. Zadaj hľadané a nové značky a stlač <strong>Spustiť kontrolu</strong>. Objekt oprav alebo preskoč a prejdi na ďalší. <strong>Pred opravou každý objekt dôkladne skontroluj!</strong> Nechaj cieľ prázdny na odstránenie značiek alebo obe polia na manuálnu kontrolu.<br>Úpravy ulož bežným spôsobom v iD pri odoslaní sady zmien."
+  },
+  "ockhamDescription": {
+    "message": "Ockhamova britva zjednodušuje príliš zložité geometrie, napríklad línie tvorené množstvom blízkych bodov."
+  },
+  "ockhamUse": {
+    "message": "Nastav toleranciu v metroch a stlač <strong>Náhľad</strong> alebo <strong>5</strong>. Potvrď tlačidlom <strong>Použiť</strong> alebo klávesom <strong>0</strong>. <strong>Späť</strong> zruší náhľad alebo posledné zjednodušenie, ak je stále poslednou operáciou."
+  },
+  "ockhamData": {
+    "message": "Pred zjednodušením načítaj úplné údaje objektu. Zachovajú sa koncové body a uzly so značkami, zdieľané uzly a členovia relácií rozpoznaní v načítanom grafe. Úpravy ulož bežným spôsobom v iD pri odoslaní sady zmien."
+  },
+  "showSensei": {
+    "message": "Zobraziť panel v iD"
+  },
+  "showOckham": {
+    "message": "Zobraziť panel zjednodušenia v iD"
+  },
+  "panelText000": {
+    "message": "Kontrola značiek"
+  },
+  "panelText001": {
+    "message": "Zjednodušenie geometrie"
+  },
+  "panelText002": {
+    "message": "Potiahnutím presuň panel"
+  },
+  "panelText003": {
+    "message": "Potiahnutím presuň"
+  },
+  "panelText004": {
+    "message": "Zbaliť alebo rozbaliť"
+  },
+  "panelText005": {
+    "message": "Zbaliť / rozbaliť"
+  },
+  "panelText006": {
+    "message": "Príprava"
+  },
+  "panelText007": {
+    "message": "Kontrola"
+  },
+  "panelText008": {
+    "message": "Objekty na kontrolu"
+  },
+  "panelText009": {
+    "message": "Značky na vyhľadanie / odstránenie · jedna na riadok"
+  },
+  "panelText010": {
+    "message": "Značky na nastavenie · jedna na riadok"
+  },
+  "panelText011": {
+    "message": "kľúč=hodnota\niný_kľúč=iná_hodnota"
+  },
+  "panelText012": {
+    "message": "Vymazať"
+  },
+  "panelText013": {
+    "message": "Vymazať zoznam a polia."
+  },
+  "panelText014": {
+    "message": "Musia sa zhodovať všetky hľadané značky. Pri manuálnej kontrole nechaj obe polia prázdne."
+  },
+  "panelText015": {
+    "message": "Odstránenie zhodných značiek"
+  },
+  "panelText016": {
+    "message": "Nahradenie značiek"
+  },
+  "panelText017": {
+    "message": "Manuálna kontrola"
+  },
+  "panelText018": {
+    "message": "Manuálny režim: uprav objekt v iD a klikni na Ďalej alebo na Preskočiť pre ďalší objekt."
+  },
+  "panelText019": {
+    "message": "Hľadané značky sa nezhodujú: {0}. Skontroluj objekt alebo klikni na Preskočiť."
+  },
+  "panelText020": {
+    "message": "Už existujú odlišné cieľové hodnoty: {0}. Uprav ručne alebo klikni na Preskočiť."
+  },
+  "panelText021": {
+    "message": "Pravidlo nevytvára žiadne zmeny."
+  },
+  "panelText022": {
+    "message": "(chýba)"
+  },
+  "panelText023": {
+    "message": "(odstrániť)"
+  },
+  "panelText024": {
+    "message": "(bez značiek)"
+  },
+  "panelText025": {
+    "message": "Odstrániť a ďalej"
+  },
+  "panelText026": {
+    "message": "Opraviť a ďalej"
+  },
+  "panelText027": {
+    "message": "Ďalej"
+  },
+  "panelText028": {
+    "message": "Preskočiť"
+  },
+  "panelText029": {
+    "message": "Predchádzajúci"
+  },
+  "panelText030": {
+    "message": "Obnoviť objekt"
+  },
+  "panelText031": {
+    "message": "Znova načítať značky a vybrať objekt v iD"
+  },
+  "panelText032": {
+    "message": "Všetky značky objektu"
+  },
+  "panelText033": {
+    "message": "Spustiť kontrolu"
+  },
+  "panelText034": {
+    "message": "Upraviť vyhľadávanie"
+  },
+  "panelText035": {
+    "message": "Nie je načítaný zoznam"
+  },
+  "panelText036": {
+    "message": "Zoznam dokončený"
+  },
+  "panelText037": {
+    "message": "Zoznam dokončený."
+  },
+  "panelText038": {
+    "message": "Zoznam dokončený · {0} objektov"
+  },
+  "panelText039": {
+    "message": "Objekt {0} z {1}"
+  },
+  "panelText040": {
+    "message": "Kontrola {0}…"
+  },
+  "panelText041": {
+    "message": "Kontrola predchádzajúceho objektu: značky už môžu byť opravené."
+  },
+  "panelText042": {
+    "message": "Objekt vybraný v iD. Pred pokračovaním ho skontroluj."
+  },
+  "panelText043": {
+    "message": "Zoznam dokončený: žiadne ďalšie objekty nezodpovedajú značkám."
+  },
+  "panelText044": {
+    "message": "Používa sa zmena…"
+  },
+  "panelText045": {
+    "message": "Uprav vyhľadávanie a spusti kontrolu z aktuálnej pozície."
+  },
+  "panelText046": {
+    "message": "Formulár vymazaný. Môžeš načítať nový zoznam."
+  },
+  "panelText047": {
+    "message": "Súbor nesmie prekročiť 20 MB."
+  },
+  "panelText048": {
+    "message": "Načítaných {0} objektov. Nastav pravidlo pomocou značiek alebo nechaj obe polia prázdne pre manuálnu kontrolu."
+  },
+  "panelText049": {
+    "message": "Súbor sa nenačítal: {0}"
+  },
+  "panelText050": {
+    "message": "Načítaj súbor GeoJSON alebo JSON z Overpass. Spracuje sa iba v prehliadači."
+  },
+  "panelText051": {
+    "message": "iD neodpovedá. Pred obnovením editora ulož úpravy."
+  },
+  "panelText052": {
+    "message": "iD neodpovedá. Obnov stránku a skús to znova."
+  },
+  "panelText053": {
+    "message": "Klikni na Náhľad alebo stlač 5."
+  },
+  "panelText054": {
+    "message": "Vyber líniu alebo polygón."
+  },
+  "panelText055": {
+    "message": "{0} · {1} uzlov"
+  },
+  "panelText056": {
+    "message": "{0} → {1} uzlov · −{2}%"
+  },
+  "panelText057": {
+    "message": "{0} chránených uzlov · odchýlka {1} m"
+  },
+  "panelText058": {
+    "message": "Použi toleranciu od 0,1 do 10 metrov."
+  },
+  "panelText059": {
+    "message": "Výpočet náhľadu…"
+  },
+  "panelText060": {
+    "message": "Pri tejto tolerancii nemožno odstrániť žiadne uzly."
+  },
+  "panelText061": {
+    "message": "Náhľad pripravený."
+  },
+  "panelText062": {
+    "message": "Odstránených {0} uzlov."
+  },
+  "panelText063": {
+    "message": "Náhľad zrušený."
+  },
+  "panelText064": {
+    "message": "Posledné zjednodušenie vrátené späť."
+  },
+  "panelText065": {
+    "message": "Zrušiť náhľad"
+  },
+  "panelText066": {
+    "message": "Vrátiť posledné zjednodušenie"
+  },
+  "panelText067": {
+    "message": "Tolerancia (m)"
+  },
+  "panelText068": {
+    "message": "Tolerancia v metroch"
+  },
+  "panelText069": {
+    "message": "Presná tolerancia v metroch"
+  },
+  "panelText070": {
+    "message": "━ ━ Pôvodný"
+  },
+  "panelText071": {
+    "message": "━━ Návrh"
+  },
+  "panelText072": {
+    "message": "Náhľad (5)"
+  },
+  "panelText073": {
+    "message": "Náhľad · 5"
+  },
+  "panelText074": {
+    "message": "Použiť (0)"
+  },
+  "panelText075": {
+    "message": "Späť"
+  },
+  "panelText076": {
+    "message": "Neznámy formát: použi GeoJSON alebo JSON Overpass."
+  },
+  "panelText077": {
+    "message": "Súbor obsahuje priveľa prvkov. Exportuj menší zoznam."
+  },
+  "panelText078": {
+    "message": "V súbore sa nenašli platné OSM ID."
+  },
+  "panelText079": {
+    "message": "Najviac {0} objektov."
+  },
+  "panelText080": {
+    "message": "Neplatný text značiek."
+  },
+  "panelText081": {
+    "message": "Riadok {0}: zadaj kľúč=hodnota."
+  },
+  "panelText082": {
+    "message": "Riadok {0}: neplatný kľúč alebo hodnota (najviac 255 znakov)."
+  },
+  "panelText083": {
+    "message": "Opakovaný kľúč: {0}."
+  },
+  "panelText084": {
+    "message": "Najviac 100 značiek na pole."
+  },
+  "panelText085": {
+    "message": "Najprv zadaj aspoň jednu hľadanú značku."
+  },
+  "panelText086": {
+    "message": "Zjednodušenie by odstránilo priveľa vrcholov. Zníž toleranciu."
+  },
+  "panelText087": {
+    "message": "Geometria obsahuje úseky s nulovou dĺžkou."
+  },
+  "panelText088": {
+    "message": "Zložitá geometria alebo vlastné pretínanie: zníž toleranciu alebo uprav ručne."
+  },
+  "panelText089": {
+    "message": "Výsledný polygón je degenerovaný. Zníž toleranciu."
+  },
+  "panelText090": {
+    "message": "Tolerancia musí byť od 0,1 do 10 metrov."
+  },
+  "panelText091": {
+    "message": "Vyber cestu s 3 až 4 000 uzlami."
+  },
+  "panelText092": {
+    "message": "Chýbajúce alebo nepodporované súradnice."
+  },
+  "panelText093": {
+    "message": "Geometrie cez antimeridián nie sú podporované."
+  },
+  "panelText094": {
+    "message": "Vnútorný prstenec musí byť uzavretá cesta."
+  },
+  "panelText095": {
+    "message": "Táto tolerancia by zrútila polygón. Zníž ju."
+  },
+  "panelText096": {
+    "message": "Zjednodušenie by obrátilo polygón. Zníž toleranciu."
+  },
+  "panelText097": {
+    "message": "Spojenie s iD nie je dostupné. Obnov stránku."
+  },
+  "panelText098": {
+    "message": "Najprv zatvor návod iD."
+  },
+  "panelText099": {
+    "message": "Dokonči operáciu v iD a pred pokračovaním zatvor ukladanie."
+  },
+  "panelText100": {
+    "message": "Objekt je nedostupný alebo odstránený. Môžeš ho preskočiť."
+  },
+  "panelText101": {
+    "message": "Čas načítania vypršal. Skús znova alebo objekt preskoč."
+  },
+  "panelText102": {
+    "message": "Objekt nemožno načítať: môže byť odstránený alebo nedostupný."
+  },
+  "panelText103": {
+    "message": "Navigácia zrušená."
+  },
+  "panelText104": {
+    "message": "Mapa sa nedokončila prekresľovať. Klikni na Obnoviť objekt."
+  },
+  "panelText105": {
+    "message": "Neplatné OSM ID."
+  },
+  "panelText106": {
+    "message": "Výber v iD sa zmenil. Klikni na Obnoviť objekt."
+  },
+  "panelText107": {
+    "message": "Editor teraz nie je pripravený na úpravy."
+  },
+  "panelText108": {
+    "message": "Značky sa po náhľade zmenili. Klikni na Obnoviť objekt a znova ich skontroluj."
+  },
+  "panelText109": {
+    "message": "Pravidlo sa nezhoduje, má konflikty alebo nemení značky."
+  },
+  "panelText110": {
+    "message": "Objekt sa zmenil: obnov značky."
+  },
+  "panelText111": {
+    "message": "Neznáma operácia."
+  },
+  "panelText112": {
+    "message": "Spojenie s iD nie je dostupné. Obnov stránku."
+  },
+  "panelText113": {
+    "message": "Dokonči operáciu v iD alebo zatvor ukladanie."
+  },
+  "panelText114": {
+    "message": "Vyber jednu líniu alebo polygón."
+  },
+  "panelText115": {
+    "message": "Výber je multipolygón. Vyber podporovanú samostatnú cestu."
+  },
+  "panelText116": {
+    "message": "Vyber líniu alebo polygón z jednej cesty."
+  },
+  "panelText117": {
+    "message": "Členovia relácií boundary nie sú podporovaní."
+  },
+  "panelText118": {
+    "message": "Podporované sú iba uzavreté inner prstence multipolygónov; outer a rozdelené prstence sú vylúčené."
+  },
+  "panelText119": {
+    "message": "Cesta nie je úplne načítaná. Načítaj údaje oblasti v iD."
+  },
+  "panelText120": {
+    "message": "Najprv vypočítaj nový náhľad."
+  },
+  "panelText121": {
+    "message": "Výber alebo údaje sa zmenili. Prepočítaj náhľad."
+  },
+  "panelText122": {
+    "message": "Editor teraz nie je pripravený na úpravy."
+  },
+  "panelText123": {
+    "message": "Údaje sa po náhľade zmenili."
+  },
+  "panelText124": {
+    "message": "Uzol určený na odstránenie sa stále používa. Prepočítaj náhľad."
+  },
+  "panelText125": {
+    "message": "Zjednodušenie už nie je posledná úprava. V histórii iD vyber, čo vrátiť späť."
   }
 }

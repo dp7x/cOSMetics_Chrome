@@ -1,0 +1,506 @@
+[
+  [
+    "Revisione tag",
+    "panelText000"
+  ],
+  [
+    "Semplificatore di geometrie",
+    "panelText001"
+  ],
+  [
+    "Trascina per spostare il pannello",
+    "panelText002"
+  ],
+  [
+    "Trascina per spostare",
+    "panelText003"
+  ],
+  [
+    "Riduci o espandi",
+    "panelText004"
+  ],
+  [
+    "Riduci / espandi",
+    "panelText005"
+  ],
+  [
+    "Preparazione",
+    "panelText006"
+  ],
+  [
+    "Revisione",
+    "panelText007"
+  ],
+  [
+    "Elenco da esaminare",
+    "panelText008"
+  ],
+  [
+    "Tag da cercare / rimuovere · uno per riga",
+    "panelText009"
+  ],
+  [
+    "Tag da impostare · uno per riga",
+    "panelText010"
+  ],
+  [
+    "chiave=valore\naltra_chiave=altro_valore",
+    "panelText011"
+  ],
+  [
+    "Azzera",
+    "panelText012"
+  ],
+  [
+    "Svuota elenco e campi.",
+    "panelText013"
+  ],
+  [
+    "Tutti i tag cercati devono corrispondere. Lascia vuoti entrambi i campi per la revisione manuale.",
+    "panelText014"
+  ],
+  [
+    "Rimozione dei tag cercati",
+    "panelText015"
+  ],
+  [
+    "Sostituzione dei tag",
+    "panelText016"
+  ],
+  [
+    "Revisione manuale",
+    "panelText017"
+  ],
+  [
+    "Modalità manuale: modifica l’oggetto in iD, poi premi Avanti oppure premi Salta per passare al successivo.",
+    "panelText018"
+  ],
+  [
+    "Tag cercati non corrispondenti: {0}. Controlla l’oggetto o premi Salta.",
+    "panelText019"
+  ],
+  [
+    "Valori di destinazione già presenti e diversi: {0}. Modifica manualmente o premi Salta.",
+    "panelText020"
+  ],
+  [
+    "La regola non produce modifiche.",
+    "panelText021"
+  ],
+  [
+    "(assente)",
+    "panelText022"
+  ],
+  [
+    "(rimuovi)",
+    "panelText023"
+  ],
+  [
+    "(nessun tag)",
+    "panelText024"
+  ],
+  [
+    "Rimuovi e avanti",
+    "panelText025"
+  ],
+  [
+    "Correggi e avanti",
+    "panelText026"
+  ],
+  [
+    "Avanti",
+    "panelText027"
+  ],
+  [
+    "Salta",
+    "panelText028"
+  ],
+  [
+    "Precedente",
+    "panelText029"
+  ],
+  [
+    "Rileggi oggetto",
+    "panelText030"
+  ],
+  [
+    "Rilegge i tag correnti e seleziona nuovamente l’oggetto in iD",
+    "panelText031"
+  ],
+  [
+    "Tutti i tag dell’oggetto",
+    "panelText032"
+  ],
+  [
+    "Avvia revisione",
+    "panelText033"
+  ],
+  [
+    "Modifica ricerca",
+    "panelText034"
+  ],
+  [
+    "Nessun elenco caricato",
+    "panelText035"
+  ],
+  [
+    "Elenco completato",
+    "panelText036"
+  ],
+  [
+    "Elenco completato.",
+    "panelText037"
+  ],
+  [
+    "Elenco completato · {0} oggetti",
+    "panelText038"
+  ],
+  [
+    "Oggetto {0} di {1}",
+    "panelText039"
+  ],
+  [
+    "Verifica di {0}…",
+    "panelText040"
+  ],
+  [
+    "Revisione di un oggetto precedente: i tag possono essere già corretti.",
+    "panelText041"
+  ],
+  [
+    "Oggetto selezionato in iD. Controllalo prima di procedere.",
+    "panelText042"
+  ],
+  [
+    "Elenco completato: nessun altro oggetto corrisponde ai tag cercati.",
+    "panelText043"
+  ],
+  [
+    "Applicazione della modifica…",
+    "panelText044"
+  ],
+  [
+    "Modifica la ricerca e avvia la revisione dalla posizione corrente.",
+    "panelText045"
+  ],
+  [
+    "Form azzerata. Puoi caricare un nuovo elenco.",
+    "panelText046"
+  ],
+  [
+    "Il file non può superare 20 MB.",
+    "panelText047"
+  ],
+  [
+    "{0} oggetti caricati. Configura la regola indicando i tag oppure lascia entrambi i campi vuoti per la revisione manuale.",
+    "panelText048"
+  ],
+  [
+    "File non caricato: {0}",
+    "panelText049"
+  ],
+  [
+    "Carica un GeoJSON o JSON di Overpass. Il file sarà letto solo nel browser.",
+    "panelText050"
+  ],
+  [
+    "iD non risponde. Ricarica l’editor dopo aver salvato le tue modifiche.",
+    "panelText051"
+  ],
+  [
+    "iD non risponde. Riprova dopo aver ricaricato la pagina.",
+    "panelText052"
+  ],
+  [
+    "Premi Anteprima o 5.",
+    "panelText053"
+  ],
+  [
+    "Seleziona una linea o un poligono.",
+    "panelText054"
+  ],
+  [
+    "{0} · {1} nodi",
+    "panelText055"
+  ],
+  [
+    "{0} → {1} nodi · −{2}%",
+    "panelText056"
+  ],
+  [
+    "{0} nodi vincolati · scarto {1} m",
+    "panelText057"
+  ],
+  [
+    "Usa una tolleranza tra 0,1 e 10 metri.",
+    "panelText058"
+  ],
+  [
+    "Calcolo dell’anteprima…",
+    "panelText059"
+  ],
+  [
+    "Nessun nodo eliminabile con questa tolleranza.",
+    "panelText060"
+  ],
+  [
+    "Anteprima pronta.",
+    "panelText061"
+  ],
+  [
+    "Rimossi {0} nodi.",
+    "panelText062"
+  ],
+  [
+    "Anteprima annullata.",
+    "panelText063"
+  ],
+  [
+    "Ultima semplificazione annullata.",
+    "panelText064"
+  ],
+  [
+    "Annulla anteprima",
+    "panelText065"
+  ],
+  [
+    "Annulla ultima semplificazione",
+    "panelText066"
+  ],
+  [
+    "Tolleranza (m)",
+    "panelText067"
+  ],
+  [
+    "Tolleranza in metri",
+    "panelText068"
+  ],
+  [
+    "Tolleranza precisa in metri",
+    "panelText069"
+  ],
+  [
+    "━ ━ Originale",
+    "panelText070"
+  ],
+  [
+    "━━ Proposta",
+    "panelText071"
+  ],
+  [
+    "Anteprima (5)",
+    "panelText072"
+  ],
+  [
+    "Anteprima · 5",
+    "panelText073"
+  ],
+  [
+    "Applica (0)",
+    "panelText074"
+  ],
+  [
+    "Annulla",
+    "panelText075"
+  ],
+  [
+    "Formato non riconosciuto: usa GeoJSON o JSON di Overpass.",
+    "panelText076"
+  ],
+  [
+    "Il file contiene troppi elementi. Esporta una lista più piccola.",
+    "panelText077"
+  ],
+  [
+    "Nessun ID OSM valido trovato nel file.",
+    "panelText078"
+  ],
+  [
+    "Massimo {0} oggetti per questa bozza.",
+    "panelText079"
+  ],
+  [
+    "Testo dei tag non valido.",
+    "panelText080"
+  ],
+  [
+    "Riga {0}: scrivi chiave=valore.",
+    "panelText081"
+  ],
+  [
+    "Riga {0}: chiave o valore non valido (massimo 255 caratteri).",
+    "panelText082"
+  ],
+  [
+    "Chiave ripetuta: {0}.",
+    "panelText083"
+  ],
+  [
+    "Massimo 100 tag per campo.",
+    "panelText084"
+  ],
+  [
+    "Specifica prima almeno un tag da cercare.",
+    "panelText085"
+  ],
+  [
+    "La semplificazione eliminerebbe troppi vertici. Riduci la tolleranza.",
+    "panelText086"
+  ],
+  [
+    "La geometria contiene segmenti di lunghezza nulla.",
+    "panelText087"
+  ],
+  [
+    "Geometria non semplice o autointersezione: riduci la tolleranza oppure intervieni manualmente.",
+    "panelText088"
+  ],
+  [
+    "Il poligono risultante è degenere. Riduci la tolleranza.",
+    "panelText089"
+  ],
+  [
+    "La tolleranza deve essere compresa tra 0,1 e 10 metri.",
+    "panelText090"
+  ],
+  [
+    "Seleziona una way con almeno 3 e non più di 4.000 nodi.",
+    "panelText091"
+  ],
+  [
+    "Coordinate mancanti o non supportate.",
+    "panelText092"
+  ],
+  [
+    "Geometrie attraverso l’antimeridiano non supportate in questa bozza.",
+    "panelText093"
+  ],
+  [
+    "L’anello interno deve essere una way chiusa.",
+    "panelText094"
+  ],
+  [
+    "La tolleranza collasserebbe il poligono. Riducila.",
+    "panelText095"
+  ],
+  [
+    "La semplificazione invertirebbe il poligono. Riduci la tolleranza.",
+    "panelText096"
+  ],
+  [
+    "Collegamento con iD non disponibile: ricarica la pagina.",
+    "panelText097"
+  ],
+  [
+    "Chiudi prima il tutorial di iD.",
+    "panelText098"
+  ],
+  [
+    "Completa l’operazione in iD e chiudi il pannello di salvataggio prima di continuare.",
+    "panelText099"
+  ],
+  [
+    "Oggetto non disponibile o eliminato. Puoi saltarlo.",
+    "panelText100"
+  ],
+  [
+    "Caricamento scaduto. Riprova o salta l’oggetto.",
+    "panelText101"
+  ],
+  [
+    "Impossibile caricare l’oggetto: potrebbe essere eliminato o non raggiungibile.",
+    "panelText102"
+  ],
+  [
+    "Navigazione annullata.",
+    "panelText103"
+  ],
+  [
+    "La mappa non ha completato il ridisegno. Premi Rileggi / seleziona per riprovare.",
+    "panelText104"
+  ],
+  [
+    "ID OSM non valido.",
+    "panelText105"
+  ],
+  [
+    "L’oggetto selezionato in iD è cambiato. Premi Rileggi / seleziona.",
+    "panelText106"
+  ],
+  [
+    "L’editor non consente modifiche in questo momento.",
+    "panelText107"
+  ],
+  [
+    "I tag sono cambiati dopo l’anteprima. Premi Rileggi / seleziona e controllali di nuovo.",
+    "panelText108"
+  ],
+  [
+    "La regola non corrisponde, presenta conflitti oppure non modifica alcun tag.",
+    "panelText109"
+  ],
+  [
+    "Oggetto cambiato: rileggi i tag.",
+    "panelText110"
+  ],
+  [
+    "Operazione non riconosciuta.",
+    "panelText111"
+  ],
+  [
+    "Collegamento con iD non disponibile. Ricarica la pagina.",
+    "panelText112"
+  ],
+  [
+    "Completa l’operazione in iD o chiudi il pannello di salvataggio.",
+    "panelText113"
+  ],
+  [
+    "Seleziona una sola linea o un poligono.",
+    "panelText114"
+  ],
+  [
+    "La selezione è un multipoligono: questa bozza semplifica i poligoni costituiti da una singola way.",
+    "panelText115"
+  ],
+  [
+    "Seleziona una linea o un poligono costituito da una way.",
+    "panelText116"
+  ],
+  [
+    "I membri di relazioni boundary non sono supportati in questa bozza.",
+    "panelText117"
+  ],
+  [
+    "Questa bozza gestisce solo anelli inner chiusi dei multipoligoni; gli outer e gli anelli spezzati restano esclusi.",
+    "panelText118"
+  ],
+  [
+    "La way non è completamente caricata. Carica i dati dell’area in iD.",
+    "panelText119"
+  ],
+  [
+    "Calcola prima una nuova anteprima.",
+    "panelText120"
+  ],
+  [
+    "La selezione o i dati sono cambiati. Ricalcola l’anteprima.",
+    "panelText121"
+  ],
+  [
+    "Lo stato dell’editor non consente modifiche in questo momento.",
+    "panelText122"
+  ],
+  [
+    "I dati sono cambiati dopo l’anteprima.",
+    "panelText123"
+  ],
+  [
+    "Un nodo da rimuovere è ancora utilizzato: ricalcola l’anteprima.",
+    "panelText124"
+  ],
+  [
+    "La semplificazione non è più l’ultima modifica. Usa la cronologia di iD per scegliere cosa annullare.",
+    "panelText125"
+  ]
+]

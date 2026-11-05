@@ -135,6 +135,8 @@
         #popupContent { overflow-y: auto; min-height: 0; padding: 0 15px 12px; scrollbar-gutter: stable; }
         .feature-section { border: 1px solid #ccc; border-radius: 6px; margin-bottom: 10px; background: white; }
         summary { cursor: pointer; padding: 13px 12px; font-weight: bold; font-size: 14px; line-height: 1.4; }
+        .feature-heading { display: inline-block; vertical-align: top; max-width: calc(100% - 22px); }
+        .feature-caption { display: block; color: #535b66; font-size: 11px; font-weight: 400; }
         summary:focus-visible { outline: 2px solid #007bff; outline-offset: -2px; }
         details[open] summary { border-bottom: 1px solid #ddd; }
         .section-content { padding: 12px; }
@@ -154,20 +156,21 @@
         <img src="cOSMetics_logo.png" alt="cOSMetics Logo">
     </div>
 
-    <h3 data-i18n="popupTitle">cOSMetics for iD 1.90</h3>
-    <p class="popup-subtitle" data-i18n="popupSubtitle">Custom Layers, Building Assistant &amp; OSMradamus (comment suggester)</p>
+    <h3 data-i18n="popupTitle">cOSMetics for iD 2.01</h3>
+    <p class="popup-subtitle" data-i18n="popupSubtitle">Mapping tools for Openstreetmap</p>
 
-<main id="popupContent"><details class="feature-section" id="sectionOverture"><summary data-i18n="sectionOverture"></summary><div class="section-content">    <div class="overture-setting">
+<main id="popupContent"><details class="feature-section" id="sectionOverture"><summary><span class="feature-heading">Bricks<span class="feature-caption" data-i18n="captionOverture"></span></span></summary><div class="section-content">    <div class="overture-setting">
         <label><input id="overtureEnabled" type="checkbox"> <span data-i18n="overtureEnable">Mostra i controlli Edifici Overture in iD</span></label>
         <p data-i18n="overtureEnableHelp">Attivali solo quando vuoi consultare e aggiungere edifici. La scelta viene salvata automaticamente.</p>
     </div>
 
     <p class="description" data-i18n-html="overtureDescription"></p>
+    <p class="description" data-i18n-html="drawDescription"></p>
 
 </div></details>
-<details class="feature-section" id="sectionLayers"><summary data-i18n="sectionLayers"></summary><div class="section-content"><p class="description" data-i18n-html="backgroundDescription"></p>
+<details class="feature-section" id="sectionLayers"><summary><span class="feature-heading">Backgrounds<span class="feature-caption" data-i18n="captionLayers"></span></span></summary><div class="section-content"><p class="description" data-i18n-html="backgroundDescription"></p>
 <form id="settingsForm"></form></div></details>
-<details class="feature-section" id="sectionComments"><summary data-i18n="sectionComments"></summary><div class="section-content">    <p class="description" style="margin-top: 15px;" data-i18n-html="commentDescription"></p>
+<details class="feature-section" id="sectionComments"><summary><span class="feature-heading">OSMradamus<span class="feature-caption" data-i18n="captionComments"></span></span></summary><div class="section-content">    <p class="description" style="margin-top: 15px;" data-i18n-html="commentDescription"></p>
 
     <div class="overture-setting">
         <label><input id="commentsInEnglish" type="checkbox"> <span data-i18n="commentsInEnglish">Commenti in lingua inglese</span></label>
@@ -185,10 +188,24 @@
     </div>
 
 </div></details>
-<details class="feature-section" id="sectionGrid"><summary data-i18n="sectionGrid"></summary><div class="section-content"><p class="description" data-i18n="gridHelp"></p>
+<details class="feature-section" id="sectionGrid"><summary><span class="feature-heading">Grids<span class="feature-caption" data-i18n="captionGrid"></span></span></summary><div class="section-content"><p class="description" data-i18n="gridHelp"></p>
 <div class="input-group"><label for="gridSize" data-i18n="gridCount"></label><input id="gridSize" type="number" min="1" max="10" step="1" value="5">
 <label for="squareSize" data-i18n="gridMeters"></label><input id="squareSize" type="number" min="100" max="1000" step="any" value="100"></div>
-<button id="generateGrid" type="button" data-i18n="gridDownload"></button><p id="gridFeedback" class="description" role="status" aria-live="polite"></p></div></details>
+<button id="generateGrid" type="button" data-i18n="gridDownload"></button><p id="gridFeedback" class="description" role="status" aria-live="polite"></p><div id="gridOffer" hidden>
+<p data-i18n="gridOffer"></p><p id="gridReplaceNotice" data-i18n="gridReplaceNotice" hidden></p>
+<button id="gridShow" type="button" data-i18n="gridShow"></button>
+<button id="gridDismiss" type="button" data-i18n="gridDismiss"></button>
+</div></div></details>
+<details class="feature-section" id="sectionFixer"><summary><span class="feature-heading">Sensei<span class="feature-caption" data-i18n="captionFixer"></span></span></summary><div class="section-content">
+<label><input id="fixerEnabled" type="checkbox"> <span data-i18n="showSensei"></span></label>
+<p class="description" style="margin-top:10px" data-i18n-html="senseiDescription"></p>
+</div></details>
+<details class="feature-section" id="sectionSimplify"><summary><span class="feature-heading">Ockham<span class="feature-caption" data-i18n="captionSimplify"></span></span></summary><div class="section-content">
+<label><input id="simplifyEnabled" type="checkbox"> <span data-i18n="showOckham"></span></label>
+<p class="description" style="margin-top:10px" data-i18n="ockhamDescription"></p>
+<p class="description" data-i18n-html="ockhamUse"></p>
+<p class="description" data-i18n="ockhamData"></p>
+</div></details>
     <div class="credits">
         <h6>&copy; 2024 <strong>dp7</strong>@<a href="https://www.openstreetmap.org/user/dp7" target="_blank">OpenStreetMap</a><br><span data-i18n="licensePrefix">Licensed under the</span> <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></h6>
     </div>
@@ -196,5 +213,6 @@
 </main><footer class="save-footer"><button id="saveButton" type="button" data-i18n="saveSettings"></button><div id="feedback" class="feedback" role="status" aria-live="polite"></div></footer>
     <script src="popup.js"></script>
     <script src="popup-tools.js"></script>
+    <script src="fixer-popup.js"></script>
 </body>
 </html>

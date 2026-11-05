@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/overture.js --bundle --minify --format=iife --target=chrome110 --outfile=dist/overture.js",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "devDependencies": {
+    "@mapbox/vector-tile": "^3.0.0",
+    "esbuild": "^0.28.2",
+    "pbf": "^5.1.2",
+    "pmtiles": "^4.5.0"
+  }
+}

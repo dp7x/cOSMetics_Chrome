@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "__MSG_appName__",
-    "version": "1.90",
+    "version": "2.01",
     "description": "__MSG_appDescription__",
     "default_locale": "en",
     "permissions": [
@@ -24,6 +24,11 @@
                 "https://www.openstreetmap.org/id"
             ],
             "js": [
+                "simplify-core.js",
+                "fixer-core.js",
+                "src/fixer-bridge.js",
+                "src/simplify-bridge.js",
+                "src/draw-building.js",
                 "src/id-bridge.js"
             ],
             "run_at": "document_start",
@@ -36,8 +41,14 @@
                 "https://www.openstreetmap.org/id"
             ],
             "js": [
+                "panel-session.js",
+                "ui-i18n.js",
                 "content.js",
-                "dist/overture.js"
+                "dist/overture.js",
+                "draw-building-control.js",
+                "fixer-core.js",
+                "fixer.js",
+                "simplify.js"
             ],
             "all_frames": true
         }

@@ -1,50 +1,64 @@
 <div align="center">
   <img width="440" height="280" alt="image" src="https://github.com/user-attachments/assets/74690435-e1d8-4a6d-8b86-9c12bbcc4f05" />
 
-  # cOSMetics for iD
+  # cOSMetics for iD 2.01
 
-  Custom Layers, Building Assistant & OSMradamus (comment suggester)
+  Mapping tools for OpenStreetMap
 </div>
 
 <hr>
 
 ## Overview
 
-cOSMetics for iD is a Chrome extension for the OpenStreetMap iD editor. It adds quick access to custom background layers, assists with reviewing and adding individual Overture buildings, and suggests descriptive changeset comments with **OSMradamus**.
+cOSMetics for iD is a Chrome extension for the OpenStreetMap iD editor. It brings together custom backgrounds, building drawing and Overture assistance, changeset comments, mapping grids, tag review and geometry simplification.
 
-Developed for Chrome. Firefox compatibility has not been verified.
+This repository contains the Chrome version. The Firefox version is maintained in a [separate repository](https://github.com/dp7x/cOSMetics_Firefox).
 
 ## Features
 
-### 🗺️ Custom Background Layers
+### 🗺️ Backgrounds — Custom layers management
 
-* **Quick Access:** Choose saved backgrounds from a dedicated panel within iD.
-* **One-Click Application:** The extension fills the custom background URL and confirms your selection.
-* **Customizable Layers:** Configure a name and URL template for each background in the extension popup.
+Save background names and URL templates in the popup, then choose a layer from a dedicated panel inside iD's custom background dialog. Use only imagery whose terms permit OpenStreetMap mapping.
 
-### 🏠 Building Assistant
+### 🏠 Bricks — Overture buildings assistant
 
-* **Optional Controls:** Enable the compact Overture control from the popup; it is disabled by default. The wide panel follows the browser’s light/dark preference. Drag its heading to reposition it; the position is saved locally. Double-click the heading to restore the default position.
-* **Area Snapshot:** At zoom 18 or higher, load buildings for the visible area with a 20% margin on each side. Moving or zooming the map does not request additional buildings; another click replaces the snapshot.
-* **Individual Addition:** Select an outline and press **A** or click **Add (A)** to create a `building=yes` way with a source tag. The accepted outline disappears from the overlay.
-* **Existing Buildings:** Candidates overlapping OSM buildings already loaded in iD are hidden or blocked. Review every proposed building against imagery and correct its geometry and tags before uploading. Geometries with holes or multiple polygons must be drawn manually.
+* **Overture outlines:** Enable the optional controls and, at zoom 18 or higher, click **Load area**. Select an outline and press **A** or click **Add (A)** to add an individual building. Moving the map does not load more buildings automatically.
+* **Three-click drawing:** Click **Draw** or press **4**. Place the first corner, move the mouse to orient and size a square, then click again to fix its orientation. Adjust the rectangle and finish with a third click. The new `building=yes` outline remains selected; **Esc** cancels an unfinished drawing.
+* **Snapping:** The first corner and the square's side corners snap to existing building corners and walls, helping draw attached buildings with shared nodes.
+* **Review:** Overture candidates overlapping OSM buildings already loaded in iD are hidden or blocked. Check every building against imagery and existing data, correcting geometry and tags before uploading.
 
-### 💡 OSMradamus (comment suggester)
+### 💡 OSMradamus — Changeset comment suggester
 
-* **Automatic Analysis:** Reads the OSMChange file and distinguishes created and modified objects. Only descriptive master tags are used; supplementary information such as `name`, `source` and `leaf_type` is ignored.
-* **Specific Categories:** Common values receive specific names, while other values use the master tag's general category. Moved untagged nodes are classified through their parent ways already loaded in iD; otherwise, the suggestion uses “geometries”.
-* **Smart Area Detection:** Uses iD's location panel or resolves coordinates through Nominatim.
-* **One-Click Generation:** Adds a **OSMradamus** button to the save dialog, producing comments such as:
+* **Descriptive comments:** In iD's save dialog, click **OSMradamus** to summarise created and modified objects, for example:  
   `Created trees, woods, buildings, farmlands + modified highways in Roma area`
-* **Persistent Hashtag:** Set a hashtag in the popup to prefill iD’s standard hashtag field when you open the save dialog, even if you write the comment manually. It is saved automatically on this device until you clear it. Other hashtags are preserved and duplicates are avoided; the suggested comment contains no appended hashtag.
-* **Sorting:** Shows up to four categories separately for creations and modifications, ordered by object count and then by total geometry points. “Other improvements” is added only when categories are omitted.
+* **Relevant categories:** Shows up to four categories for creations and four for modifications, ordered by object count and then geometry complexity. Area names come from iD's location panel or Nominatim.
+* **Persistent hashtag:** Configure a hashtag to prefill iD's standard hashtag field, including when writing comments manually. It stays saved locally until changed or cleared; other hashtags are preserved and duplicates avoided.
 
-### ▦ Mapping Grid
+Always review the suggested comment before uploading.
 
-* Download a GeoJSON grid centred on the current OpenStreetMap view: 1–10 cells per side and 100–1000 metres per cell. Then enter edit mode in iD and drag the downloaded file onto the map. Grid parameters are remembered locally.
-* The grid is a visual aid; generating it does not add objects to OpenStreetMap.
+### ▦ Grids — Mapping grids GeoJSON exporter
 
-**Compact popup:** Each feature has a collapsible section. Open/closed states are remembered locally and the Save button remains visible while the contents scroll.
+Download a grid centred on the current OpenStreetMap view, with 1–10 cells per side and 100–1000 metres per cell. When iD is ready for editing, the grid also appears automatically as custom data; existing custom data is replaced only after confirmation. Otherwise, import the downloaded GeoJSON manually. Grid parameters are remembered locally.
+
+The grid is a reference layer and does not create OpenStreetMap objects.
+
+### 🔎 Sensei — Tag reviewer
+
+Import an Overpass JSON or GeoJSON file containing OSM object IDs, then review the objects one at a time in iD. Enter search tags and replacement tags, one `key=value` pair per line: **Fix** applies the correction and advances, **Skip** moves on, and **Previous** returns to the preceding object.
+
+Leave replacement tags empty to remove matching tags, or leave both fields empty for manual review. Forward navigation checks current tags and skips objects that no longer match. Unrelated tags are preserved.
+
+Prepare the file externally, for example with [Overpass Turbo](https://overpass-turbo.eu/); Sensei does not run Overpass queries. Review each correction and upload through iD as usual.
+
+### ✂️ Ockham — Geometry simplifier
+
+Simplify an eligible selected line or polygon using a tolerance in metres, adjustable directly in the floating panel. Click **Preview** or press **5** to inspect the proposed geometry, then click **Apply** or press **0** to confirm.
+
+Endpoints and protected nodes, such as tagged or shared nodes, are retained based on the data loaded in iD. Some relation geometries are excluded. The panel's **Undo** discards a preview or reverses the simplification while it remains the latest operation; iD's normal undo is also available.
+
+**Panel activation:** Bricks, Sensei and Ockham start disabled whenever iD is opened or reloaded. Enable them from the popup for the current tab; positions and tool preferences remain saved.
+
+**Compact interface:** Popup sections collapse independently, remember their state and keep **Save** visible. Bricks, Sensei and Ockham use collapsible floating panels with light/dark styling; drag their headings to reposition them, including over iD's sidebar.
 
 ### 🌐 Languages
 
@@ -61,21 +75,19 @@ To load the repository version in Chrome:
 3. Click **Load unpacked** and select the folder containing `manifest.json`.
 4. Optionally pin **cOSMetics for iD** to the toolbar.
 
-The bundled `dist/overture.js` is included, so no build step is required to install. After updating the files, reload the extension and open iD tabs.
+The bundled `dist/overture.js` is included, so no build step is required to install. After updating the files, reload the extension and refresh any open iD tabs.
 
 ## Usage
 
-### Custom Background Layers
+### Backgrounds
 
 1. Open the extension popup, click **Add new layer**, enter a name and URL template, then **Save settings**.
 2. In iD, open **Background settings**, then **Edit custom background** (three dots).
 3. Choose a saved background from the extension's panel.
 
-### 🏠 Using the Building Assistant
+### Bricks
 
-1. Enable **Show Overture building controls in iD** in the popup.
-2. At zoom 18 or higher, click **Load area**. Use **Clear layer** to remove the snapshot; disabling the controls also clears it.
-3. Select an outline, press **A** or click **Add (A)**, then check and correct the building before uploading. Each building is added individually; iD's Undo can revert the addition.
+Enable the building controls in the popup. Use **Load area** for Overture outlines, or **Draw (4)** for three-click drawing. Check each building before uploading; additions can be undone through iD.
 
 ### 💡 Using OSMradamus
 
@@ -84,6 +96,16 @@ The bundled `dist/overture.js` is included, so no build step is required to inst
 3. Review and edit the comment before uploading.
 
 > **Tip:** Press `Ctrl+Shift+L` in iD to open the location panel and help identify the area name.
+
+## Keyboard Shortcuts
+
+With map focus and no text field active:
+
+| Key | Action |
+| --- | --- |
+| **4** | Start Bricks drawing |
+| **5** | Preview Ockham simplification |
+| **0** | Apply Ockham preview |
 
 ## Supported Object Types
 
@@ -102,7 +124,7 @@ npm run build
 
 ## Contributing
 
-Suggestions, bug reports and pull requests are welcome on the [GitHub repository](https://github.com/dp7x/iD-multilayer). You can also [contact me on OpenStreetMap](https://www.openstreetmap.org/messages/new/dp7).
+Suggestions, bug reports and pull requests are welcome on the [GitHub repository](https://github.com/dp7x/cOSMetics_Chrome). You can also [contact me on OpenStreetMap](https://www.openstreetmap.org/messages/new/dp7).
 
 ## License
 

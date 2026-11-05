@@ -138,3 +138,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+
+## OpenStreetMap test fixture — ODbL 1.0
+
+`tests/fixtures/way-1297393997.json` contains a read-only OpenStreetMap snapshot
+retrieved on 2 November 2026. © OpenStreetMap contributors. Data licensed under
+ODbL 1.0: https://www.openstreetmap.org/copyright . API source URLs, attribution
+and license metadata are retained in the fixture. This data is used only by
+automated tests and is not loaded by the runtime extension.

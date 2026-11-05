@@ -2,6 +2,37 @@
 // editor context in a local variable, so capture it at construction time.
 (() => {
   let context;
+  globalThis.CosmeticsDrawBuilding?.(() => context, () => window.iD);
+  globalThis.CosmeticsSimplifyBridge(() => context, () => window.iD);
+  globalThis.CosmeticsFixerBridge(() => context, () => window.iD);
+  document.addEventListener('cosmetics:grid-request', event => {
+    if (!context) return;
+    const reply = (status, extra = {}) => document.dispatchEvent(
+      new CustomEvent('cosmetics:grid-result', { detail: JSON.stringify({ status, ...extra }) })
+    );
+    try {
+      const request = JSON.parse(event.detail);
+      const mode = context.mode?.()?.id;
+      const layer = context.layers?.()?.layer('data');
+      if (!['browse', 'select'].includes(mode) || context.inIntro?.() ||
+          !context.editable?.() || !layer?.setFile || !layer.hasData || !layer.enabled) {
+        return reply('unavailable');
+      }
+      const occupied = layer.hasData();
+      if (request.action === 'probe') return reply('ready', { occupied });
+      if (request.action !== 'show') return;
+      if (occupied && request.replace !== true) return reply('occupied');
+      const data = request.data;
+      if (data?.type !== 'FeatureCollection' || !Array.isArray(data.features) ||
+          data.features.length < 1 || data.features.length > 100) return reply('unavailable');
+      layer.setFile('.geojson', JSON.stringify(data));
+      layer.enabled(true);
+      reply('shown');
+    } catch {
+      reply('unavailable');
+    }
+  });
+
   let watchingHistory = false;
 
   function inside(point, ring) {

@@ -6,28 +6,28 @@
     "message": "Custom background layers, changeset comment suggestions, and Overture building outlines for iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 1.90"
+    "message": "cOSMetics for iD 2.01"
   },
   "overtureEnable": {
     "message": "Show Overture building controls in iD"
   },
   "overtureEnableHelp": {
-    "message": "Enable them when you want to inspect and add buildings. This choice is saved automatically."
+    "message": "Enable these controls when you want to inspect and add buildings. A floating tool panel will appear."
   },
   "overtureDescription": {
-    "message": "This feature lets you load the building layer from Overture.<br>Once enabled, at zoom 18 or higher press <strong>Load area</strong> to load the buildings in the visible area. Select an outline and press <strong>A</strong> or <strong>Add (A)</strong>.<br><strong>Check each building before saving:</strong> generated outlines can be inaccurate. Compare them with imagery and OSM data, and correct their shape and position when needed. If you move the map, press the button again to load the visible area."
+    "message": "This feature loads a building layer from <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>At zoom 18 or higher, click <strong>Load area</strong> to fetch buildings for the displayed area. Select an outline and press <strong>A</strong> or click <strong>Add (A)</strong>.<br>Check every building before saving: generated outlines may be inaccurate. Compare them with other background imagery and OSM data, and correct their shape and position when necessary.<br>After moving the map, click the button again to load the displayed area."
   },
   "backgroundDescription": {
-    "message": "This feature lets you save additional custom backgrounds beyond the one provided by iD.<br>Add backgrounds here with a name and a URL template. In iD open <strong>Background settings</strong> (layers icon), then <strong>Edit custom background</strong> (three dots). Choose a saved layer in the panel to display it on the map.<br><strong>Important:</strong> make sure the backgrounds you use are permitted for OpenStreetMap mapping!"
+    "message": "This feature stores additional custom backgrounds beyond the one provided by iD.<br>Add backgrounds here with a name and a URL template. In iD, open <strong>Background settings</strong> (layers icon), then <strong>Edit custom background</strong> (three dots). Select a saved layer from the panel to display it.<br><strong>Important:</strong> use only backgrounds whose terms permit use for OpenStreetMap mapping!"
   },
   "commentDescription": {
-    "message": "<strong>OSMradamus</strong> — This feature suggests a comment for your changesets when you are unsure what to write. It analyzes your edits and proposes a description of the main changes.<br>When saving in iD, press <strong>OSMradamus</strong> to generate a comment based on your edits and the current area. Review and correct it before uploading, or replace it if you find it unsuitable.<br><br>For suggestions or feedback, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">contact me on OpenStreetMap</a>."
+    "message": "<strong>OSMradamus</strong> suggests a changeset comment when you are unsure what to write. It analyses your edits and describes the main changes.<br>When saving in iD, click <strong>OSMradamus</strong> to generate a comment based on your edits and the current area. Review and edit it before uploading, or replace it if it is unsuitable.<br><br>To add new comment rules, fork the repository on <a href=\"https://github.com/dp7x/cOSMetics_Chrome\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>."
   },
   "commentsInEnglish": {
     "message": "Comments in English"
   },
   "commentsInEnglishHelp": {
-    "message": "Always write suggested comments in English, regardless of the browser language."
+    "message": "Always use English for suggested comments, regardless of the browser language."
   },
   "licensePrefix": {
     "message": "Licensed under the"
@@ -282,7 +282,7 @@
     "message": "localities"
   },
   "overtureHeading": {
-    "message": "Overture buildings"
+    "message": "Bricks"
   },
   "loadArea": {
     "message": "Load area"
@@ -372,7 +372,7 @@
     "message": "relations"
   },
   "popupSubtitle": {
-    "message": "Custom Layers, Building Assistant & OSMradamus (comment suggester)"
+    "message": "Mapping tools for Openstreetmap"
   },
   "overtureMoveHelp": {
     "message": "Drag to move. Double-click or press Home to reset; arrow keys move the panel."
@@ -384,7 +384,7 @@
     "message": "Clear"
   },
   "hashtagHelp": {
-    "message": "Saved automatically and added to iD’s hashtag field when you open the save dialog, until you clear it. Enter it with or without #."
+    "message": "If you enter a hashtag, it is automatically added to the dedicated field when you open the save dialog, until you clear it. You can enter it with or without #. Hashtags can be useful for mapping projects."
   },
   "hashtagSaved": {
     "message": "Hashtag saved."
@@ -411,7 +411,7 @@
     "message": "Mapping grid"
   },
   "gridHelp": {
-    "message": "Generate a grid centred on the current OpenStreetMap view. To display it in iD, enter edit mode and drag the downloaded file onto the map."
+    "message": "Generate a grid centred on the current map view, with your chosen cell count and size. It is downloaded as GeoJSON and displayed automatically when iD is ready for editing. If custom data is already loaded, you are asked before replacing it. Use the grid to work systematically on one zone at a time or to divide an area between several mappers."
   },
   "gridCount": {
     "message": "Cells per side (1–10)"
@@ -432,9 +432,471 @@
     "message": "Cannot read the map centre. Move the map and try again."
   },
   "gridDone": {
-    "message": "Grid downloaded. Drag the file onto the map in iD."
+    "message": "Grid download started."
   },
   "gridError": {
     "message": "Cannot generate the grid. Please try again."
+  },
+  "captionOverture": {
+    "message": "Overture buildings assistant"
+  },
+  "captionLayers": {
+    "message": "Custom layers management"
+  },
+  "captionGrid": {
+    "message": "Mapping grids GeoJSON exporter"
+  },
+  "captionComments": {
+    "message": "Changeset comment suggester"
+  },
+  "captionFixer": {
+    "message": "Tag reviewer"
+  },
+  "captionSimplify": {
+    "message": "Geometry simplifier"
+  },
+  "gridOffer": {
+    "message": "Replace the custom data with the grid?"
+  },
+  "gridReplaceNotice": {
+    "message": "The grid will replace the custom data currently loaded in iD."
+  },
+  "gridShow": {
+    "message": "Show in iD"
+  },
+  "gridDismiss": {
+    "message": "No thanks"
+  },
+  "gridShown": {
+    "message": "Grid visible in iD."
+  },
+  "gridShowUnavailable": {
+    "message": "iD is not ready. You can import the downloaded GeoJSON."
+  },
+  "drawBuilding": {
+    "message": "Draw"
+  },
+  "drawCancel": {
+    "message": "Cancel"
+  },
+  "drawFirst": {
+    "message": "Click the first corner."
+  },
+  "drawSecond": {
+    "message": "Click the opposite corner to set the square."
+  },
+  "drawThird": {
+    "message": "Adjust width or depth, then click to confirm."
+  },
+  "drawCancelled": {
+    "message": "Drawing cancelled."
+  },
+  "drawCreated": {
+    "message": "Building drawn."
+  },
+  "drawUnavailable": {
+    "message": "Zoom in and finish the current operation in iD."
+  },
+  "drawWallDepth": {
+    "message": "Wall snapped. Click outside to set the depth."
+  },
+  "drawDescription": {
+    "message": "The advanced drawing tool makes it easier to create buildings. Click <strong>Draw</strong> or press <strong>4</strong>: place the first point and move the mouse to adjust the square’s size and orientation. Place the second point and move the mouse to resize the rectangle. Confirm with the third click. For attached buildings, use snapping: the first point and the square’s side corners snap to existing building corners and walls."
+  },
+  "senseiDescription": {
+    "message": "Sensei helps you systematically correct your own tagging mistakes. If you have repeatedly used an incorrect tag combination, you can find and correct the affected objects. Extract them with <a href=\"https://overpass-turbo.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">Overpass Turbo</a>, export GeoJSON and import the file into Sensei. Enter the tags to replace and those to set, then click <strong>Start review</strong> to find the first object. Correct or skip it to move to the next. <strong>Check every object carefully before correcting it!</strong> Leave the destination empty to remove tags, or both fields empty for manual review.<br>Save your edits through iD as usual when you choose to upload the changeset."
+  },
+  "ockhamDescription": {
+    "message": "Ockham’s razor simplifies overly complex geometries, typically lines made up of many closely spaced points."
+  },
+  "ockhamUse": {
+    "message": "Set the tolerance in metres and click <strong>Preview</strong> or press <strong>5</strong> to see the proposed simplification. Press <strong>0</strong> or click <strong>Apply</strong> to confirm. <strong>Undo</strong> discards the preview or undoes the last simplification if it is still the latest operation."
+  },
+  "ockhamData": {
+    "message": "Load the object’s complete data before simplifying. Endpoints and nodes with tags, shared nodes and relation-member nodes detected in the loaded graph are preserved. Save your edits through iD as usual when uploading the changeset."
+  },
+  "showSensei": {
+    "message": "Show panel in iD"
+  },
+  "showOckham": {
+    "message": "Show the simplification panel in iD"
+  },
+  "panelText000": {
+    "message": "Tag reviewer"
+  },
+  "panelText001": {
+    "message": "Geometry simplifier"
+  },
+  "panelText002": {
+    "message": "Drag to move the panel"
+  },
+  "panelText003": {
+    "message": "Drag to move"
+  },
+  "panelText004": {
+    "message": "Collapse or expand"
+  },
+  "panelText005": {
+    "message": "Collapse / expand"
+  },
+  "panelText006": {
+    "message": "Setup"
+  },
+  "panelText007": {
+    "message": "Review"
+  },
+  "panelText008": {
+    "message": "Objects to review"
+  },
+  "panelText009": {
+    "message": "Tags to find / remove · one per line"
+  },
+  "panelText010": {
+    "message": "Tags to set · one per line"
+  },
+  "panelText011": {
+    "message": "key=value\nother_key=other_value"
+  },
+  "panelText012": {
+    "message": "Clear"
+  },
+  "panelText013": {
+    "message": "Clear the list and fields."
+  },
+  "panelText014": {
+    "message": "All search tags must match. Leave both fields empty for manual review."
+  },
+  "panelText015": {
+    "message": "Remove matching tags"
+  },
+  "panelText016": {
+    "message": "Replace tags"
+  },
+  "panelText017": {
+    "message": "Manual review"
+  },
+  "panelText018": {
+    "message": "Manual mode: edit the object in iD, then click Next, or click Skip to move to the next object."
+  },
+  "panelText019": {
+    "message": "Search tags do not match: {0}. Check the object or click Skip."
+  },
+  "panelText020": {
+    "message": "Different destination values already exist: {0}. Edit manually or click Skip."
+  },
+  "panelText021": {
+    "message": "The rule makes no changes."
+  },
+  "panelText022": {
+    "message": "(missing)"
+  },
+  "panelText023": {
+    "message": "(remove)"
+  },
+  "panelText024": {
+    "message": "(no tags)"
+  },
+  "panelText025": {
+    "message": "Remove and next"
+  },
+  "panelText026": {
+    "message": "Fix and next"
+  },
+  "panelText027": {
+    "message": "Next"
+  },
+  "panelText028": {
+    "message": "Skip"
+  },
+  "panelText029": {
+    "message": "Previous"
+  },
+  "panelText030": {
+    "message": "Refresh object"
+  },
+  "panelText031": {
+    "message": "Read the current tags and reselect the object in iD"
+  },
+  "panelText032": {
+    "message": "All object tags"
+  },
+  "panelText033": {
+    "message": "Start review"
+  },
+  "panelText034": {
+    "message": "Edit search"
+  },
+  "panelText035": {
+    "message": "No list loaded"
+  },
+  "panelText036": {
+    "message": "List completed"
+  },
+  "panelText037": {
+    "message": "List completed."
+  },
+  "panelText038": {
+    "message": "List completed · {0} objects"
+  },
+  "panelText039": {
+    "message": "Object {0} of {1}"
+  },
+  "panelText040": {
+    "message": "Checking {0}…"
+  },
+  "panelText041": {
+    "message": "Reviewing a previous object: its tags may already be corrected."
+  },
+  "panelText042": {
+    "message": "Object selected in iD. Check it before continuing."
+  },
+  "panelText043": {
+    "message": "List completed: no more objects match the search tags."
+  },
+  "panelText044": {
+    "message": "Applying change…"
+  },
+  "panelText045": {
+    "message": "Edit the search and start reviewing from the current position."
+  },
+  "panelText046": {
+    "message": "Form cleared. You can load a new list."
+  },
+  "panelText047": {
+    "message": "The file must not exceed 20 MB."
+  },
+  "panelText048": {
+    "message": "{0} objects loaded. Configure the rule using tags, or leave both fields empty for manual review."
+  },
+  "panelText049": {
+    "message": "File not loaded: {0}"
+  },
+  "panelText050": {
+    "message": "Load a GeoJSON or Overpass JSON file. It is read only in your browser."
+  },
+  "panelText051": {
+    "message": "iD is not responding. Save your edits before reloading the editor."
+  },
+  "panelText052": {
+    "message": "iD is not responding. Reload the page and try again."
+  },
+  "panelText053": {
+    "message": "Click Preview or press 5."
+  },
+  "panelText054": {
+    "message": "Select a line or polygon."
+  },
+  "panelText055": {
+    "message": "{0} · {1} nodes"
+  },
+  "panelText056": {
+    "message": "{0} → {1} nodes · −{2}%"
+  },
+  "panelText057": {
+    "message": "{0} protected nodes · deviation {1} m"
+  },
+  "panelText058": {
+    "message": "Use a tolerance between 0.1 and 10 metres."
+  },
+  "panelText059": {
+    "message": "Calculating preview…"
+  },
+  "panelText060": {
+    "message": "No nodes can be removed at this tolerance."
+  },
+  "panelText061": {
+    "message": "Preview ready."
+  },
+  "panelText062": {
+    "message": "Removed {0} nodes."
+  },
+  "panelText063": {
+    "message": "Preview discarded."
+  },
+  "panelText064": {
+    "message": "Last simplification undone."
+  },
+  "panelText065": {
+    "message": "Discard preview"
+  },
+  "panelText066": {
+    "message": "Undo last simplification"
+  },
+  "panelText067": {
+    "message": "Tolerance (m)"
+  },
+  "panelText068": {
+    "message": "Tolerance in metres"
+  },
+  "panelText069": {
+    "message": "Exact tolerance in metres"
+  },
+  "panelText070": {
+    "message": "━ ━ Original"
+  },
+  "panelText071": {
+    "message": "━━ Proposed"
+  },
+  "panelText072": {
+    "message": "Preview (5)"
+  },
+  "panelText073": {
+    "message": "Preview · 5"
+  },
+  "panelText074": {
+    "message": "Apply (0)"
+  },
+  "panelText075": {
+    "message": "Undo"
+  },
+  "panelText076": {
+    "message": "Unknown format: use GeoJSON or Overpass JSON."
+  },
+  "panelText077": {
+    "message": "The file contains too many items. Export a smaller list."
+  },
+  "panelText078": {
+    "message": "No valid OSM IDs found in the file."
+  },
+  "panelText079": {
+    "message": "Maximum {0} objects."
+  },
+  "panelText080": {
+    "message": "Invalid tag text."
+  },
+  "panelText081": {
+    "message": "Line {0}: enter key=value."
+  },
+  "panelText082": {
+    "message": "Line {0}: invalid key or value (maximum 255 characters)."
+  },
+  "panelText083": {
+    "message": "Duplicate key: {0}."
+  },
+  "panelText084": {
+    "message": "Maximum 100 tags per field."
+  },
+  "panelText085": {
+    "message": "First enter at least one search tag."
+  },
+  "panelText086": {
+    "message": "Simplification would remove too many vertices. Reduce the tolerance."
+  },
+  "panelText087": {
+    "message": "The geometry contains zero-length segments."
+  },
+  "panelText088": {
+    "message": "Complex or self-intersecting geometry: reduce the tolerance or edit manually."
+  },
+  "panelText089": {
+    "message": "The resulting polygon is degenerate. Reduce the tolerance."
+  },
+  "panelText090": {
+    "message": "Tolerance must be between 0.1 and 10 metres."
+  },
+  "panelText091": {
+    "message": "Select a way with 3 to 4,000 nodes."
+  },
+  "panelText092": {
+    "message": "Missing or unsupported coordinates."
+  },
+  "panelText093": {
+    "message": "Geometries crossing the antimeridian are not supported."
+  },
+  "panelText094": {
+    "message": "The inner ring must be a closed way."
+  },
+  "panelText095": {
+    "message": "This tolerance would collapse the polygon. Reduce it."
+  },
+  "panelText096": {
+    "message": "Simplification would reverse the polygon. Reduce the tolerance."
+  },
+  "panelText097": {
+    "message": "Connection to iD unavailable. Reload the page."
+  },
+  "panelText098": {
+    "message": "Close the iD tutorial first."
+  },
+  "panelText099": {
+    "message": "Finish the current operation in iD and close the save dialog before continuing."
+  },
+  "panelText100": {
+    "message": "Object unavailable or deleted. You can skip it."
+  },
+  "panelText101": {
+    "message": "Loading timed out. Retry or skip the object."
+  },
+  "panelText102": {
+    "message": "Cannot load the object: it may be deleted or unreachable."
+  },
+  "panelText103": {
+    "message": "Navigation cancelled."
+  },
+  "panelText104": {
+    "message": "Map redraw is incomplete. Click Refresh object to retry."
+  },
+  "panelText105": {
+    "message": "Invalid OSM ID."
+  },
+  "panelText106": {
+    "message": "The selection in iD changed. Click Refresh object."
+  },
+  "panelText107": {
+    "message": "The editor is not ready for editing."
+  },
+  "panelText108": {
+    "message": "Tags changed after the preview. Click Refresh object and check again."
+  },
+  "panelText109": {
+    "message": "The rule does not match, has conflicts or changes no tags."
+  },
+  "panelText110": {
+    "message": "Object changed: refresh its tags."
+  },
+  "panelText111": {
+    "message": "Unknown operation."
+  },
+  "panelText112": {
+    "message": "Connection to iD unavailable. Reload the page."
+  },
+  "panelText113": {
+    "message": "Finish the operation in iD or close the save dialog."
+  },
+  "panelText114": {
+    "message": "Select a single line or polygon."
+  },
+  "panelText115": {
+    "message": "The selection is a multipolygon. Select an eligible individual way."
+  },
+  "panelText116": {
+    "message": "Select a line or polygon consisting of one way."
+  },
+  "panelText117": {
+    "message": "Members of boundary relations are not supported."
+  },
+  "panelText118": {
+    "message": "Only closed inner rings of multipolygons are supported; outer and split rings are excluded."
+  },
+  "panelText119": {
+    "message": "The way is not fully loaded. Load the area’s data in iD."
+  },
+  "panelText120": {
+    "message": "Calculate a new preview first."
+  },
+  "panelText121": {
+    "message": "Selection or data changed. Recalculate the preview."
+  },
+  "panelText122": {
+    "message": "The editor is not ready for editing."
+  },
+  "panelText123": {
+    "message": "Data changed after the preview."
+  },
+  "panelText124": {
+    "message": "A node marked for removal is still in use. Recalculate the preview."
+  },
+  "panelText125": {
+    "message": "Simplification is no longer the last edit. Use iD’s history to choose what to undo."
   }
 }

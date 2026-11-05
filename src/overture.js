@@ -384,15 +384,14 @@ if (!document.documentElement.dataset.cosmeticsOverture) {
   function positionBounds() {
     const map = document.querySelector('.main-map');
     if (!map || !control || control.style.display === 'none') return null;
-    const rect = map.getBoundingClientRect();
-    control.style.maxWidth = `${Math.max(1, Math.min(innerWidth - 24, rect.width - 16))}px`;
+    control.style.maxWidth = `${Math.max(1, innerWidth - 24)}px`;
     const box = control.getBoundingClientRect();
-    const left = Math.max(8, rect.left + 8);
-    const top = Math.max(8, rect.top + 8);
+    const left = 8;
+    const top = 8;
     return {
       left, top,
-      right: Math.max(left, Math.min(innerWidth - 8, rect.right - 8) - box.width),
-      bottom: Math.max(top, Math.min(innerHeight - 8, rect.bottom - 8) - box.height)
+      right: Math.max(left, innerWidth - 8 - box.width),
+      bottom: Math.max(top, innerHeight - 8 - box.height)
     };
   }
 
@@ -639,10 +638,7 @@ if (!document.documentElement.dataset.cosmeticsOverture) {
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup);
   else setup();
-  chrome.storage.sync.get('overtureEnabled', items => setEnabled(items.overtureEnabled));
-  chrome.storage.onChanged.addListener((changes, area) => {
-    if (area === 'sync' && changes.overtureEnabled) setEnabled(changes.overtureEnabled.newValue);
-  });
+  CosmeticsPanels.subscribe('overtureEnabled', setEnabled);
   const boot = setInterval(() => {
     if (document.getElementById(BUTTON_ID)) clearInterval(boot);
     else setup();

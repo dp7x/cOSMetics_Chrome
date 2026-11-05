@@ -70,7 +70,43 @@ function saveGridParameters() {
     }
 }
 [gridSizeInput, squareSizeInput].forEach(input => input.addEventListener('input', saveGridParameters));
-document.getElementById('generateGrid').addEventListener('click', async () => {
+const gridOffer = document.getElementById('gridOffer');
+const gridShow = document.getElementById('gridShow');
+const gridReplaceNotice = document.getElementById('gridReplaceNotice');
+const gridDownload = document.getElementById('generateGrid');
+let pendingGrid;
+function dismissGridOffer() {
+    pendingGrid = undefined;
+    gridOffer.hidden = true;
+}
+document.getElementById('gridDismiss').addEventListener('click', dismissGridOffer);
+async function showPendingGrid() {
+    const choice = pendingGrid;
+    if (!choice) return;
+    gridShow.disabled = gridDownload.disabled = true;
+    try {
+        const result = await chrome.tabs.sendMessage(choice.tabId, {
+            kind: 'cosmetics-grid', action: 'show', frameKey: choice.frameKey,
+            data: choice.data, replace: choice.occupied
+        });
+        if (result?.status === 'occupied') {
+            choice.occupied = true;
+            gridReplaceNotice.hidden = false;
+            return;
+        }
+        dismissGridOffer();
+        gridFeedback.textContent = t(result?.status === 'shown' ? 'gridShown' : 'gridShowUnavailable');
+    } catch {
+        dismissGridOffer();
+        gridFeedback.textContent = t('gridShowUnavailable');
+    } finally {
+        gridShow.disabled = gridDownload.disabled = false;
+    }
+}
+gridShow.addEventListener('click',showPendingGrid);
+gridDownload.addEventListener('click', async () => {
+    dismissGridOffer();
+    gridDownload.disabled = true;
     try {
         const count = Number(gridSizeInput.value), meters = Number(squareSizeInput.value);
         if (!gridSizeInput.checkValidity() || !squareSizeInput.checkValidity() || !gridSizeInput.value || !squareSizeInput.value) throw new Error('gridInvalid');
@@ -88,7 +124,25 @@ document.getElementById('generateGrid').addEventListener('click', async () => {
         link.remove();
         setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
         gridFeedback.textContent = t('gridDone');
+        if (/^\/(edit|id)\/?$/.test(new URL(tab.url).pathname)) {
+            try {
+                const status = await chrome.tabs.sendMessage(tab.id, { kind: 'cosmetics-grid', action: 'probe' });
+                if (status?.status === 'ready' && status.frameKey) {
+                    pendingGrid = { tabId: tab.id, data, ...status };
+                    gridReplaceNotice.hidden = !status.occupied;
+                    if(status.occupied) {
+                        gridOffer.hidden = false;
+                    } else {
+                        await showPendingGrid();
+                        // Another custom layer may have appeared since the probe.
+                        if(pendingGrid?.occupied)gridOffer.hidden=false;
+                    }
+                }
+            } catch { /* The download also works without iD. */ }
+        }
     } catch (error) {
         gridFeedback.textContent = t(['gridInvalid', 'gridSite', 'gridCoordinates'].includes(error.message) ? error.message : 'gridError');
+    } finally {
+        gridDownload.disabled = false;
     }
 });

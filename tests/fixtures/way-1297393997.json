@@ -1,0 +1,407 @@
+{
+  "version": "0.6",
+  "generator": "openstreetmap-cgimap 2.1.0 (1786264 spike-06.openstreetmap.org)",
+  "copyright": "OpenStreetMap and contributors",
+  "attribution": "http://www.openstreetmap.org/copyright",
+  "license": "http://opendatacommons.org/licenses/odbl/1-0/",
+  "elements": [
+    {
+      "type": "node",
+      "id": 12020531451,
+      "lat": 42.7430736,
+      "lon": 12.8234039,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531452,
+      "lat": 42.7430795,
+      "lon": 12.8234924,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531453,
+      "lat": 42.7430687,
+      "lon": 12.8235917,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531454,
+      "lat": 42.7430421,
+      "lon": 12.8236507,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531455,
+      "lat": 42.7429988,
+      "lon": 12.8236775,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531456,
+      "lat": 42.7429121,
+      "lon": 12.8236829,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531457,
+      "lat": 42.7428304,
+      "lon": 12.8236721,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531458,
+      "lat": 42.7427555,
+      "lon": 12.8236172,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531459,
+      "lat": 42.742721,
+      "lon": 12.8235836,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531460,
+      "lat": 42.7426531,
+      "lon": 12.8235005,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531461,
+      "lat": 42.7425703,
+      "lon": 12.8233543,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531462,
+      "lat": 42.7425112,
+      "lon": 12.8232269,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531463,
+      "lat": 42.7424827,
+      "lon": 12.823078,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531464,
+      "lat": 42.7425034,
+      "lon": 12.8230324,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531465,
+      "lat": 42.7425546,
+      "lon": 12.823015,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531466,
+      "lat": 42.742591,
+      "lon": 12.8230284,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531467,
+      "lat": 42.7426747,
+      "lon": 12.8230485,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020531468,
+      "lat": 42.74279,
+      "lon": 12.8230271,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020532769,
+      "lat": 42.7428579,
+      "lon": 12.8229842,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020532770,
+      "lat": 42.7429377,
+      "lon": 12.8229909,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020532771,
+      "lat": 42.7429909,
+      "lon": 12.8230298,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020532772,
+      "lat": 42.7430372,
+      "lon": 12.8231585,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "node",
+      "id": 12020532773,
+      "lat": 42.7430687,
+      "lon": 12.8233436,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323
+    },
+    {
+      "type": "way",
+      "id": 1297393997,
+      "timestamp": "2024-06-29T16:46:02Z",
+      "version": 1,
+      "changeset": 153339953,
+      "user": "SekeRob",
+      "uid": 1940323,
+      "nodes": [
+        12020532773,
+        12020532772,
+        12020532771,
+        12020532770,
+        12020532769,
+        12020531468,
+        12020531467,
+        12020531466,
+        12020531465,
+        12020531464,
+        12020531463,
+        12020531462,
+        12020531461,
+        12020531460,
+        12020531459,
+        12020531458,
+        12020531457,
+        12020531456,
+        12020531455,
+        12020531454,
+        12020531453,
+        12020531452,
+        12020531451,
+        12020532773
+      ],
+      "tags": {
+        "landuse": "orchard",
+        "leaf_type": "broadleaved",
+        "surface": "ground"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 21864055,
+      "timestamp": "2026-11-02T18:38:12Z",
+      "version": 1,
+      "changeset": 191382890,
+      "user": "dp7",
+      "uid": 4188272,
+      "members": [
+        {
+          "type": "way",
+          "ref": 1247122637,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 1247115146,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 1247115144,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 360109785,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 1574765203,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 360109789,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 360109790,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 1574566451,
+          "role": "inner"
+        },
+        {
+          "type": "way",
+          "ref": 1363570326,
+          "role": "inner"
+        },
+        {
+          "type": "way",
+          "ref": 1363570325,
+          "role": "inner"
+        },
+        {
+          "type": "way",
+          "ref": 1247115147,
+          "role": "inner"
+        },
+        {
+          "type": "way",
+          "ref": 1297393997,
+          "role": "inner"
+        },
+        {
+          "type": "way",
+          "ref": 1574765204,
+          "role": "inner"
+        },
+        {
+          "type": "way",
+          "ref": 1574765205,
+          "role": "inner"
+        },
+        {
+          "type": "way",
+          "ref": 1574765206,
+          "role": "inner"
+        },
+        {
+          "type": "way",
+          "ref": 1574765207,
+          "role": "inner"
+        },
+        {
+          "type": "way",
+          "ref": 1574765208,
+          "role": "inner"
+        }
+      ],
+      "tags": {
+        "landuse": "forest",
+        "type": "multipolygon"
+      }
+    }
+  ],
+  "source_urls": [
+    "https://api.openstreetmap.org/api/0.6/way/1297393997/full.json",
+    "https://api.openstreetmap.org/api/0.6/way/1297393997/relations.json"
+  ],
+  "fixture_note": "Read-only OSM snapshot retrieved 2026-11-02. OSM data: OpenStreetMap contributors, ODbL 1.0."
+}

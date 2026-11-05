@@ -6,28 +6,28 @@
     "message": "Fonds personnalisés, suggestions de commentaires de groupes de modifications et contours de bâtiments Overture pour iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 1.90"
+    "message": "cOSMetics for iD 2.01"
   },
   "overtureEnable": {
     "message": "Afficher les commandes des bâtiments Overture dans iD"
   },
   "overtureEnableHelp": {
-    "message": "Activez-les pour examiner et ajouter des bâtiments. Ce choix est enregistré automatiquement."
+    "message": "Activez ces commandes pour consulter et ajouter des bâtiments : un panneau flottant contenant les outils apparaîtra."
   },
   "overtureDescription": {
-    "message": "Cette fonctionnalité permet de charger la couche de bâtiments d’Overture.<br>Une fois activée, au niveau de zoom 18 ou supérieur, cliquez sur <strong>Charger la zone</strong> pour charger les bâtiments de la zone visible. Sélectionnez un contour et appuyez sur <strong>A</strong> ou cliquez sur <strong>Ajouter (A)</strong>.<br><strong>Vérifiez chaque bâtiment avant d’enregistrer :</strong> les contours générés peuvent être imprécis. Comparez-les avec l’imagerie et les données OSM et corrigez leur forme et leur position si nécessaire. Si vous déplacez la carte, cliquez à nouveau sur le bouton pour charger la zone visible."
+    "message": "Cette fonction charge une couche de bâtiments depuis <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>Au zoom 18 ou supérieur, cliquez sur <strong>Charger la zone</strong> pour récupérer les bâtiments de la zone affichée. Sélectionnez un contour et appuyez sur <strong>A</strong> ou cliquez sur <strong>Ajouter (A)</strong>.<br>Vérifiez chaque bâtiment avant de sauvegarder : les contours générés peuvent être imprécis. Comparez-les avec d’autres images de fond et les données OSM, puis corrigez leur forme et leur position si nécessaire.<br>Après avoir déplacé la carte, cliquez à nouveau sur le bouton pour charger la zone affichée."
   },
   "backgroundDescription": {
-    "message": "Cette fonctionnalité permet d’enregistrer des fonds personnalisés supplémentaires, en plus de celui prévu par iD.<br>Ajoutez ici des fonds avec un nom et un modèle d’URL. Dans iD, ouvrez les <strong>Paramètres du fond</strong> (icône des couches), puis <strong>Modifier le fond personnalisé</strong> (trois points). Choisissez un fond enregistré dans le panneau pour l’afficher sur la carte.<br><strong>Attention :</strong> assurez-vous que les fonds utilisés sont autorisés pour la cartographie dans OpenStreetMap !"
+    "message": "Cette fonction mémorise des fonds personnalisés supplémentaires à celui prévu par iD.<br>Ajoutez ici un nom et un modèle d’URL pour chaque fond. Dans iD, ouvrez les <strong>Paramètres du fond</strong> (icône des couches), puis <strong>Modifier le fond personnalisé</strong> (trois points). Sélectionnez un fond enregistré dans le panneau pour l’afficher.<br><strong>Attention :</strong> utilisez uniquement des fonds dont les conditions autorisent l’utilisation pour OpenStreetMap !"
   },
   "commentDescription": {
-    "message": "<strong>OSMradamus</strong> — Cette fonctionnalité propose un commentaire pour vos groupes de modifications lorsque vous ne savez pas quoi écrire. Elle analyse vos modifications et propose une description des principales.<br>Lors de l’enregistrement dans iD, cliquez sur <strong>OSMradamus</strong> pour générer un commentaire à partir des modifications et de la zone actuelle. Vérifiez-le et corrigez-le avant l’envoi, ou remplacez-le si vous ne le trouvez pas adapté.<br><br>Pour toute suggestion ou remarque, <a href=\"https://www.openstreetmap.org/messages/new/dp7\" target=\"_blank\">contactez-moi sur OpenStreetMap</a>."
+    "message": "<strong>OSMradamus</strong> propose un commentaire de groupe de modifications lorsque vous ne savez pas quoi écrire. Il analyse vos modifications et décrit les principales.<br>Lors de la sauvegarde dans iD, cliquez sur <strong>OSMradamus</strong> pour générer un commentaire selon vos modifications et la zone courante. Vérifiez-le et corrigez-le avant l’envoi, ou remplacez-le s’il ne convient pas.<br><br>Pour ajouter de nouvelles règles, créez un fork du dépôt sur <a href=\"https://github.com/dp7x/cOSMetics_Chrome\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>."
   },
   "commentsInEnglish": {
     "message": "Commentaires en anglais"
   },
   "commentsInEnglishHelp": {
-    "message": "Toujours rédiger les commentaires proposés en anglais, quelle que soit la langue du navigateur."
+    "message": "Toujours proposer les commentaires en anglais, quelle que soit la langue du navigateur."
   },
   "licensePrefix": {
     "message": "Licence :"
@@ -282,7 +282,7 @@
     "message": "lieux-dits"
   },
   "overtureHeading": {
-    "message": "Bâtiments Overture"
+    "message": "Bricks"
   },
   "loadArea": {
     "message": "Charger la zone"
@@ -372,7 +372,7 @@
     "message": "relations"
   },
   "popupSubtitle": {
-    "message": "Fonds personnalisés, assistant bâtiments et OSMradamus (comment suggester)"
+    "message": "Outils de cartographie pour OpenStreetMap"
   },
   "overtureMoveHelp": {
     "message": "Faites glisser pour déplacer. Double-clic ou touche Début pour réinitialiser ; les flèches déplacent le panneau."
@@ -384,7 +384,7 @@
     "message": "Effacer"
   },
   "hashtagHelp": {
-    "message": "Enregistré automatiquement et ajouté au champ des hashtags d’iD à l’ouverture de l’enregistrement, jusqu’à ce que vous l’effaciez. Saisissez-le avec ou sans #."
+    "message": "Si vous indiquez un hashtag, il sera ajouté automatiquement dans le champ dédié lors de la sauvegarde, jusqu’à ce que vous l’effaciez. Vous pouvez l’écrire avec ou sans #. Les hashtags sont utiles pour les projets de cartographie."
   },
   "hashtagSaved": {
     "message": "Hashtag enregistré."
@@ -411,7 +411,7 @@
     "message": "Grille de cartographie"
   },
   "gridHelp": {
-    "message": "Générez une grille centrée sur la vue OpenStreetMap actuelle. Pour l’afficher dans iD, passez en mode édition et glissez le fichier téléchargé sur la carte."
+    "message": "Générez une grille centrée sur la vue courante avec le nombre et la taille de cellules souhaités. Elle est téléchargée en GeoJSON et affichée automatiquement si iD est prêt à modifier la carte. Les données personnalisées déjà chargées ne sont remplacées qu’après confirmation. La grille permet de travailler zone par zone ou de répartir une zone entre plusieurs contributeurs."
   },
   "gridCount": {
     "message": "Cellules par côté (1–10)"
@@ -432,9 +432,471 @@
     "message": "Impossible de lire le centre de la carte. Déplacez la carte et réessayez."
   },
   "gridDone": {
-    "message": "Grille téléchargée. Glissez le fichier sur la carte dans iD."
+    "message": "Téléchargement de la grille lancé."
   },
   "gridError": {
     "message": "Impossible de générer la grille. Réessayez."
+  },
+  "captionOverture": {
+    "message": "Assistant pour les bâtiments Overture"
+  },
+  "captionLayers": {
+    "message": "Gestion des fonds personnalisés"
+  },
+  "captionGrid": {
+    "message": "Export GeoJSON de grilles de cartographie"
+  },
+  "captionComments": {
+    "message": "Suggestions de commentaires de groupes de modifications"
+  },
+  "captionFixer": {
+    "message": "Révision des tags"
+  },
+  "captionSimplify": {
+    "message": "Simplification des géométries"
+  },
+  "gridOffer": {
+    "message": "Remplacer les données personnalisées par la grille ?"
+  },
+  "gridReplaceNotice": {
+    "message": "La grille remplacera les données personnalisées chargées dans iD."
+  },
+  "gridShow": {
+    "message": "Afficher dans iD"
+  },
+  "gridDismiss": {
+    "message": "Non merci"
+  },
+  "gridShown": {
+    "message": "Grille visible dans iD."
+  },
+  "gridShowUnavailable": {
+    "message": "iD n’est pas prêt. Vous pouvez importer le fichier GeoJSON téléchargé."
+  },
+  "drawBuilding": {
+    "message": "Dessiner"
+  },
+  "drawCancel": {
+    "message": "Annuler"
+  },
+  "drawFirst": {
+    "message": "Cliquez sur le premier coin."
+  },
+  "drawSecond": {
+    "message": "Cliquez sur le coin opposé pour fixer le carré."
+  },
+  "drawThird": {
+    "message": "Réglez la largeur ou la profondeur, puis cliquez pour confirmer."
+  },
+  "drawCancelled": {
+    "message": "Dessin annulé."
+  },
+  "drawCreated": {
+    "message": "Bâtiment dessiné."
+  },
+  "drawUnavailable": {
+    "message": "Zoomez et terminez l’opération en cours dans iD."
+  },
+  "drawWallDepth": {
+    "message": "Mur accroché. Cliquez à l’extérieur pour fixer la profondeur."
+  },
+  "drawDescription": {
+    "message": "L’outil de dessin avancé facilite la création de bâtiments. Cliquez sur <strong>Dessiner</strong> ou appuyez sur <strong>4</strong> : placez le premier point et déplacez la souris pour régler la taille et l’orientation du carré. Placez le deuxième point et ajustez le rectangle. Confirmez avec un troisième clic. Pour des bâtiments mitoyens, le premier point et les coins latéraux du carré s’accrochent aux angles et aux murs existants."
+  },
+  "senseiDescription": {
+    "message": "Sensei aide à corriger méthodiquement vos propres erreurs de tags. Si vous avez longtemps utilisé une combinaison incorrecte, vous pouvez retrouver et corriger les objets concernés. Recherchez-les avec <a href=\"https://overpass-turbo.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">Overpass Turbo</a>, exportez-les en GeoJSON et importez le fichier dans Sensei. Indiquez les tags recherchés et ceux à appliquer, puis cliquez sur <strong>Démarrer la révision</strong>. Corrigez ou ignorez chaque objet pour passer au suivant. <strong>Vérifiez attentivement chaque objet avant de le corriger !</strong> Laissez la destination vide pour supprimer les tags, ou les deux champs pour une révision manuelle.<br>Sauvegardez les modifications normalement dans iD lorsque vous souhaitez envoyer le groupe de modifications."
+  },
+  "ockhamDescription": {
+    "message": "Le rasoir d’Ockham simplifie les géométries trop complexes, notamment les lignes composées de nombreux points très rapprochés."
+  },
+  "ockhamUse": {
+    "message": "Réglez la tolérance en mètres et cliquez sur <strong>Aperçu</strong> ou appuyez sur <strong>5</strong>. Appuyez sur <strong>0</strong> ou cliquez sur <strong>Appliquer</strong> pour confirmer. <strong>Annuler</strong> abandonne l’aperçu ou annule la dernière simplification si elle est toujours la dernière opération."
+  },
+  "ockhamData": {
+    "message": "Chargez les données complètes de l’objet avant de le simplifier. Les extrémités, les nœuds avec tags, les nœuds partagés et les membres de relations détectés dans le graphe chargé sont conservés. Sauvegardez les modifications normalement dans iD lors de l’envoi."
+  },
+  "showSensei": {
+    "message": "Afficher le panneau dans iD"
+  },
+  "showOckham": {
+    "message": "Afficher le panneau de simplification dans iD"
+  },
+  "panelText000": {
+    "message": "Révision des tags"
+  },
+  "panelText001": {
+    "message": "Simplification des géométries"
+  },
+  "panelText002": {
+    "message": "Faites glisser pour déplacer le panneau"
+  },
+  "panelText003": {
+    "message": "Faites glisser pour déplacer"
+  },
+  "panelText004": {
+    "message": "Réduire ou développer"
+  },
+  "panelText005": {
+    "message": "Réduire / développer"
+  },
+  "panelText006": {
+    "message": "Préparation"
+  },
+  "panelText007": {
+    "message": "Révision"
+  },
+  "panelText008": {
+    "message": "Objets à réviser"
+  },
+  "panelText009": {
+    "message": "Tags à rechercher / supprimer · un par ligne"
+  },
+  "panelText010": {
+    "message": "Tags à définir · un par ligne"
+  },
+  "panelText011": {
+    "message": "clé=valeur\nautre_clé=autre_valeur"
+  },
+  "panelText012": {
+    "message": "Effacer"
+  },
+  "panelText013": {
+    "message": "Effacer la liste et les champs."
+  },
+  "panelText014": {
+    "message": "Tous les tags recherchés doivent correspondre. Laissez les deux champs vides pour une révision manuelle."
+  },
+  "panelText015": {
+    "message": "Suppression des tags recherchés"
+  },
+  "panelText016": {
+    "message": "Remplacement des tags"
+  },
+  "panelText017": {
+    "message": "Révision manuelle"
+  },
+  "panelText018": {
+    "message": "Mode manuel : modifiez l’objet dans iD, puis cliquez sur Suivant ou sur Ignorer pour passer au suivant."
+  },
+  "panelText019": {
+    "message": "Tags recherchés non correspondants : {0}. Vérifiez l’objet ou cliquez sur Ignorer."
+  },
+  "panelText020": {
+    "message": "Des valeurs de destination différentes existent déjà : {0}. Modifiez manuellement ou cliquez sur Ignorer."
+  },
+  "panelText021": {
+    "message": "La règle ne produit aucune modification."
+  },
+  "panelText022": {
+    "message": "(absent)"
+  },
+  "panelText023": {
+    "message": "(supprimer)"
+  },
+  "panelText024": {
+    "message": "(aucun tag)"
+  },
+  "panelText025": {
+    "message": "Supprimer et suivant"
+  },
+  "panelText026": {
+    "message": "Corriger et suivant"
+  },
+  "panelText027": {
+    "message": "Suivant"
+  },
+  "panelText028": {
+    "message": "Ignorer"
+  },
+  "panelText029": {
+    "message": "Précédent"
+  },
+  "panelText030": {
+    "message": "Relire l’objet"
+  },
+  "panelText031": {
+    "message": "Relire les tags actuels et sélectionner à nouveau l’objet dans iD"
+  },
+  "panelText032": {
+    "message": "Tous les tags de l’objet"
+  },
+  "panelText033": {
+    "message": "Démarrer la révision"
+  },
+  "panelText034": {
+    "message": "Modifier la recherche"
+  },
+  "panelText035": {
+    "message": "Aucune liste chargée"
+  },
+  "panelText036": {
+    "message": "Liste terminée"
+  },
+  "panelText037": {
+    "message": "Liste terminée."
+  },
+  "panelText038": {
+    "message": "Liste terminée · {0} objets"
+  },
+  "panelText039": {
+    "message": "Objet {0} sur {1}"
+  },
+  "panelText040": {
+    "message": "Vérification de {0}…"
+  },
+  "panelText041": {
+    "message": "Révision d’un objet précédent : ses tags peuvent déjà être corrigés."
+  },
+  "panelText042": {
+    "message": "Objet sélectionné dans iD. Vérifiez-le avant de continuer."
+  },
+  "panelText043": {
+    "message": "Liste terminée : aucun autre objet ne correspond aux tags recherchés."
+  },
+  "panelText044": {
+    "message": "Application de la modification…"
+  },
+  "panelText045": {
+    "message": "Modifiez la recherche et démarrez la révision à la position actuelle."
+  },
+  "panelText046": {
+    "message": "Formulaire effacé. Vous pouvez charger une nouvelle liste."
+  },
+  "panelText047": {
+    "message": "Le fichier ne doit pas dépasser 20 Mo."
+  },
+  "panelText048": {
+    "message": "{0} objets chargés. Définissez les tags de la règle ou laissez les deux champs vides pour une révision manuelle."
+  },
+  "panelText049": {
+    "message": "Fichier non chargé : {0}"
+  },
+  "panelText050": {
+    "message": "Chargez un fichier GeoJSON ou JSON Overpass. Il est lu uniquement dans le navigateur."
+  },
+  "panelText051": {
+    "message": "iD ne répond pas. Sauvegardez vos modifications avant de recharger l’éditeur."
+  },
+  "panelText052": {
+    "message": "iD ne répond pas. Rechargez la page et réessayez."
+  },
+  "panelText053": {
+    "message": "Cliquez sur Aperçu ou appuyez sur 5."
+  },
+  "panelText054": {
+    "message": "Sélectionnez une ligne ou un polygone."
+  },
+  "panelText055": {
+    "message": "{0} · {1} nœuds"
+  },
+  "panelText056": {
+    "message": "{0} → {1} nœuds · −{2}%"
+  },
+  "panelText057": {
+    "message": "{0} nœuds protégés · écart {1} m"
+  },
+  "panelText058": {
+    "message": "Utilisez une tolérance de 0,1 à 10 mètres."
+  },
+  "panelText059": {
+    "message": "Calcul de l’aperçu…"
+  },
+  "panelText060": {
+    "message": "Aucun nœud ne peut être supprimé avec cette tolérance."
+  },
+  "panelText061": {
+    "message": "Aperçu prêt."
+  },
+  "panelText062": {
+    "message": "{0} nœuds supprimés."
+  },
+  "panelText063": {
+    "message": "Aperçu abandonné."
+  },
+  "panelText064": {
+    "message": "Dernière simplification annulée."
+  },
+  "panelText065": {
+    "message": "Abandonner l’aperçu"
+  },
+  "panelText066": {
+    "message": "Annuler la dernière simplification"
+  },
+  "panelText067": {
+    "message": "Tolérance (m)"
+  },
+  "panelText068": {
+    "message": "Tolérance en mètres"
+  },
+  "panelText069": {
+    "message": "Tolérance précise en mètres"
+  },
+  "panelText070": {
+    "message": "━ ━ Original"
+  },
+  "panelText071": {
+    "message": "━━ Proposition"
+  },
+  "panelText072": {
+    "message": "Aperçu (5)"
+  },
+  "panelText073": {
+    "message": "Aperçu · 5"
+  },
+  "panelText074": {
+    "message": "Appliquer (0)"
+  },
+  "panelText075": {
+    "message": "Annuler"
+  },
+  "panelText076": {
+    "message": "Format inconnu : utilisez GeoJSON ou JSON Overpass."
+  },
+  "panelText077": {
+    "message": "Le fichier contient trop d’éléments. Exportez une liste plus petite."
+  },
+  "panelText078": {
+    "message": "Aucun identifiant OSM valide dans le fichier."
+  },
+  "panelText079": {
+    "message": "Maximum : {0} objets."
+  },
+  "panelText080": {
+    "message": "Texte des tags non valide."
+  },
+  "panelText081": {
+    "message": "Ligne {0} : saisissez clé=valeur."
+  },
+  "panelText082": {
+    "message": "Ligne {0} : clé ou valeur non valide (255 caractères maximum)."
+  },
+  "panelText083": {
+    "message": "Clé répétée : {0}."
+  },
+  "panelText084": {
+    "message": "100 tags maximum par champ."
+  },
+  "panelText085": {
+    "message": "Indiquez d’abord au moins un tag à rechercher."
+  },
+  "panelText086": {
+    "message": "La simplification supprimerait trop de sommets. Réduisez la tolérance."
+  },
+  "panelText087": {
+    "message": "La géométrie contient des segments de longueur nulle."
+  },
+  "panelText088": {
+    "message": "Géométrie complexe ou auto-intersection : réduisez la tolérance ou modifiez manuellement."
+  },
+  "panelText089": {
+    "message": "Le polygone résultant est dégénéré. Réduisez la tolérance."
+  },
+  "panelText090": {
+    "message": "La tolérance doit être comprise entre 0,1 et 10 mètres."
+  },
+  "panelText091": {
+    "message": "Sélectionnez un chemin comportant de 3 à 4 000 nœuds."
+  },
+  "panelText092": {
+    "message": "Coordonnées manquantes ou non prises en charge."
+  },
+  "panelText093": {
+    "message": "Les géométries traversant l’antiméridien ne sont pas prises en charge."
+  },
+  "panelText094": {
+    "message": "L’anneau intérieur doit être un chemin fermé."
+  },
+  "panelText095": {
+    "message": "Cette tolérance ferait s’effondrer le polygone. Réduisez-la."
+  },
+  "panelText096": {
+    "message": "La simplification inverserait le polygone. Réduisez la tolérance."
+  },
+  "panelText097": {
+    "message": "Connexion à iD indisponible. Rechargez la page."
+  },
+  "panelText098": {
+    "message": "Fermez d’abord le tutoriel d’iD."
+  },
+  "panelText099": {
+    "message": "Terminez l’opération dans iD et fermez la sauvegarde avant de continuer."
+  },
+  "panelText100": {
+    "message": "Objet indisponible ou supprimé. Vous pouvez l’ignorer."
+  },
+  "panelText101": {
+    "message": "Délai de chargement dépassé. Réessayez ou ignorez l’objet."
+  },
+  "panelText102": {
+    "message": "Impossible de charger l’objet : il peut être supprimé ou inaccessible."
+  },
+  "panelText103": {
+    "message": "Navigation annulée."
+  },
+  "panelText104": {
+    "message": "La carte n’a pas fini de se redessiner. Cliquez sur Relire l’objet pour réessayer."
+  },
+  "panelText105": {
+    "message": "Identifiant OSM non valide."
+  },
+  "panelText106": {
+    "message": "La sélection dans iD a changé. Cliquez sur Relire l’objet."
+  },
+  "panelText107": {
+    "message": "L’éditeur n’est pas prêt pour les modifications."
+  },
+  "panelText108": {
+    "message": "Les tags ont changé après l’aperçu. Cliquez sur Relire l’objet et vérifiez à nouveau."
+  },
+  "panelText109": {
+    "message": "La règle ne correspond pas, présente des conflits ou ne change aucun tag."
+  },
+  "panelText110": {
+    "message": "Objet modifié : relisez ses tags."
+  },
+  "panelText111": {
+    "message": "Opération inconnue."
+  },
+  "panelText112": {
+    "message": "Connexion à iD indisponible. Rechargez la page."
+  },
+  "panelText113": {
+    "message": "Terminez l’opération dans iD ou fermez la sauvegarde."
+  },
+  "panelText114": {
+    "message": "Sélectionnez une seule ligne ou un polygone."
+  },
+  "panelText115": {
+    "message": "La sélection est un multipolygone. Sélectionnez un chemin individuel admissible."
+  },
+  "panelText116": {
+    "message": "Sélectionnez une ligne ou un polygone constitué d’un seul chemin."
+  },
+  "panelText117": {
+    "message": "Les membres de relations boundary ne sont pas pris en charge."
+  },
+  "panelText118": {
+    "message": "Seuls les anneaux inner fermés des multipolygones sont pris en charge ; les anneaux outer et fractionnés sont exclus."
+  },
+  "panelText119": {
+    "message": "Le chemin n’est pas entièrement chargé. Chargez les données de la zone dans iD."
+  },
+  "panelText120": {
+    "message": "Calculez d’abord un nouvel aperçu."
+  },
+  "panelText121": {
+    "message": "La sélection ou les données ont changé. Recalculez l’aperçu."
+  },
+  "panelText122": {
+    "message": "L’éditeur n’est pas prêt pour les modifications."
+  },
+  "panelText123": {
+    "message": "Les données ont changé après l’aperçu."
+  },
+  "panelText124": {
+    "message": "Un nœud à supprimer est encore utilisé. Recalculez l’aperçu."
+  },
+  "panelText125": {
+    "message": "La simplification n’est plus la dernière modification. Utilisez l’historique d’iD pour choisir quoi annuler."
   }
 }
