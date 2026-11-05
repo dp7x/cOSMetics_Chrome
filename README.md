@@ -1,7 +1,7 @@
 <div align="center">
   <img width="440" height="280" alt="image" src="https://github.com/user-attachments/assets/74690435-e1d8-4a6d-8b86-9c12bbcc4f05" />
 
-  # cOSMetics for iD 2.01
+  # cOSMetics for iD 2.02
 
   Mapping tools for OpenStreetMap
 </div>
@@ -23,8 +23,9 @@ Save background names and URL templates in the popup, then choose a layer from a
 ### 🏠 Bricks — Overture buildings assistant
 
 * **Overture outlines:** Enable the optional controls and, at zoom 18 or higher, click **Load area**. Select an outline and press **A** or click **Add (A)** to add an individual building. Moving the map does not load more buildings automatically.
-* **Three-click drawing:** Click **Draw** or press **4**. Place the first corner, move the mouse to orient and size a square, then click again to fix its orientation. Adjust the rectangle and finish with a third click. The new `building=yes` outline remains selected; **Esc** cancels an unfinished drawing.
+* **Three-click drawing:** Click **Draw** or press **4**. Place the first corner, move the mouse to orient and size a square, then click again to fix its orientation. Adjust the rectangle and finish with a third click. The new `building=yes` outline remains selected; **Esc** cancels an unfinished drawing. A reminder asks you to specify the exact building type in the properties and add other tags when known.
 * **Snapping:** The first corner and the square's side corners snap to existing building corners and walls, helping draw attached buildings with shared nodes.
+* **Tagging reminder:** After drawing a building or adding one from Overture, the panel reminds you to specify the exact building type and other tags when known.
 * **Review:** Overture candidates overlapping OSM buildings already loaded in iD are hidden or blocked. Check every building against imagery and existing data, correcting geometry and tags before uploading.
 
 ### 💡 OSMradamus — Changeset comment suggester

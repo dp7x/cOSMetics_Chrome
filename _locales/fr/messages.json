@@ -6,7 +6,7 @@
     "message": "Fonds personnalisés, suggestions de commentaires de groupes de modifications et contours de bâtiments Overture pour iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 2.01"
+    "message": "cOSMetics for iD 2.02"
   },
   "overtureEnable": {
     "message": "Afficher les commandes des bâtiments Overture dans iD"
@@ -15,7 +15,7 @@
     "message": "Activez ces commandes pour consulter et ajouter des bâtiments : un panneau flottant contenant les outils apparaîtra."
   },
   "overtureDescription": {
-    "message": "Cette fonction charge une couche de bâtiments depuis <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>Au zoom 18 ou supérieur, cliquez sur <strong>Charger la zone</strong> pour récupérer les bâtiments de la zone affichée. Sélectionnez un contour et appuyez sur <strong>A</strong> ou cliquez sur <strong>Ajouter (A)</strong>.<br>Vérifiez chaque bâtiment avant de sauvegarder : les contours générés peuvent être imprécis. Comparez-les avec d’autres images de fond et les données OSM, puis corrigez leur forme et leur position si nécessaire.<br>Après avoir déplacé la carte, cliquez à nouveau sur le bouton pour charger la zone affichée."
+    "message": "Cette fonction charge une couche de bâtiments depuis <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>Au zoom 18 ou supérieur, cliquez sur <strong>Charger la zone</strong> pour récupérer les bâtiments de la zone affichée. Sélectionnez un contour et appuyez sur <strong>A</strong> ou cliquez sur <strong>Ajouter (A)</strong>.<br>Vérifiez chaque bâtiment avant de sauvegarder : les contours générés peuvent être imprécis. Comparez-les avec d’autres images de fond et les données OSM, puis corrigez leur forme et leur position si nécessaire. De plus, le bâtiment est créé avec le <strong>tag générique building=yes.</strong> Si vous connaissez le type exact de bâtiment, précisez-le dans les propriétés et ajoutez les autres tags connus.<br>Après avoir déplacé la carte, cliquez à nouveau sur le bouton pour charger la zone affichée."
   },
   "backgroundDescription": {
     "message": "Cette fonction mémorise des fonds personnalisés supplémentaires à celui prévu par iD.<br>Ajoutez ici un nom et un modèle d’URL pour chaque fond. Dans iD, ouvrez les <strong>Paramètres du fond</strong> (icône des couches), puis <strong>Modifier le fond personnalisé</strong> (trois points). Sélectionnez un fond enregistré dans le panneau pour l’afficher.<br><strong>Attention :</strong> utilisez uniquement des fonds dont les conditions autorisent l’utilisation pour OpenStreetMap !"
@@ -492,7 +492,7 @@
     "message": "Dessin annulé."
   },
   "drawCreated": {
-    "message": "Bâtiment dessiné."
+    "message": "Bâtiment créé avec le tag générique building=yes. Si vous connaissez le type exact de bâtiment, précisez-le dans les propriétés et ajoutez les autres tags connus."
   },
   "drawUnavailable": {
     "message": "Zoomez et terminez l’opération en cours dans iD."

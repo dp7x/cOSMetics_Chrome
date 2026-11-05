@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "__MSG_appName__",
-    "version": "2.01",
+    "version": "2.0.2",
     "description": "__MSG_appDescription__",
     "default_locale": "en",
     "permissions": [
@@ -65,5 +65,6 @@
     ],
     "icons": {
         "48": "icon.png"
-    }
+    },
+    "version_name": "2.02"
 }

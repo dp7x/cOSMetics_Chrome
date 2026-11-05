@@ -6,7 +6,7 @@
     "message": "Fondos personalizados, sugerencias de comentarios de conjuntos de cambios y contornos de edificios Overture para iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 2.01"
+    "message": "cOSMetics for iD 2.02"
   },
   "overtureEnable": {
     "message": "Mostrar los controles de edificios Overture en iD"
@@ -15,7 +15,7 @@
     "message": "Activa los controles cuando quieras consultar y añadir edificios: aparecerá un panel flotante con las herramientas."
   },
   "overtureDescription": {
-    "message": "Esta función carga una capa de edificios de <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>Con zoom 18 o superior, pulsa <strong>Cargar área</strong> para obtener los edificios de la zona visible. Selecciona un contorno y pulsa <strong>A</strong> o haz clic en <strong>Añadir (A)</strong>.<br>Comprueba cada edificio antes de guardar: los contornos generados pueden ser imprecisos. Compáralos con otras imágenes de fondo y datos OSM, y corrige su forma y posición cuando sea necesario.<br>Si mueves el mapa, vuelve a pulsar el botón para cargar la zona visible."
+    "message": "Esta función carga una capa de edificios de <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>Con zoom 18 o superior, pulsa <strong>Cargar área</strong> para obtener los edificios de la zona visible. Selecciona un contorno y pulsa <strong>A</strong> o haz clic en <strong>Añadir (A)</strong>.<br>Comprueba cada edificio antes de guardar: los contornos generados pueden ser imprecisos. Compáralos con otras imágenes de fondo y datos OSM, y corrige su forma y posición cuando sea necesario. Además, el edificio se crea con la <strong>etiqueta genérica building=yes.</strong> Si conoces el tipo exacto de edificio, especifícalo en las propiedades y añade las demás etiquetas conocidas.<br>Si mueves el mapa, vuelve a pulsar el botón para cargar la zona visible."
   },
   "backgroundDescription": {
     "message": "Esta función guarda fondos personalizados adicionales al que ofrece iD.<br>Añade aquí los fondos con un nombre y una plantilla de URL. En iD, abre <strong>Configuración del fondo</strong> (icono de capas) y <strong>Editar fondo personalizado</strong> (tres puntos). Elige una capa guardada en el panel para mostrarla.<br><strong>Atención:</strong> utiliza únicamente fondos cuyas condiciones permitan su uso para OpenStreetMap."
@@ -492,7 +492,7 @@
     "message": "Dibujo cancelado."
   },
   "drawCreated": {
-    "message": "Edificio dibujado."
+    "message": "Edificio creado con la etiqueta genérica building=yes. Si conoces el tipo exacto de edificio, especifícalo en las propiedades y añade las demás etiquetas conocidas."
   },
   "drawUnavailable": {
     "message": "Acerca el mapa y termina la operación actual en iD."

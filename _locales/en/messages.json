@@ -6,7 +6,7 @@
     "message": "Custom background layers, changeset comment suggestions, and Overture building outlines for iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 2.01"
+    "message": "cOSMetics for iD 2.02"
   },
   "overtureEnable": {
     "message": "Show Overture building controls in iD"
@@ -15,7 +15,7 @@
     "message": "Enable these controls when you want to inspect and add buildings. A floating tool panel will appear."
   },
   "overtureDescription": {
-    "message": "This feature loads a building layer from <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>At zoom 18 or higher, click <strong>Load area</strong> to fetch buildings for the displayed area. Select an outline and press <strong>A</strong> or click <strong>Add (A)</strong>.<br>Check every building before saving: generated outlines may be inaccurate. Compare them with other background imagery and OSM data, and correct their shape and position when necessary.<br>After moving the map, click the button again to load the displayed area."
+    "message": "This feature loads a building layer from <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>At zoom 18 or higher, click <strong>Load area</strong> to fetch buildings for the displayed area. Select an outline and press <strong>A</strong> or click <strong>Add (A)</strong>.<br>Check every building before saving: generated outlines may be inaccurate. Compare them with other background imagery and OSM data, and correct their shape and position when necessary. Also, the building is created with the <strong>generic building=yes tag.</strong> If you know the exact building type, specify it in the properties and add any other known tags.<br>After moving the map, click the button again to load the displayed area."
   },
   "backgroundDescription": {
     "message": "This feature stores additional custom backgrounds beyond the one provided by iD.<br>Add backgrounds here with a name and a URL template. In iD, open <strong>Background settings</strong> (layers icon), then <strong>Edit custom background</strong> (three dots). Select a saved layer from the panel to display it.<br><strong>Important:</strong> use only backgrounds whose terms permit use for OpenStreetMap mapping!"
@@ -492,7 +492,7 @@
     "message": "Drawing cancelled."
   },
   "drawCreated": {
-    "message": "Building drawn."
+    "message": "Building created with the generic building=yes tag. If you know the exact building type, specify it in the properties and add any other known tags."
   },
   "drawUnavailable": {
     "message": "Zoom in and finish the current operation in iD."

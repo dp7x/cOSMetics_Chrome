@@ -6,7 +6,7 @@
     "message": "Sfondi personalizzati, suggerimenti per i commenti e contorni degli edifici Overture in iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 2.01"
+    "message": "cOSMetics for iD 2.02"
   },
   "overtureEnable": {
     "message": "Mostra i controlli Edifici Overture in iD"
@@ -15,7 +15,7 @@
     "message": "Attivali solo quando vuoi consultare e aggiungere edifici: verrà aggiunto un pannello flottante con gli strumenti."
   },
   "overtureDescription": {
-    "message": "Questa funzionalità permette di caricare il livello con gli edifici da <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>Si attiva a zoom 18 o superiore. Premi <strong>Carica area</strong> per acquisire gli edifici dell’area visualizzata, quindi seleziona un contorno e premi <strong>A</strong> oppure clicca su <strong>Aggiungi (A)</strong>.<br>Controlla ogni edificio prima di salvarlo: i contorni generati possono essere imprecisi. Confrontali con altre immagini di sfondo e dati OSM e correggi forma e posizione quando necessario.<br>Se sposti la mappa, premi nuovamente il pulsante per caricare l’area visualizzata."
+    "message": "Questa funzionalità permette di caricare il livello con gli edifici da <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>Si attiva a zoom 18 o superiore. Premi <strong>Carica area</strong> per acquisire gli edifici dell’area visualizzata, quindi seleziona un contorno e premi <strong>A</strong> oppure clicca su <strong>Aggiungi (A)</strong>.<br>Controlla ogni edificio prima di salvarlo: i contorni generati possono essere imprecisi. Confrontali con altre immagini di sfondo e dati OSM e correggi forma e posizione quando necessario. Inoltre: l'edificio viene creato con il <strong>tag generico building=yes.</strong> Se conosci il tipo esatto di edificio, specificalo nelle proprietà e aggiungi gli altri tag conosciuti.<br>Se sposti la mappa, premi nuovamente il pulsante per caricare l’area visualizzata."
   },
   "backgroundDescription": {
     "message": "Questa funzionalità permette di memorizzare ulteriori sfondi personalizzati rispetto a quello previsto da iD.<br>Aggiungi qui gli sfondi indicando un nome e un modello di URL. In iD apri <strong>Impostazioni sfondo</strong> (icona dei livelli), poi <strong>Modifica sfondo personalizzato</strong> (tre puntini). Scegli uno dei livelli salvati nel pannello per caricarlo sullo schermo.<br><strong>Attenzione:</strong> assicurati di utilizzare solo sfondi per i quali sia previsto l’utilizzo su OpenStreetMap!"
@@ -492,7 +492,7 @@
     "message": "Disegno annullato."
   },
   "drawCreated": {
-    "message": "Edificio disegnato."
+    "message": "Edificio creato con il tag generico building=yes. Se conosci il tipo esatto di edificio, specificalo nelle proprietà e aggiungi gli altri tag conosciuti."
   },
   "drawUnavailable": {
     "message": "Avvicina la mappa e completa l’operazione corrente in iD."

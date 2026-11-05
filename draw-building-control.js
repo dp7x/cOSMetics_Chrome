@@ -58,6 +58,15 @@
     function cancel() { document.dispatchEvent(new CustomEvent('cosmetics:draw-building-cancel')); }
     new MutationObserver(() => { if (panel.style.display === 'none') cancel(); })
       .observe(panel,{attributes:true,attributeFilter:['style']});
+    // Keep the tagging reminder visible independently of Overture redraws.
+    document.addEventListener('cosmetics:add-building-result', event => {
+      let result;
+      try { result = typeof event.detail === 'string' ? JSON.parse(event.detail) : event.detail; }
+      catch { return; }
+      if (result?.ok !== true) return;
+      status.textContent = t('drawCreated');
+      status.hidden = !status.textContent;
+    });
     document.addEventListener('cosmetics:draw-building-state',e=>{
       let state;
       try { state=JSON.parse(e.detail); } catch { return; }

@@ -6,7 +6,7 @@
     "message": "Vlastné podkladové mapy, návrhy komentárov k úpravám a obrysy budov Overture v editore iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 2.01"
+    "message": "cOSMetics for iD 2.02"
   },
   "overtureEnable": {
     "message": "Zobraziť ovládanie budov Overture v iD"
@@ -15,7 +15,7 @@
     "message": "Ovládanie zapni, keď chceš prezerať a pridávať budovy. Zobrazí sa plávajúci panel s nástrojmi."
   },
   "overtureDescription": {
-    "message": "Táto funkcia načíta vrstvu budov z <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>Pri priblížení 18 alebo vyššom stlač <strong>Načítať oblasť</strong>. Vyber obrys a stlač <strong>A</strong> alebo klikni na <strong>Pridať (A)</strong>.<br>Pred uložením skontroluj každú budovu: vytvorené obrysy môžu byť nepresné. Porovnaj ich s ďalšími podkladmi a údajmi OSM a podľa potreby oprav tvar a polohu.<br>Po posunutí mapy opäť stlač tlačidlo na načítanie zobrazenej oblasti."
+    "message": "Táto funkcia načíta vrstvu budov z <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>Pri priblížení 18 alebo vyššom stlač <strong>Načítať oblasť</strong>. Vyber obrys a stlač <strong>A</strong> alebo klikni na <strong>Pridať (A)</strong>.<br>Pred uložením skontroluj každú budovu: vytvorené obrysy môžu byť nepresné. Porovnaj ich s ďalšími podkladmi a údajmi OSM a podľa potreby oprav tvar a polohu. Budova sa navyše vytvorí so <strong>všeobecným tagom building=yes.</strong> Ak poznáte presný typ budovy, uveďte ho vo vlastnostiach a doplňte ďalšie známe tagy.<br>Po posunutí mapy opäť stlač tlačidlo na načítanie zobrazenej oblasti."
   },
   "backgroundDescription": {
     "message": "Táto funkcia uloží ďalšie vlastné pozadia nad rámec jedného pozadia poskytovaného iD.<br>Zadaj názov a šablónu URL. V iD otvor <strong>Nastavenia pozadia</strong> (ikona vrstiev), potom <strong>Upraviť vlastné pozadie</strong> (tri bodky). V paneli vyber uloženú vrstvu.<br><strong>Pozor:</strong> používaj iba podklady, ktorých podmienky povoľujú použitie pre OpenStreetMap!"
@@ -492,7 +492,7 @@
     "message": "Kreslenie zrušené."
   },
   "drawCreated": {
-    "message": "Budova nakreslená."
+    "message": "Budova bola vytvorená so všeobecným tagom building=yes. Ak poznáte presný typ budovy, uveďte ho vo vlastnostiach a doplňte ďalšie známe tagy."
   },
   "drawUnavailable": {
     "message": "Priblíž mapu a dokonči aktuálnu operáciu v iD."

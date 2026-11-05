@@ -6,7 +6,7 @@
     "message": "Eigene Hintergrundebenen, Vorschläge für Änderungssatzkommentare und Overture-Gebäudeumrisse für iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 2.01"
+    "message": "cOSMetics for iD 2.02"
   },
   "overtureEnable": {
     "message": "Overture-Gebäudesteuerung in iD anzeigen"
@@ -15,7 +15,7 @@
     "message": "Aktiviere die Steuerelemente, wenn du Gebäude ansehen und hinzufügen möchtest. Ein verschiebbares Werkzeugfenster wird eingeblendet."
   },
   "overtureDescription": {
-    "message": "Diese Funktion lädt eine Gebäudeebene von <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>Klicke ab Zoomstufe 18 auf <strong>Bereich laden</strong>, um Gebäude für den sichtbaren Bereich abzurufen. Wähle einen Umriss und drücke <strong>A</strong> oder klicke auf <strong>Hinzufügen (A)</strong>.<br>Prüfe jedes Gebäude vor dem Speichern: Die erzeugten Umrisse können ungenau sein. Vergleiche sie mit anderen Hintergrundbildern und OSM-Daten und korrigiere bei Bedarf Form und Position.<br>Nach dem Verschieben der Karte lade den sichtbaren Bereich erneut über die Schaltfläche."
+    "message": "Diese Funktion lädt eine Gebäudeebene von <a href=\"https://overturemaps.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Overture</a>.<br>Klicke ab Zoomstufe 18 auf <strong>Bereich laden</strong>, um Gebäude für den sichtbaren Bereich abzurufen. Wähle einen Umriss und drücke <strong>A</strong> oder klicke auf <strong>Hinzufügen (A)</strong>.<br>Prüfe jedes Gebäude vor dem Speichern: Die erzeugten Umrisse können ungenau sein. Vergleiche sie mit anderen Hintergrundbildern und OSM-Daten und korrigiere bei Bedarf Form und Position. Außerdem wird das Gebäude mit dem <strong>allgemeinen Tag building=yes</strong> erstellt. Wenn du den genauen Gebäudetyp kennst, gib ihn in den Eigenschaften an und ergänze weitere bekannte Tags.<br>Nach dem Verschieben der Karte lade den sichtbaren Bereich erneut über die Schaltfläche."
   },
   "backgroundDescription": {
     "message": "Diese Funktion speichert weitere eigene Hintergründe zusätzlich zum einzelnen benutzerdefinierten Hintergrund in iD.<br>Trage hier Namen und URL-Vorlagen ein. Öffne in iD die <strong>Hintergrundeinstellungen</strong> (Ebenensymbol), dann <strong>Benutzerdefinierten Hintergrund bearbeiten</strong> (drei Punkte). Wähle im Fenster eine gespeicherte Ebene aus.<br><strong>Achtung:</strong> Verwende nur Hintergründe, deren Bedingungen die Nutzung für OpenStreetMap erlauben!"
@@ -492,7 +492,7 @@
     "message": "Zeichnen abgebrochen."
   },
   "drawCreated": {
-    "message": "Gebäude gezeichnet."
+    "message": "Das Gebäude wurde mit dem allgemeinen Tag building=yes erstellt. Wenn du den genauen Gebäudetyp kennst, gib ihn in den Eigenschaften an und ergänze weitere bekannte Tags."
   },
   "drawUnavailable": {
     "message": "Heranzoomen und den aktuellen Vorgang in iD abschließen."
