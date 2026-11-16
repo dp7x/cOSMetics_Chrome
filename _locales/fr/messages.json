@@ -1,12 +1,12 @@
 {
   "appName": {
-    "message": "cOSMetics for iD"
+    "message": "cOSMetics for iD — Redraw Beta 5"
   },
   "appDescription": {
     "message": "Fonds personnalisés, suggestions de commentaires de groupes de modifications et contours de bâtiments Overture pour iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 2.02"
+    "message": "cOSMetics for iD 2.10"
   },
   "overtureEnable": {
     "message": "Afficher les commandes des bâtiments Overture dans iD"
@@ -452,8 +452,14 @@
   "captionFixer": {
     "message": "Révision des tags"
   },
+  "shapesTitle": {
+    "message": "Formes"
+  },
+  "shapesResumeUse": {
+    "message": "Sélectionnez une zone, cliquez sur Reprendre le dessin et choisissez le sommet de départ."
+  },
   "captionSimplify": {
-    "message": "Simplification des géométries"
+    "message": "Simplifier et redessiner les contours"
   },
   "gridOffer": {
     "message": "Remplacer les données personnalisées par la grille ?"
@@ -472,6 +478,45 @@
   },
   "gridShowUnavailable": {
     "message": "iD n’est pas prêt. Vous pouvez importer le fichier GeoJSON téléchargé."
+  },
+  "drawArcOrthoEdge": {
+    "message": "Tracez d’abord un côté droit en mode orthogonal."
+  },
+  "bricksToolsSubtitle": {
+    "message": "Outils pour les bâtiments"
+  },
+  "bricksDrawingGroup": {
+    "message": "Dessin"
+  },
+  "drawArc": {
+    "message": "Demi-cercle"
+  },
+  "drawArcSelect": {
+    "message": "Sélectionnez le contour d’un bâtiment simple."
+  },
+  "drawArcEdge": {
+    "message": "Cliquez sur le côté à transformer."
+  },
+  "drawArcSide": {
+    "message": "Choisissez le côté avec la souris et cliquez pour confirmer."
+  },
+  "drawArcBlocked": {
+    "message": "Côté partagé ou arc croisant le contour."
+  },
+  "drawArcDone": {
+    "message": "Demi-cercle appliqué."
+  },
+  "drawOrtho": {
+    "message": "Orthogonal"
+  },
+  "drawOrthoFirst": {
+    "message": "Placez le premier point."
+  },
+  "drawOrthoSecond": {
+    "message": "Placez le deuxième point pour orienter les côtés."
+  },
+  "drawOrthoNext": {
+    "message": "Ajoutez des sommets. Cliquez près du premier point pour fermer. Maj : angle libre."
   },
   "drawBuilding": {
     "message": "Dessiner"
@@ -501,25 +546,22 @@
     "message": "Mur accroché. Cliquez à l’extérieur pour fixer la profondeur."
   },
   "drawDescription": {
-    "message": "L’outil de dessin avancé facilite la création de bâtiments. Cliquez sur <strong>Dessiner</strong> ou appuyez sur <strong>4</strong> : placez le premier point et déplacez la souris pour régler la taille et l’orientation du carré. Placez le deuxième point et ajustez le rectangle. Confirmez avec un troisième clic. Pour des bâtiments mitoyens, le premier point et les coins latéraux du carré s’accrochent aux angles et aux murs existants."
+    "message": "<strong>Dessiner (4)</strong>: Tracez un rectangle en trois clics ; les deux premiers fixent sa position et son orientation.<br><strong>Orthogonal (5)</strong>: Tracez à angle droit ; maintenez Maj pour un angle libre. Cliquez près du premier point pour fermer.<br><strong>Demi-cercle (6)</strong>: Sélectionnez un bâtiment et cliquez sur un côté. Orientez l’arc avec la souris, puis cliquez pour confirmer.<br>Le tracé s’accroche aux sommets et aux murs des bâtiments existants."
   },
   "senseiDescription": {
     "message": "Sensei aide à corriger méthodiquement vos propres erreurs de tags. Si vous avez longtemps utilisé une combinaison incorrecte, vous pouvez retrouver et corriger les objets concernés. Recherchez-les avec <a href=\"https://overpass-turbo.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">Overpass Turbo</a>, exportez-les en GeoJSON et importez le fichier dans Sensei. Indiquez les tags recherchés et ceux à appliquer, puis cliquez sur <strong>Démarrer la révision</strong>. Corrigez ou ignorez chaque objet pour passer au suivant. <strong>Vérifiez attentivement chaque objet avant de le corriger !</strong> Laissez la destination vide pour supprimer les tags, ou les deux champs pour une révision manuelle.<br>Sauvegardez les modifications normalement dans iD lorsque vous souhaitez envoyer le groupe de modifications."
   },
-  "ockhamDescription": {
-    "message": "Le rasoir d’Ockham simplifie les géométries trop complexes, notamment les lignes composées de nombreux points très rapprochés."
-  },
   "ockhamUse": {
-    "message": "Réglez la tolérance en mètres et cliquez sur <strong>Aperçu</strong> ou appuyez sur <strong>5</strong>. Appuyez sur <strong>0</strong> ou cliquez sur <strong>Appliquer</strong> pour confirmer. <strong>Annuler</strong> abandonne l’aperçu ou annule la dernière simplification si elle est toujours la dernière opération."
+    "message": "Simplifiez une ligne ou une zone : réglez la tolérance en mètres, puis utilisez <strong>Aperçu (9)</strong> et <strong>Appliquer (0)</strong>. <strong>Annuler</strong> efface l’aperçu ou annule la simplification si c’est la dernière modification."
   },
   "ockhamData": {
-    "message": "Chargez les données complètes de l’objet avant de le simplifier. Les extrémités, les nœuds avec tags, les nœuds partagés et les membres de relations détectés dans le graphe chargé sont conservés. Sauvegardez les modifications normalement dans iD lors de l’envoi."
+    "message": "Chargez d’abord l’objet complet. Les extrémités, les nœuds étiquetés ou partagés et les nœuds des relations chargées sont conservés."
   },
   "showSensei": {
     "message": "Afficher le panneau dans iD"
   },
   "showOckham": {
-    "message": "Afficher le panneau de simplification dans iD"
+    "message": "Afficher le panneau Formes"
   },
   "panelText000": {
     "message": "Révision des tags"
@@ -681,7 +723,7 @@
     "message": "iD ne répond pas. Rechargez la page et réessayez."
   },
   "panelText053": {
-    "message": "Cliquez sur Aperçu ou appuyez sur 5."
+    "message": "Cliquez sur Aperçu ou appuyez sur 9."
   },
   "panelText054": {
     "message": "Sélectionnez une ligne ou un polygone."
@@ -738,10 +780,10 @@
     "message": "━━ Proposition"
   },
   "panelText072": {
-    "message": "Aperçu (5)"
+    "message": "Aperçu (9)"
   },
   "panelText073": {
-    "message": "Aperçu · 5"
+    "message": "Aperçu · 9"
   },
   "panelText074": {
     "message": "Appliquer (0)"

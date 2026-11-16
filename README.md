@@ -1,7 +1,7 @@
 <div align="center">
   <img width="440" height="280" alt="image" src="https://github.com/user-attachments/assets/74690435-e1d8-4a6d-8b86-9c12bbcc4f05" />
 
-  # cOSMetics for iD 2.02
+  # cOSMetics for iD 2.10
 
   Mapping tools for OpenStreetMap
 </div>
@@ -20,11 +20,11 @@ This repository contains the Chrome version. The Firefox version is maintained i
 
 Save background names and URL templates in the popup, then choose a layer from a dedicated panel inside iD's custom background dialog. Use only imagery whose terms permit OpenStreetMap mapping.
 
-### 🏠 Bricks — Overture buildings assistant
+### 🏠 Bricks — Building tools
 
 * **Overture outlines:** Enable the optional controls and, at zoom 18 or higher, click **Load area**. Select an outline and press **A** or click **Add (A)** to add an individual building. Moving the map does not load more buildings automatically.
-* **Three-click drawing:** Click **Draw** or press **4**. Place the first corner, move the mouse to orient and size a square, then click again to fix its orientation. Adjust the rectangle and finish with a third click. The new `building=yes` outline remains selected; **Esc** cancels an unfinished drawing. A reminder asks you to specify the exact building type in the properties and add other tags when known.
-* **Snapping:** The first corner and the square's side corners snap to existing building corners and walls, helping draw attached buildings with shared nodes.
+* **Draw (4):** Create a rectangle in three clicks. **Orthogonal (5)** draws right-angled outlines; hold **Shift** for a free angle. Both tools snap to existing building corners and walls.
+* **Semicircle (6):** Select a building, click a side, choose the direction of the arc with the mouse and click to confirm.
 * **Tagging reminder:** After drawing a building or adding one from Overture, the panel reminds you to specify the exact building type and other tags when known.
 * **Review:** Overture candidates overlapping OSM buildings already loaded in iD are hidden or blocked. Check every building against imagery and existing data, correcting geometry and tags before uploading.
 
@@ -51,15 +51,17 @@ Leave replacement tags empty to remove matching tags, or leave both fields empty
 
 Prepare the file externally, for example with [Overpass Turbo](https://overpass-turbo.eu/); Sensei does not run Overpass queries. Review each correction and upload through iD as usual.
 
-### ✂️ Ockham — Geometry simplifier
+### ✂️ Shapes — Outline tools
 
-Simplify an eligible selected line or polygon using a tolerance in metres, adjustable directly in the floating panel. Click **Preview** or press **5** to inspect the proposed geometry, then click **Apply** or press **0** to confirm.
+**Ockham:** Simplify an eligible selected line or polygon using a tolerance in metres, adjustable directly in the floating panel. Click **Preview** or press **9** to inspect the proposed geometry, then click **Apply** or press **0** to confirm.
 
 Endpoints and protected nodes, such as tagged or shared nodes, are retained based on the data loaded in iD. Some relation geometries are excluded. The panel's **Undo** discards a preview or reverses the simplification while it remains the latest operation; iD's normal undo is also available.
 
-**Panel activation:** Bricks, Sensei and Ockham start disabled whenever iD is opened or reloaded. Enable them from the popup for the current tab; positions and tool preferences remain saved.
+**Resume drawing:** Select an eligible area, click **Resume drawing** and choose the vertex to continue from.
 
-**Compact interface:** Popup sections collapse independently, remember their state and keep **Save** visible. Bricks, Sensei and Ockham use collapsible floating panels with light/dark styling; drag their headings to reposition them, including over iD's sidebar.
+**Panel activation:** Bricks, Sensei and Shapes start disabled whenever iD is opened or reloaded. Enable them from the popup for the current tab; positions and tool preferences remain saved.
+
+**Compact interface:** Popup sections collapse independently, remember their state and keep **Save** visible. Bricks, Sensei and Shapes use collapsible floating panels with light/dark styling; drag their headings to reposition them, including over iD's sidebar.
 
 ### 🌐 Languages
 
@@ -105,7 +107,9 @@ With map focus and no text field active:
 | Key | Action |
 | --- | --- |
 | **4** | Start Bricks drawing |
-| **5** | Preview Ockham simplification |
+| **5** | Start Bricks orthogonal drawing |
+| **6** | Bricks semicircle |
+| **9** | Preview Ockham simplification |
 | **0** | Apply Ockham preview |
 
 ## Supported Object Types

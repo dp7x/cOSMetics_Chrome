@@ -1,12 +1,12 @@
 {
   "appName": {
-    "message": "cOSMetics for iD"
+    "message": "cOSMetics for iD — Redraw Beta 5"
   },
   "appDescription": {
     "message": "Vlastné podkladové mapy, návrhy komentárov k úpravám a obrysy budov Overture v editore iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 2.02"
+    "message": "cOSMetics for iD 2.10"
   },
   "overtureEnable": {
     "message": "Zobraziť ovládanie budov Overture v iD"
@@ -452,8 +452,14 @@
   "captionFixer": {
     "message": "Kontrola značiek"
   },
+  "shapesTitle": {
+    "message": "Tvary"
+  },
+  "shapesResumeUse": {
+    "message": "Vyber plochu, klikni na Pokračovať v kreslení a vyber vrchol, od ktorého chceš pokračovať."
+  },
   "captionSimplify": {
-    "message": "Zjednodušenie geometrie"
+    "message": "Zjednodušenie a prekreslenie obrysov"
   },
   "gridOffer": {
     "message": "Nahradiť vlastné údaje mriežkou?"
@@ -472,6 +478,45 @@
   },
   "gridShowUnavailable": {
     "message": "iD nie je pripravený. Stiahnutý GeoJSON môžete importovať."
+  },
+  "drawArcOrthoEdge": {
+    "message": "Najprv nakreslite rovnú stranu v pravouhlom režime."
+  },
+  "bricksToolsSubtitle": {
+    "message": "Nástroje pre budovy"
+  },
+  "bricksDrawingGroup": {
+    "message": "Kreslenie"
+  },
+  "drawArc": {
+    "message": "Polkruh"
+  },
+  "drawArcSelect": {
+    "message": "Vyberte obrys jednoduchej budovy."
+  },
+  "drawArcEdge": {
+    "message": "Kliknite na stranu, ktorú chcete upraviť."
+  },
+  "drawArcSide": {
+    "message": "Myšou vyberte smer a kliknutím ho potvrďte."
+  },
+  "drawArcBlocked": {
+    "message": "Spoločná strana alebo oblúk pretína obrys."
+  },
+  "drawArcDone": {
+    "message": "Polkruh bol použitý."
+  },
+  "drawOrtho": {
+    "message": "Pravouhlé"
+  },
+  "drawOrthoFirst": {
+    "message": "Umiestnite prvý bod."
+  },
+  "drawOrthoSecond": {
+    "message": "Druhým bodom určte smer strán."
+  },
+  "drawOrthoNext": {
+    "message": "Pridajte vrcholy. Kliknutím pri prvom bode obrys uzavriete. Shift: voľný uhol."
   },
   "drawBuilding": {
     "message": "Kresliť"
@@ -501,25 +546,22 @@
     "message": "Stena prichytená. Kliknutím zvonka nastav hĺbku."
   },
   "drawDescription": {
-    "message": "Pokročilé kreslenie uľahčuje vytváranie budov. Klikni na <strong>Kresliť</strong> alebo stlač <strong>4</strong>: umiestni prvý bod a pohybom myši uprav veľkosť a natočenie štvorca. Umiestni druhý bod a uprav obdĺžnik. Potvrď tretím kliknutím. Pri susediacich budovách sa prvý bod a bočné rohy štvorca prichytia k existujúcim rohom a stenám."
+    "message": "<strong>Kresliť (4)</strong>: Nakresli obdĺžnik tromi kliknutiami; prvé dve určia polohu a orientáciu.<br><strong>Pravouhlé (5)</strong>: Kresli pod pravým uhlom; podrž Shift pre voľný uhol. Obrys uzavrieš kliknutím pri prvom bode.<br><strong>Polkruh (6)</strong>: Vyber budovu a klikni na stranu. Myšou urči smer oblúka a potvrď ho kliknutím.<br>Kresba sa prichytáva k rohom a stenám existujúcich budov."
   },
   "senseiDescription": {
     "message": "Sensei pomáha systematicky opravovať vlastné chyby v značkách. Ak si dlhšie používal nesprávnu kombináciu, môžeš nájsť a opraviť dotknuté objekty. Vyhľadaj ich cez <a href=\"https://overpass-turbo.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">Overpass Turbo</a>, exportuj GeoJSON a súbor načítaj do Sensei. Zadaj hľadané a nové značky a stlač <strong>Spustiť kontrolu</strong>. Objekt oprav alebo preskoč a prejdi na ďalší. <strong>Pred opravou každý objekt dôkladne skontroluj!</strong> Nechaj cieľ prázdny na odstránenie značiek alebo obe polia na manuálnu kontrolu.<br>Úpravy ulož bežným spôsobom v iD pri odoslaní sady zmien."
   },
-  "ockhamDescription": {
-    "message": "Ockhamova britva zjednodušuje príliš zložité geometrie, napríklad línie tvorené množstvom blízkych bodov."
-  },
   "ockhamUse": {
-    "message": "Nastav toleranciu v metroch a stlač <strong>Náhľad</strong> alebo <strong>5</strong>. Potvrď tlačidlom <strong>Použiť</strong> alebo klávesom <strong>0</strong>. <strong>Späť</strong> zruší náhľad alebo posledné zjednodušenie, ak je stále poslednou operáciou."
+    "message": "Zjednoduš líniu alebo plochu: nastav toleranciu v metroch a použi <strong>Náhľad (9)</strong> a <strong>Použiť (0)</strong>. <strong>Späť</strong> zruší náhľad alebo vráti zjednodušenie, ak bolo poslednou úpravou."
   },
   "ockhamData": {
-    "message": "Pred zjednodušením načítaj úplné údaje objektu. Zachovajú sa koncové body a uzly so značkami, zdieľané uzly a členovia relácií rozpoznaní v načítanom grafe. Úpravy ulož bežným spôsobom v iD pri odoslaní sady zmien."
+    "message": "Najprv načítaj celý objekt. Koncové, označené a zdieľané uzly aj uzly v načítaných reláciách sa zachovajú."
   },
   "showSensei": {
     "message": "Zobraziť panel v iD"
   },
   "showOckham": {
-    "message": "Zobraziť panel zjednodušenia v iD"
+    "message": "Zobraziť panel Tvary"
   },
   "panelText000": {
     "message": "Kontrola značiek"
@@ -681,7 +723,7 @@
     "message": "iD neodpovedá. Obnov stránku a skús to znova."
   },
   "panelText053": {
-    "message": "Klikni na Náhľad alebo stlač 5."
+    "message": "Klikni na Náhľad alebo stlač 9."
   },
   "panelText054": {
     "message": "Vyber líniu alebo polygón."
@@ -738,10 +780,10 @@
     "message": "━━ Návrh"
   },
   "panelText072": {
-    "message": "Náhľad (5)"
+    "message": "Náhľad (9)"
   },
   "panelText073": {
-    "message": "Náhľad · 5"
+    "message": "Náhľad · 9"
   },
   "panelText074": {
     "message": "Použiť (0)"

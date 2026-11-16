@@ -1,12 +1,12 @@
 {
   "appName": {
-    "message": "cOSMetics for iD"
+    "message": "cOSMetics for iD — Redraw Beta 5"
   },
   "appDescription": {
     "message": "Sfondi personalizzati, suggerimenti per i commenti e contorni degli edifici Overture in iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 2.02"
+    "message": "cOSMetics for iD 2.10"
   },
   "overtureEnable": {
     "message": "Mostra i controlli Edifici Overture in iD"
@@ -452,8 +452,14 @@
   "captionFixer": {
     "message": "Revisione tag"
   },
+  "shapesTitle": {
+    "message": "Forme"
+  },
+  "shapesResumeUse": {
+    "message": "Seleziona un’area, clicca su Riprendi disegno e scegli il vertice da cui ripartire."
+  },
   "captionSimplify": {
-    "message": "Semplificatore di geometrie"
+    "message": "Semplifica e ridisegna i contorni"
   },
   "gridOffer": {
     "message": "Vuoi sostituire i dati personalizzati con la griglia?"
@@ -472,6 +478,45 @@
   },
   "gridShowUnavailable": {
     "message": "iD non è pronto. Puoi importare il GeoJSON scaricato."
+  },
+  "drawArcOrthoEdge": {
+    "message": "Traccia prima un lato dritto in Ortogonale."
+  },
+  "bricksToolsSubtitle": {
+    "message": "Strumenti per edifici"
+  },
+  "bricksDrawingGroup": {
+    "message": "Disegno"
+  },
+  "drawArc": {
+    "message": "Semicerchio"
+  },
+  "drawArcSelect": {
+    "message": "Seleziona il contorno di un edificio semplice."
+  },
+  "drawArcEdge": {
+    "message": "Clicca sul lato da trasformare."
+  },
+  "drawArcSide": {
+    "message": "Scegli il verso con il mouse e clicca per confermare."
+  },
+  "drawArcBlocked": {
+    "message": "Lato condiviso o arco che incrocia il contorno."
+  },
+  "drawArcDone": {
+    "message": "Semicerchio applicato."
+  },
+  "drawOrtho": {
+    "message": "Ortogonale"
+  },
+  "drawOrthoFirst": {
+    "message": "Fissa il primo punto."
+  },
+  "drawOrthoSecond": {
+    "message": "Fissa il secondo punto per orientare i lati."
+  },
+  "drawOrthoNext": {
+    "message": "Aggiungi i vertici. Clicca vicino al primo punto per chiudere. Shift: tratto libero."
   },
   "drawBuilding": {
     "message": "Disegna"
@@ -501,25 +546,22 @@
     "message": "Parete agganciata. Clicca all’esterno per fissare la profondità."
   },
   "drawDescription": {
-    "message": "La funzionalità avanzata di disegno permette di generare edifici in modo semplificato. Clicca su <strong>Disegna</strong> o premi <strong>4</strong>: fissa il primo punto e muovi il mouse per regolare misura e orientamento del quadrato; fissa il secondo punto e muovi il mouse per regolare il rettangolo. Conferma con il terzo clic. Per edifici attaccati, sfrutta l’effetto calamita: il primo punto e i vertici laterali del quadrato si agganciano agli angoli e ai lati dell’edificio esistente."
+    "message": "<strong>Disegna (4)</strong>: Rettangolo in tre clic; i primi due fissano posizione e orientamento.<br><strong>Ortogonale (5)</strong>: Traccia lati ad angolo retto; tieni premuto Shift per un lato libero. Clicca vicino al punto iniziale per chiudere.<br><strong>Semicerchio (6)</strong>: Seleziona un edificio, clicca un lato, scegli il verso dell’arco con il mouse e conferma con un clic.<br>I disegni si agganciano ai vertici e ai lati degli edifici esistenti."
   },
   "senseiDescription": {
     "message": "Sensei è uno strumento per la correzione organizzata dei propri errori nell’uso dei tag. Se ti sei accorto di aver usato per lungo tempo una combinazione di tag errata, puoi individuare e correggere gli oggetti interessati. Estraili da <a href=\"https://overpass-turbo.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">Overpass Turbo</a> ed esportali in GeoJSON, quindi importa il file nel pannello di Sensei. Inserisci i tag da correggere e quelli da impostare, poi premi <strong>Avvia revisione</strong> per individuare il primo oggetto. Puoi correggerlo o saltarlo, passando al successivo. <strong>Ricontrolla attentamente ogni oggetto prima di correggerlo!</strong> Lascia vuota la destinazione per rimuovere i tag, oppure entrambi i campi per la revisione manuale.<br>Le modifiche si salvano normalmente in iD quando decidi di caricare il changeset."
   },
-  "ockhamDescription": {
-    "message": "Il rasoio di Ockham è uno strumento pensato per semplificare le geometrie troppo complesse, tipicamente le linee composte da moltissimi punti vicini tra loro."
-  },
   "ockhamUse": {
-    "message": "Imposta la tolleranza in metri e premi <strong>Anteprima</strong> oppure <strong>5</strong> per vedere come verrebbe semplificata la geometria. Premi <strong>0</strong> o <strong>Applica</strong> per confermare. <strong>Annulla</strong> scarta l’anteprima o ripristina l’ultima semplificazione, se è ancora l’ultima operazione."
+    "message": "Semplifica una linea o un’area: imposta la tolleranza in metri, poi usa <strong>Anteprima (9)</strong> e <strong>Applica (0)</strong>. <strong>Annulla</strong> scarta l’anteprima o annulla la semplificazione se è l’ultima modifica."
   },
   "ockhamData": {
-    "message": "Carica i dati completi dell’oggetto prima di semplificare: vengono conservati estremi e nodi con tag, condivisi o membri di relazioni rilevati nel grafo caricato. Le modifiche si salvano normalmente in iD quando decidi di caricare il changeset."
+    "message": "Carica prima l’oggetto completo. Gli estremi, i nodi con tag, quelli condivisi e quelli che appartengono a relazioni caricate vengono mantenuti."
   },
   "showSensei": {
     "message": "Mostra il pannello in iD"
   },
   "showOckham": {
-    "message": "Mostra il pannello di semplificazione in iD"
+    "message": "Mostra il pannello Forme"
   },
   "panelText000": {
     "message": "Revisione tag"
@@ -681,7 +723,7 @@
     "message": "iD non risponde. Riprova dopo aver ricaricato la pagina."
   },
   "panelText053": {
-    "message": "Premi Anteprima o 5."
+    "message": "Premi Anteprima o 9."
   },
   "panelText054": {
     "message": "Seleziona una linea o un poligono."
@@ -738,10 +780,10 @@
     "message": "━━ Proposta"
   },
   "panelText072": {
-    "message": "Anteprima (5)"
+    "message": "Anteprima (9)"
   },
   "panelText073": {
-    "message": "Anteprima · 5"
+    "message": "Anteprima · 9"
   },
   "panelText074": {
     "message": "Applica (0)"
@@ -898,5 +940,50 @@
   },
   "panelText125": {
     "message": "La semplificazione non è più l’ultima modifica. Usa la cronologia di iD per scegliere cosa annullare."
+  },
+  "redrawSegment": {
+    "message": "Riprendi disegno"
+  },
+  "redrawCancelButton": {
+    "message": "Annulla ridisegno"
+  },
+  "redrawSelect": {
+    "message": "Seleziona un’area semplice e chiusa, completamente caricata e fuori da relazioni, a uno zoom modificabile."
+  },
+  "redrawPick": {
+    "message": "Clicca sul vertice dove si è interrotto il disegno. Il tratteggio indica il collegamento al vertice successivo. Esc annulla."
+  },
+  "redrawDrawing": {
+    "message": "Disegno nativo di iD: trascina per spostare la mappa. Ctrl+Z annulla l’ultimo punto; se non ci sono punti nuovi, torna al vertice precedente. Invio conclude."
+  },
+  "redrawShared": {
+    "message": "Il segmento è condiviso con un altro oggetto. Scegline un altro."
+  },
+  "redrawLimit": {
+    "message": "L’area ha raggiunto il numero massimo di nodi."
+  },
+  "redrawChanged": {
+    "message": "L’area o la selezione è cambiata. Riavvia il ridisegno."
+  },
+  "redrawCancelled": {
+    "message": "Ridisegno annullato. L’area originale non è stata modificata."
+  },
+  "redrawDone": {
+    "message": "Segmento ridisegnato. Le modifiche sono nella cronologia di iD."
+  },
+  "redrawDisconnected": {
+    "message": "Collegamento con iD non disponibile. Lascia attiva solo la beta e ricarica la pagina di iD."
+  },
+  "redrawNativeUnavailable": {
+    "message": "Questa versione di iD non espone la modalità di disegno delle aree."
+  },
+  "redrawSteppedBack": {
+    "message": "Vertice rimosso. Continua a disegnare dal precedente."
+  },
+  "redrawProtectedPoint": {
+    "message": "Non posso rimuovere un vertice con tag o collegato a un altro oggetto."
+  },
+  "redrawCannotStepBack": {
+    "message": "Non puoi arretrare ancora: il contorno diventerebbe non valido."
   }
 }

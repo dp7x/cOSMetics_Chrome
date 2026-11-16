@@ -4,13 +4,15 @@ const fs=require('node:fs'),vm=require('node:vm');
 test('Bricks shows the tagging reminder after successful Overture additions with either event transport',()=>{
   const listeners=new Map();
   class Element{
-    constructor(){this.style={};this.children=[];this.attributes={};}
+    constructor(){this.style={};this.children=[];this.attributes={};this.classList={add(){}};}
     append(...nodes){this.children.push(...nodes);}
-    after(){} replaceWith(){} remove(){}
+    prepend(node){this.children.unshift(node);}
+    after(node){this.nextSibling=node;} replaceWith(){} remove(){}
     setAttribute(key,value){this.attributes[key]=value;}
     addEventListener(){}
   }
   const panel=new Element(),heading=new Element(),title=new Element(),load=new Element();
+  const overtureRow=new Element();overtureRow.append(load);load.parentElement=overtureRow;
   panel.querySelector=()=>heading;heading.querySelector=()=>title;load.closest=()=>panel;
   const document={head:new Element(),querySelector:()=>load,createElement:()=>new Element(),
     addEventListener(type,fn){listeners.set(type,fn);}};

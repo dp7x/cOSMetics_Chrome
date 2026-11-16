@@ -2,6 +2,7 @@
 // editor context in a local variable, so capture it at construction time.
 (() => {
   let context;
+  globalThis.CosmeticsRedrawSegment?.(() => context, () => window.iD);
   globalThis.CosmeticsDrawBuilding?.(() => context, () => window.iD);
   globalThis.CosmeticsSimplifyBridge(() => context, () => window.iD);
   globalThis.CosmeticsFixerBridge(() => context, () => window.iD);
@@ -251,41 +252,62 @@
     }
   });
 
+  const hookedApis = new WeakSet();
   function attach(api) {
-    if (!api || typeof api.coreContext !== 'function') return api;
+    if (!api || typeof api.coreContext !== 'function' || hookedApis.has(api)) return api;
     const original = api.coreContext;
-    const wrapped = function (...args) {
-      const instance = original.apply(this, args);
-      context = instance;
-      document.documentElement.dataset.cosmeticsIdBridge = 'ready';
-      return instance;
-    };
-    // iD exports an ES module namespace object whose members are read-only.
-    // Proxy the global instead of assigning to api.coreContext.
-    return new Proxy(api, {
-      get(target, key) {
-        return key === 'coreContext' ? wrapped : Reflect.get(target, key);
+    // A facade also works when a namespace or export is frozen; a Proxy
+    // cannot substitute a frozen, non-writable own data property.
+    const facade = Object.create(api);
+    Object.defineProperty(facade, 'coreContext', {
+      configurable: true, enumerable: true,
+      value: function (...args) {
+        const instance = Reflect.apply(original, api, args);
+        context = instance;
+        document.documentElement.dataset.cosmeticsIdBridge = 'ready';
+        return instance;
       }
     });
+    hookedApis.add(facade);
+    return facade;
   }
 
-  if (window.iD) {
-    window.iD = attach(window.iD);
-  } else {
-    let api;
-    Object.defineProperty(window, 'iD', {
-      configurable: true,
-      enumerable: true,
-      get: () => api,
-      set(value) {
-        api = attach(value);
-        // Restore the ordinary global immediately after iD has loaded.
-        Object.defineProperty(window, 'iD', {
-          configurable: true, enumerable: true, writable: true, value: api
-        });
-      }
-    });
+  function ensureHook() {
+    try {
+      const api = window.iD;
+      const hooked = attach(api);
+      if (hooked !== api) window.iD = hooked;
+    } catch (error) {
+      console.warn('cOSMetics: cannot hook iD', error);
+    }
   }
+  if (window.iD) {
+    ensureHook();
+  } else {
+    const previous = Object.getOwnPropertyDescriptor(window, 'iD');
+    if (!previous || previous.configurable) {
+      let api;
+      Object.defineProperty(window, 'iD', {
+        configurable: true,
+        enumerable: true,
+        get: () => api,
+        set(value) {
+          if (previous?.set) {
+            previous.set.call(window, value);
+            api = attach(window.iD ?? previous.get?.call(window) ?? value);
+          } else {
+            api = attach(value);
+          }
+          Object.defineProperty(window, 'iD', {
+            configurable: true, enumerable: true, writable: true, value: api
+          });
+        }
+      });
+    }
+  }
+  // The website starts iD in a DOMContentLoaded listener on document.
+  // Repair an overwritten hook in the earlier window capture phase.
+  window.addEventListener('DOMContentLoaded', ensureHook, {capture: true, once: true});
 
   document.addEventListener('cosmetics:add-building', event => {
     const reply = (ok, messageKey) =>

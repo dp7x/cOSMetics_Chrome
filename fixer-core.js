@@ -11,14 +11,17 @@
   function normalizeID(value) {
     if (typeof value !== 'string') return null;
     if (/^[nwr][1-9]\d{0,18}$/.test(value)) return value;
-    const match = /^(node|way|relation)\/([1-9]\d{0,18})$/.exec(value);
-    return match ? osmID(match[1], match[2]) : null;
+    const match = /^(node|way|relation)\/([1-9]\d{0,18})$/.exec(value) ||
+      /^https?:\/\/(?:www\.)?openstreetmap\.org\/(node|way|relation)\/([1-9]\d{0,18})\/?(?:[?#][^\s]*)?$/i.exec(value);
+    return match ? osmID(match[1].toLowerCase(), match[2]) : null;
   }
   function parseList(data) {
     if (!data || typeof data !== 'object') throw new Error('Formato non riconosciuto: usa GeoJSON o JSON di Overpass.');
     let raw;
     if (data.type === 'FeatureCollection' && Array.isArray(data.features)) {
-      raw = data.features.map(f => normalizeID(f?.id) || normalizeID(f?.properties?.['@id']));
+      raw = data.features.map(f =>
+        normalizeID(f?.id) || normalizeID(f?.properties?.['@id']) || normalizeID(f?.properties?.osm)
+      );
     } else if (Array.isArray(data.elements)) {
       raw = data.elements.map(e => osmID(e?.type, e?.id));
     } else throw new Error('Formato non riconosciuto: usa GeoJSON o JSON di Overpass.');

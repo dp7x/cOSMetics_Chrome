@@ -1,12 +1,12 @@
 {
   "appName": {
-    "message": "cOSMetics for iD"
+    "message": "cOSMetics for iD — Redraw Beta 5"
   },
   "appDescription": {
     "message": "Fondos personalizados, sugerencias de comentarios de conjuntos de cambios y contornos de edificios Overture para iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 2.02"
+    "message": "cOSMetics for iD 2.10"
   },
   "overtureEnable": {
     "message": "Mostrar los controles de edificios Overture en iD"
@@ -452,8 +452,14 @@
   "captionFixer": {
     "message": "Revisión de etiquetas"
   },
+  "shapesTitle": {
+    "message": "Formas"
+  },
+  "shapesResumeUse": {
+    "message": "Selecciona un área, pulsa Reanudar dibujo y elige el vértice desde el que continuar."
+  },
   "captionSimplify": {
-    "message": "Simplificación de geometrías"
+    "message": "Simplifica y redibuja contornos"
   },
   "gridOffer": {
     "message": "¿Sustituir los datos personalizados por la cuadrícula?"
@@ -472,6 +478,45 @@
   },
   "gridShowUnavailable": {
     "message": "iD no está listo. Puedes importar el GeoJSON descargado."
+  },
+  "drawArcOrthoEdge": {
+    "message": "Dibuja primero un lado recto en modo ortogonal."
+  },
+  "bricksToolsSubtitle": {
+    "message": "Herramientas para edificios"
+  },
+  "bricksDrawingGroup": {
+    "message": "Dibujo"
+  },
+  "drawArc": {
+    "message": "Semicírculo"
+  },
+  "drawArcSelect": {
+    "message": "Selecciona el contorno de un edificio simple."
+  },
+  "drawArcEdge": {
+    "message": "Haz clic en el lado que quieres transformar."
+  },
+  "drawArcSide": {
+    "message": "Elige el lado con el ratón y haz clic para confirmar."
+  },
+  "drawArcBlocked": {
+    "message": "Lado compartido o arco que cruza el contorno."
+  },
+  "drawArcDone": {
+    "message": "Semicírculo aplicado."
+  },
+  "drawOrtho": {
+    "message": "Ortogonal"
+  },
+  "drawOrthoFirst": {
+    "message": "Coloca el primer punto."
+  },
+  "drawOrthoSecond": {
+    "message": "Coloca el segundo punto para orientar los lados."
+  },
+  "drawOrthoNext": {
+    "message": "Añade vértices. Haz clic cerca del primer punto para cerrar. Mayús: ángulo libre."
   },
   "drawBuilding": {
     "message": "Dibujar"
@@ -501,25 +546,22 @@
     "message": "Pared ajustada. Haz clic fuera para fijar la profundidad."
   },
   "drawDescription": {
-    "message": "La herramienta de dibujo avanzado facilita la creación de edificios. Pulsa <strong>Dibujar</strong> o <strong>4</strong>: fija el primer punto y mueve el ratón para ajustar el tamaño y la orientación del cuadrado. Fija el segundo punto y ajusta el rectángulo. Confirma con el tercer clic. Para edificios adosados, el primer punto y las esquinas laterales del cuadrado se ajustan a las esquinas y paredes existentes."
+    "message": "<strong>Dibujar (4)</strong>: Dibuja un rectángulo en tres clics; los dos primeros fijan su posición y orientación.<br><strong>Ortogonal (5)</strong>: Dibuja en ángulo recto; mantén Mayús para un ángulo libre. Haz clic cerca del primer punto para cerrar.<br><strong>Semicírculo (6)</strong>: Selecciona un edificio y haz clic en un lado. Orienta el arco con el ratón y haz clic para confirmar.<br>El dibujo se ajusta a los vértices y lados de edificios existentes."
   },
   "senseiDescription": {
     "message": "Sensei ayuda a corregir de forma organizada tus propios errores de etiquetado. Si has usado durante mucho tiempo una combinación incorrecta, puedes localizar y corregir los objetos afectados. Búscalos con <a href=\"https://overpass-turbo.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">Overpass Turbo</a>, expórtalos en GeoJSON e importa el archivo en Sensei. Indica las etiquetas que quieres corregir y las nuevas, y pulsa <strong>Iniciar revisión</strong>. Corrige u omite cada objeto para pasar al siguiente. <strong>Revisa cuidadosamente cada objeto antes de corregirlo.</strong> Deja vacío el destino para eliminar etiquetas, o ambos campos para la revisión manual.<br>Guarda las ediciones normalmente en iD cuando decidas subir el conjunto de cambios."
   },
-  "ockhamDescription": {
-    "message": "La navaja de Ockham simplifica geometrías demasiado complejas, como líneas formadas por muchos puntos muy próximos."
-  },
   "ockhamUse": {
-    "message": "Ajusta la tolerancia en metros y pulsa <strong>Vista previa</strong> o <strong>5</strong>. Pulsa <strong>0</strong> o <strong>Aplicar</strong> para confirmar. <strong>Deshacer</strong> descarta la vista previa o revierte la última simplificación si sigue siendo la última operación."
+    "message": "Simplifica una línea o un área: ajusta la tolerancia en metros y usa <strong>Vista previa (9)</strong> y <strong>Aplicar (0)</strong>. <strong>Deshacer</strong> descarta la vista previa o revierte la simplificación si fue la última edición."
   },
   "ockhamData": {
-    "message": "Carga todos los datos del objeto antes de simplificar. Se conservan los extremos, los nodos con etiquetas, los compartidos y los miembros de relaciones detectados en el grafo cargado. Guarda las ediciones normalmente en iD al subir el conjunto de cambios."
+    "message": "Carga primero el objeto completo. Se conservan los extremos, los nodos con etiquetas, los compartidos y los que pertenecen a relaciones cargadas."
   },
   "showSensei": {
     "message": "Mostrar el panel en iD"
   },
   "showOckham": {
-    "message": "Mostrar el panel de simplificación en iD"
+    "message": "Mostrar el panel Formas"
   },
   "panelText000": {
     "message": "Revisión de etiquetas"
@@ -681,7 +723,7 @@
     "message": "iD no responde. Recarga la página e inténtalo de nuevo."
   },
   "panelText053": {
-    "message": "Pulsa Vista previa o 5."
+    "message": "Pulsa Vista previa o 9."
   },
   "panelText054": {
     "message": "Selecciona una línea o un polígono."
@@ -738,10 +780,10 @@
     "message": "━━ Propuesta"
   },
   "panelText072": {
-    "message": "Vista previa (5)"
+    "message": "Vista previa (9)"
   },
   "panelText073": {
-    "message": "Vista previa · 5"
+    "message": "Vista previa · 9"
   },
   "panelText074": {
     "message": "Aplicar (0)"

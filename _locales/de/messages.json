@@ -1,12 +1,12 @@
 {
   "appName": {
-    "message": "cOSMetics for iD"
+    "message": "cOSMetics for iD — Redraw Beta 5"
   },
   "appDescription": {
     "message": "Eigene Hintergrundebenen, Vorschläge für Änderungssatzkommentare und Overture-Gebäudeumrisse für iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 2.02"
+    "message": "cOSMetics for iD 2.10"
   },
   "overtureEnable": {
     "message": "Overture-Gebäudesteuerung in iD anzeigen"
@@ -452,8 +452,14 @@
   "captionFixer": {
     "message": "Tag-Prüfung"
   },
+  "shapesTitle": {
+    "message": "Formen"
+  },
+  "shapesResumeUse": {
+    "message": "Wähle eine Fläche, klicke auf Zeichnen fortsetzen und wähle den Knoten, an dem du weiterzeichnen möchtest."
+  },
   "captionSimplify": {
-    "message": "Geometrievereinfachung"
+    "message": "Konturen vereinfachen und neu zeichnen"
   },
   "gridOffer": {
     "message": "Eigene Daten durch das Raster ersetzen?"
@@ -472,6 +478,45 @@
   },
   "gridShowUnavailable": {
     "message": "iD ist nicht bereit. Die heruntergeladene GeoJSON-Datei kann importiert werden."
+  },
+  "drawArcOrthoEdge": {
+    "message": "Zeichne zuerst eine gerade Seite im rechtwinkligen Modus."
+  },
+  "bricksToolsSubtitle": {
+    "message": "Gebäudewerkzeuge"
+  },
+  "bricksDrawingGroup": {
+    "message": "Zeichnen"
+  },
+  "drawArc": {
+    "message": "Halbkreis"
+  },
+  "drawArcSelect": {
+    "message": "Wähle den Umriss eines einfachen Gebäudes aus."
+  },
+  "drawArcEdge": {
+    "message": "Klicke auf die Seite, die du umformen möchtest."
+  },
+  "drawArcSide": {
+    "message": "Wähle mit der Maus die Seite und klicke zum Bestätigen."
+  },
+  "drawArcBlocked": {
+    "message": "Gemeinsame Seite oder Bogen kreuzt den Umriss."
+  },
+  "drawArcDone": {
+    "message": "Halbkreis angewendet."
+  },
+  "drawOrtho": {
+    "message": "Rechtwinklig"
+  },
+  "drawOrthoFirst": {
+    "message": "Setze den ersten Punkt."
+  },
+  "drawOrthoSecond": {
+    "message": "Setze den zweiten Punkt, um die Seiten auszurichten."
+  },
+  "drawOrthoNext": {
+    "message": "Füge Eckpunkte hinzu. Klicke zum Schließen nahe am ersten Punkt. Umschalt: freier Winkel."
   },
   "drawBuilding": {
     "message": "Zeichnen"
@@ -501,25 +546,22 @@
     "message": "Wand eingerastet. Klicke außen, um die Tiefe festzulegen."
   },
   "drawDescription": {
-    "message": "Mit dem erweiterten Zeichenwerkzeug lassen sich Gebäude einfacher erstellen. Klicke auf <strong>Zeichnen</strong> oder drücke <strong>4</strong>: Setze den ersten Punkt und bewege die Maus, um Größe und Ausrichtung des Quadrats anzupassen. Setze den zweiten Punkt und passe das Rechteck an. Bestätige mit dem dritten Klick. Bei angrenzenden Gebäuden rasten der erste Punkt und die seitlichen Ecken des Quadrats an vorhandenen Ecken und Wänden ein."
+    "message": "<strong>Zeichnen (4)</strong>: Zeichne ein Rechteck mit drei Klicks; die ersten beiden legen Position und Ausrichtung fest.<br><strong>Rechtwinklig (5)</strong>: Zeichne rechtwinklig; halte die Umschalttaste für freie Winkel. Klicke zum Schließen nahe am ersten Punkt.<br><strong>Halbkreis (6)</strong>: Wähle ein Gebäude und klicke auf eine Seite. Richte den Bogen mit der Maus aus und bestätige per Klick.<br>Beim Zeichnen rasten Punkte an Ecken und Wänden vorhandener Gebäude ein."
   },
   "senseiDescription": {
     "message": "Sensei hilft dir, eigene Taggingfehler systematisch zu korrigieren. Hast du über längere Zeit eine falsche Tag-Kombination verwendet, kannst du die betroffenen Objekte suchen und berichtigen. Ermittle sie mit <a href=\"https://overpass-turbo.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">Overpass Turbo</a>, exportiere GeoJSON und importiere die Datei in Sensei. Gib die gesuchten und die neuen Tags ein und klicke auf <strong>Prüfung starten</strong>. Korrigiere oder überspringe jedes Objekt, um zum nächsten zu gelangen. <strong>Prüfe jedes Objekt sorgfältig vor der Korrektur!</strong> Lass das Ziel leer, um Tags zu entfernen, oder beide Felder für die manuelle Prüfung.<br>Speichere die Änderungen wie gewohnt über iD, wenn du den Änderungssatz hochladen möchtest."
   },
-  "ockhamDescription": {
-    "message": "Ockhams Rasiermesser vereinfacht übermäßig komplexe Geometrien, etwa Linien mit sehr vielen dicht beieinanderliegenden Punkten."
-  },
   "ockhamUse": {
-    "message": "Stelle die Toleranz in Metern ein und klicke auf <strong>Vorschau</strong> oder drücke <strong>5</strong>. Mit <strong>0</strong> oder <strong>Anwenden</strong> bestätigst du die Vereinfachung. <strong>Rückgängig</strong> verwirft die Vorschau oder nimmt die letzte Vereinfachung zurück, sofern sie noch die letzte Aktion ist."
+    "message": "Vereinfache eine Linie oder Fläche: Stelle die Toleranz in Metern ein und nutze <strong>Vorschau (9)</strong> und <strong>Anwenden (0)</strong>. <strong>Rückgängig</strong> verwirft die Vorschau oder nimmt die zuletzt ausgeführte Vereinfachung zurück, wenn sie die letzte Änderung war."
   },
   "ockhamData": {
-    "message": "Lade vor dem Vereinfachen die vollständigen Objektdaten. Endpunkte sowie im geladenen Graphen erkannte Knoten mit Tags, gemeinsam genutzte Knoten und Relationsmitglieder bleiben erhalten. Speichere die Änderungen beim Hochladen des Änderungssatzes wie gewohnt über iD."
+    "message": "Lade zuerst das gesamte Objekt. Endpunkte, getaggte und gemeinsam genutzte Knoten sowie Knoten geladener Relationen bleiben erhalten."
   },
   "showSensei": {
     "message": "Fenster in iD anzeigen"
   },
   "showOckham": {
-    "message": "Vereinfachungsfenster in iD anzeigen"
+    "message": "Formen anzeigen"
   },
   "panelText000": {
     "message": "Tag-Prüfung"
@@ -681,7 +723,7 @@
     "message": "iD antwortet nicht. Lade die Seite neu und versuche es erneut."
   },
   "panelText053": {
-    "message": "Klicke auf Vorschau oder drücke 5."
+    "message": "Klicke auf Vorschau oder drücke 9."
   },
   "panelText054": {
     "message": "Wähle eine Linie oder ein Polygon."
@@ -738,10 +780,10 @@
     "message": "━━ Vorschlag"
   },
   "panelText072": {
-    "message": "Vorschau (5)"
+    "message": "Vorschau (9)"
   },
   "panelText073": {
-    "message": "Vorschau · 5"
+    "message": "Vorschau · 9"
   },
   "panelText074": {
     "message": "Anwenden (0)"

@@ -1,4 +1,4 @@
-// Attach Draw beside the existing Bricks load control, without rebuilding Overture.
+// Group Overture and drawing controls in separate rows inside Bricks.
 (() => {
   const t = key => chrome.i18n.getMessage(key);
   function attach() {
@@ -10,7 +10,7 @@
     title.textContent='Bricks';
     const titles=document.createElement('div'),subtitle=document.createElement('small');
     title.replaceWith(titles);titles.append(title,subtitle);
-    subtitle.textContent=t('captionOverture');subtitle.className='co-subtitle';
+    subtitle.textContent=t('bricksToolsSubtitle');subtitle.className='co-subtitle';
     const minimize=document.createElement('button');
     minimize.id='co-minimize';minimize.type='button';minimize.textContent='−';
     minimize.title=globalThis.CosmeticsUI.text('Riduci o espandi');
@@ -29,6 +29,9 @@
       #cosmetics-overture-toggle .co-heading{padding:8px 10px;margin:-8px -8px 2px;background:#f2f5f8;color:inherit;display:flex;justify-content:space-between;gap:8px}
       #cosmetics-overture-toggle .co-heading strong{font-size:15px}
       #cosmetics-overture-toggle .co-subtitle{display:block;font-size:11px;font-weight:400;color:var(--co-muted)}
+      #cosmetics-overture-toggle .co-tool-row{align-items:center}
+      #cosmetics-overture-toggle .co-tool-label{font-size:11px;font-weight:600;color:var(--co-muted);flex:0 0 auto}
+      #cosmetics-overture-toggle .co-tool-row + .co-tool-row{border-top:1px solid var(--co-border);padding-top:5px}
       #cosmetics-overture-toggle button{font:inherit;border-radius:5px;padding:7px 9px}
       #cosmetics-overture-toggle button.co-load{background:#146b49;border-color:#146b49;color:#fff}
       #cosmetics-overture-toggle button.co-load:hover{background:#125c3e}
@@ -41,19 +44,48 @@
       }
     `;
     document.head.append(style);
-    const button = document.createElement('button'), status = document.createElement('span');
-    button.type = 'button';
-    button.id = 'cosmetics-draw-building';
-    button.textContent = t('drawBuilding') + ' (4)';
-    button.title = t('drawBuilding') + ' (4)';
-    button.setAttribute('aria-keyshortcuts','4');
-    button.setAttribute('aria-pressed','false');
-    status.className = 'co-status';
+    const status = document.createElement('span');
+    const buttons = [
+      ['rectangle', 'cosmetics-draw-building', 'drawBuilding', '4', 'cosmetics:draw-building-toggle'],
+      ['ortho', 'cosmetics-draw-ortho', 'drawOrtho', '5', 'cosmetics:draw-ortho-toggle'],
+      ['arc', 'cosmetics-draw-arc', 'drawArc', '6', 'cosmetics:draw-arc-toggle']
+    ].map(([mode,id,label,key,event])=>{
+      const button=document.createElement('button');
+      button.type='button';button.id=id;
+      button.addEventListener('click',()=>document.dispatchEvent(new CustomEvent(event)));
+      return {mode,button,label,key};
+    });
+    function updateButtons(mode,curving=false) {
+      for(const {mode:own,button,label,key} of buttons) {
+        const active=own===mode || (own==='arc'&&curving);
+        button.setAttribute('aria-pressed',String(active));
+        button.textContent=active?t('drawCancel'):t(label)+(key?' ('+key+')':'');
+        button.title=active?'Esc':button.textContent;
+        if(key||active)button.setAttribute('aria-keyshortcuts',active?'Escape':key);
+        else button.removeAttribute?.('aria-keyshortcuts');
+      }
+    }
+    updateButtons();
+    status.className='co-status';
     status.setAttribute('role','status');
-    status.hidden = true;
-    load.after(button);
+    status.hidden=true;
+    function labelRow(row,text){
+      const label=document.createElement('span');
+      label.className='co-tool-label';
+      label.textContent=text;
+      row.classList.add('co-tool-row');
+      row.setAttribute('role','group');
+      row.setAttribute('aria-label',label.textContent);
+      row.prepend(label);
+    }
+    const overtureRow=load.parentElement;
+    const drawingRow=document.createElement('div');
+    drawingRow.className='co-actions';
+    labelRow(overtureRow,'Overture');
+    labelRow(drawingRow,t('bricksDrawingGroup'));
+    drawingRow.append(...buttons.map(item=>item.button));
+    overtureRow.after(drawingRow);
     panel.append(status);
-    button.addEventListener('click', () => document.dispatchEvent(new CustomEvent('cosmetics:draw-building-toggle')));
     load.addEventListener('click', cancel, true);
     function cancel() { document.dispatchEvent(new CustomEvent('cosmetics:draw-building-cancel')); }
     new MutationObserver(() => { if (panel.style.display === 'none') cancel(); })
@@ -70,10 +102,7 @@
     document.addEventListener('cosmetics:draw-building-state',e=>{
       let state;
       try { state=JSON.parse(e.detail); } catch { return; }
-      button.setAttribute('aria-pressed',String(!!state.active));
-      button.textContent=t(state.active?'drawCancel':'drawBuilding') + (state.active ? '' : ' (4)');
-      button.title = state.active ? 'Esc' : t('drawBuilding') + ' (4)';
-      button.setAttribute('aria-keyshortcuts', state.active ? 'Escape' : '4');
+      updateButtons(state.active?state.mode:undefined,state.curving);
       status.textContent=t(state.key);
       status.hidden=!status.textContent;
     });

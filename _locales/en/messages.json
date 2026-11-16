@@ -1,12 +1,12 @@
 {
   "appName": {
-    "message": "cOSMetics for iD"
+    "message": "cOSMetics for iD — Redraw Beta 5"
   },
   "appDescription": {
     "message": "Custom background layers, changeset comment suggestions, and Overture building outlines for iD."
   },
   "popupTitle": {
-    "message": "cOSMetics for iD 2.02"
+    "message": "cOSMetics for iD 2.10"
   },
   "overtureEnable": {
     "message": "Show Overture building controls in iD"
@@ -452,8 +452,14 @@
   "captionFixer": {
     "message": "Tag reviewer"
   },
+  "shapesTitle": {
+    "message": "Shapes"
+  },
+  "shapesResumeUse": {
+    "message": "Select an area, click Resume drawing and choose the vertex to continue from."
+  },
   "captionSimplify": {
-    "message": "Geometry simplifier"
+    "message": "Simplify and redraw outlines"
   },
   "gridOffer": {
     "message": "Replace the custom data with the grid?"
@@ -472,6 +478,45 @@
   },
   "gridShowUnavailable": {
     "message": "iD is not ready. You can import the downloaded GeoJSON."
+  },
+  "drawArcOrthoEdge": {
+    "message": "Draw a straight side in Orthogonal first."
+  },
+  "bricksToolsSubtitle": {
+    "message": "Building tools"
+  },
+  "bricksDrawingGroup": {
+    "message": "Drawing"
+  },
+  "drawArc": {
+    "message": "Semicircle"
+  },
+  "drawArcSelect": {
+    "message": "Select the outline of a simple building."
+  },
+  "drawArcEdge": {
+    "message": "Click the wall to reshape."
+  },
+  "drawArcSide": {
+    "message": "Move the mouse to choose a side and click to confirm."
+  },
+  "drawArcBlocked": {
+    "message": "Shared wall or arc crossing the outline."
+  },
+  "drawArcDone": {
+    "message": "Semicircle applied."
+  },
+  "drawOrtho": {
+    "message": "Orthogonal"
+  },
+  "drawOrthoFirst": {
+    "message": "Place the first point."
+  },
+  "drawOrthoSecond": {
+    "message": "Place the second point to set the wall direction."
+  },
+  "drawOrthoNext": {
+    "message": "Add corners. Click near the first point to close. Shift: free angle."
   },
   "drawBuilding": {
     "message": "Draw"
@@ -501,25 +546,22 @@
     "message": "Wall snapped. Click outside to set the depth."
   },
   "drawDescription": {
-    "message": "The advanced drawing tool makes it easier to create buildings. Click <strong>Draw</strong> or press <strong>4</strong>: place the first point and move the mouse to adjust the square’s size and orientation. Place the second point and move the mouse to resize the rectangle. Confirm with the third click. For attached buildings, use snapping: the first point and the square’s side corners snap to existing building corners and walls."
+    "message": "<strong>Draw (4)</strong>: Draw a rectangle in three clicks; the first two set its position and orientation.<br><strong>Orthogonal (5)</strong>: Draw at right angles; hold Shift for a free angle. Click near the first point to close.<br><strong>Semicircle (6)</strong>: Select a building, click a side, move the mouse to choose the direction of the arc, then click to confirm.<br>Drawing snaps to corners and walls of existing buildings."
   },
   "senseiDescription": {
     "message": "Sensei helps you systematically correct your own tagging mistakes. If you have repeatedly used an incorrect tag combination, you can find and correct the affected objects. Extract them with <a href=\"https://overpass-turbo.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">Overpass Turbo</a>, export GeoJSON and import the file into Sensei. Enter the tags to replace and those to set, then click <strong>Start review</strong> to find the first object. Correct or skip it to move to the next. <strong>Check every object carefully before correcting it!</strong> Leave the destination empty to remove tags, or both fields empty for manual review.<br>Save your edits through iD as usual when you choose to upload the changeset."
   },
-  "ockhamDescription": {
-    "message": "Ockham’s razor simplifies overly complex geometries, typically lines made up of many closely spaced points."
-  },
   "ockhamUse": {
-    "message": "Set the tolerance in metres and click <strong>Preview</strong> or press <strong>5</strong> to see the proposed simplification. Press <strong>0</strong> or click <strong>Apply</strong> to confirm. <strong>Undo</strong> discards the preview or undoes the last simplification if it is still the latest operation."
+    "message": "Simplify a line or area: set the tolerance in metres, then use <strong>Preview (9)</strong> and <strong>Apply (0)</strong>. <strong>Undo</strong> clears the preview or reverses the simplification if it was the last edit."
   },
   "ockhamData": {
-    "message": "Load the object’s complete data before simplifying. Endpoints and nodes with tags, shared nodes and relation-member nodes detected in the loaded graph are preserved. Save your edits through iD as usual when uploading the changeset."
+    "message": "Load the entire object first. Endpoints, tagged nodes, shared nodes and nodes belonging to loaded relations are kept."
   },
   "showSensei": {
     "message": "Show panel in iD"
   },
   "showOckham": {
-    "message": "Show the simplification panel in iD"
+    "message": "Show the Shapes panel"
   },
   "panelText000": {
     "message": "Tag reviewer"
@@ -681,7 +723,7 @@
     "message": "iD is not responding. Reload the page and try again."
   },
   "panelText053": {
-    "message": "Click Preview or press 5."
+    "message": "Click Preview or press 9."
   },
   "panelText054": {
     "message": "Select a line or polygon."
@@ -738,10 +780,10 @@
     "message": "━━ Proposed"
   },
   "panelText072": {
-    "message": "Preview (5)"
+    "message": "Preview (9)"
   },
   "panelText073": {
-    "message": "Preview · 5"
+    "message": "Preview · 9"
   },
   "panelText074": {
     "message": "Apply (0)"
@@ -898,5 +940,50 @@
   },
   "panelText125": {
     "message": "Simplification is no longer the last edit. Use iD’s history to choose what to undo."
+  },
+  "redrawSegment": {
+    "message": "Resume drawing"
+  },
+  "redrawCancelButton": {
+    "message": "Cancel redraw"
+  },
+  "redrawSelect": {
+    "message": "Select a simple closed area, fully loaded and outside relations, at editing zoom."
+  },
+  "redrawPick": {
+    "message": "Click the vertex where drawing stopped. The dashed line shows the connection to the next vertex. Esc cancels."
+  },
+  "redrawDrawing": {
+    "message": "Native iD drawing: drag to pan. Ctrl+Z undoes the last point, or steps back to the previous vertex if no new points remain. Enter finishes."
+  },
+  "redrawShared": {
+    "message": "This segment is shared with another object. Choose a different segment."
+  },
+  "redrawLimit": {
+    "message": "This area has reached the maximum number of nodes."
+  },
+  "redrawChanged": {
+    "message": "The area or selection changed. Start the redraw again."
+  },
+  "redrawCancelled": {
+    "message": "Redraw cancelled. The original area was not changed."
+  },
+  "redrawDone": {
+    "message": "Segment redrawn. Changes are in iD’s edit history."
+  },
+  "redrawDisconnected": {
+    "message": "Connection to iD unavailable. Keep only the beta enabled and reload the iD page."
+  },
+  "redrawNativeUnavailable": {
+    "message": "This version of iD does not expose its area drawing mode."
+  },
+  "redrawSteppedBack": {
+    "message": "Vertex removed. Continue drawing from the previous vertex."
+  },
+  "redrawProtectedPoint": {
+    "message": "Cannot remove a tagged vertex or one linked to another feature."
+  },
+  "redrawCannotStepBack": {
+    "message": "Cannot step back again: the outline would become invalid."
   }
 }

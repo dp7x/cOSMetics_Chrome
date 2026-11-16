@@ -13,6 +13,17 @@ test('GeoJSON IDs, mixed OSM types, deduplication and invalid entries', () => {
   assert.throws(() => core.parseList({elements:[{type:'way',id:Number.MAX_SAFE_INTEGER+1}]}));
 });
 
+test('GeoJSON accepts explicit OSM references from URLs without inferring types from geometry', () => {
+  assert.deepEqual(core.parseList({type:'FeatureCollection',features:[
+    {properties:{id:14,osm:'https://www.openstreetmap.org/node/14'}},
+    {id:'https://openstreetmap.org/way/123/'},
+    {properties:{'@id':'https://www.openstreetmap.org/relation/123?x=1#map'}},
+    {id:'n14',properties:{osm:'https://www.openstreetmap.org/way/99'}},
+    {properties:{osm:'https://www.openstreetmap.org.example.org/node/15'}},
+    {geometry:{type:'Point'},properties:{id:16}}
+  ]}), {ids:['n14','w123','r123'],duplicates:1,ignored:2});
+});
+
 test('Free-form rules, equals inside values, duplicate keys and incomplete configuration', () => {
   assert.deepEqual(core.parseTags(' network:type=lwn\r\n\nwebsite=https://example.test/?a=b '),[['network:type','lwn'],['website','https://example.test/?a=b']]);
   for(const bad of ['building','building=','bad key=yes','x=1\nx=2','x='+ 'a'.repeat(256)])assert.throws(()=>core.parseTags(bad));
