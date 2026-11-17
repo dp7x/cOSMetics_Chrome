@@ -1,4 +1,7 @@
 {
+  "supportMessage": {
+    "message": "Si te gusta cOSMetics, dale una estrella al repositorio en <a href=\"https://github.com/dp7x/cOSMetics_Chrome\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> y deja una reseña en <a href=\"https://chromewebstore.google.com/detail/cosmetics-for-id/fpdlhefglgiccjhljnpbebieaehocmpc\" target=\"_blank\" rel=\"noopener noreferrer\">Chrome Web Store</a>. ¡Gracias!"
+  },
   "appName": {
     "message": "cOSMetics for iD — Redraw Beta 5"
   },
