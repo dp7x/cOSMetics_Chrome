@@ -256,9 +256,10 @@
   function attach(api) {
     if (!api || typeof api.coreContext !== 'function' || hookedApis.has(api)) return api;
     const original = api.coreContext;
-    // A facade also works when a namespace or export is frozen; a Proxy
-    // cannot substitute a frozen, non-writable own data property.
-    const facade = Object.create(api);
+    // Copy enumerable exports as own properties: other extensions spread iD
+    // when wrapping coreContext. Inherited exports disappear during that copy.
+    // A fresh object also supports frozen module namespaces.
+    const facade = { ...api };
     Object.defineProperty(facade, 'coreContext', {
       configurable: true, enumerable: true,
       value: function (...args) {
