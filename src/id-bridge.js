@@ -25,7 +25,7 @@
       if (occupied && request.replace !== true) return reply('occupied');
       const data = request.data;
       if (data?.type !== 'FeatureCollection' || !Array.isArray(data.features) ||
-          data.features.length < 1 || data.features.length > 100) return reply('unavailable');
+          data.features.length < 1) return reply('unavailable');
       layer.setFile('.geojson', JSON.stringify(data));
       layer.enabled(true);
       reply('shown');

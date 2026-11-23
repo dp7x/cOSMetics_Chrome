@@ -39,7 +39,9 @@ Always review the suggested comment before uploading.
 
 ### ▦ Grids — Mapping grids GeoJSON exporter
 
-Download a grid centred on the current OpenStreetMap view, with 1–10 cells per side and 100–1000 metres per cell. When iD is ready for editing, the grid also appears automatically as custom data; existing custom data is replaced only after confirmation. Otherwise, import the downloaded GeoJSON manually. Grid parameters are remembered locally.
+Choose **Current map view** for a grid centred on OpenStreetMap, with 1–10 cells per side, or **GPX file** for numbered cells along a track or route. The first GPX cell is centred on the first point. The grid includes every cell touched by the track, and **Include track** adds the original line to the same GeoJSON when checked.
+
+Both modes use a cell size of 100–1000 metres. When iD is ready for editing, the grid also appears automatically as custom data. Existing custom data is replaced only after confirmation. You can also import the downloaded GeoJSON manually. Grid dimensions are remembered locally.
 
 The grid is a reference layer and does not create OpenStreetMap objects.
 

@@ -52,6 +52,20 @@ function generateGeoJSONGrid(lon, lat, count, meters) {
 const gridSizeInput = document.getElementById('gridSize');
 const squareSizeInput = document.getElementById('squareSize');
 const gridFeedback = document.getElementById('gridFeedback');
+const gridSource = document.getElementById('gridSource');
+const gridGpxFile = document.getElementById('gridGpxFile');
+const gridIncludeTrack = document.getElementById('gridIncludeTrack');
+
+function updateGridMode() {
+    const fromGpx = gridSource.value === 'gpx';
+    document.getElementById('gridHelp').hidden = fromGpx;
+    document.getElementById('gridGpxHelp').hidden = !fromGpx;
+    document.getElementById('gridMapFields').hidden = fromGpx;
+    document.getElementById('gridGpxFields').hidden = !fromGpx;
+}
+
+gridSource.addEventListener('change', updateGridMode);
+updateGridMode();
 let gridTouched = false;
 chrome.storage.local.get('gridParameters', items => {
     if (gridTouched) return;
@@ -107,24 +121,43 @@ gridShow.addEventListener('click',showPendingGrid);
 gridDownload.addEventListener('click', async () => {
     dismissGridOffer();
     gridDownload.disabled = true;
+    const fromGpx = gridSource.value === 'gpx';
     try {
-        const count = Number(gridSizeInput.value), meters = Number(squareSizeInput.value);
-        if (!gridSizeInput.checkValidity() || !squareSizeInput.checkValidity() || !gridSizeInput.value || !squareSizeInput.value) throw new Error('gridInvalid');
-        const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-        if (!tab?.url) throw new Error('gridSite');
-        const { lat, lon } = readGridCenter(tab.url);
-        const data = generateGeoJSONGrid(lon, lat, count, meters);
+        const meters = Number(squareSizeInput.value);
+        if (!squareSizeInput.value || !squareSizeInput.checkValidity()) {
+            if (!fromGpx) throw new Error('gridInvalid');
+            squareSizeInput.reportValidity();
+            return;
+        }
+        let data, filename, tab;
+        if (fromGpx) {
+            const file = gridGpxFile.files[0];
+            if (!file) throw new Error('gridGpxMissing');
+            const includeTrack = gridIncludeTrack.checked;
+            const segments = readGpxSegments(await file.text());
+            data = generateGpxGrid(segments, meters, includeTrack);
+            filename = `${file.name.replace(/\.gpx$/i, '')}_grid_${meters}m.geojson`;
+        }
+        [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+        if (!fromGpx) {
+            const count = Number(gridSizeInput.value);
+            if (!gridSizeInput.value || !gridSizeInput.checkValidity()) throw new Error('gridInvalid');
+            if (!tab?.url) throw new Error('gridSite');
+            const { lat, lon } = readGridCenter(tab.url);
+            data = generateGeoJSONGrid(lon, lat, count, meters);
+            filename = `osm_grid_${lat.toFixed(6)}_${lon.toFixed(6)}_${count}x${count}_${meters}m.geojson`;
+        }
         saveGridParameters();
         const objectUrl = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/geo+json' }));
         const link = document.createElement('a');
         link.href = objectUrl;
-        link.download = `osm_grid_${lat.toFixed(6)}_${lon.toFixed(6)}_${count}x${count}_${meters}m.geojson`;
+        link.download = filename;
         document.body.appendChild(link);
         link.click();
         link.remove();
         setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
         gridFeedback.textContent = t('gridDone');
-        if (/^\/(edit|id)\/?$/.test(new URL(tab.url).pathname)) {
+        if (tab?.url && /^https:\/\/www\.openstreetmap\.org\/(edit|id)\/?(?:[?#]|$)/.test(tab.url)) {
             try {
                 const status = await chrome.tabs.sendMessage(tab.id, { kind: 'cosmetics-grid', action: 'probe' });
                 if (status?.status === 'ready' && status.frameKey) {
@@ -141,7 +174,11 @@ gridDownload.addEventListener('click', async () => {
             } catch { /* The download also works without iD. */ }
         }
     } catch (error) {
-        gridFeedback.textContent = t(['gridInvalid', 'gridSite', 'gridCoordinates'].includes(error.message) ? error.message : 'gridError');
+        const knownErrors = ['gridInvalid', 'gridSite', 'gridCoordinates', 'gridGpxMissing', 'gridGpxInvalid'];
+        const key = error.message === 'gridCoordinates' && fromGpx
+            ? 'gridGpxCoordinates'
+            : knownErrors.includes(error.message) ? error.message : 'gridError';
+        gridFeedback.textContent = t(key);
     } finally {
         gridDownload.disabled = false;
     }

@@ -416,6 +416,30 @@
   "gridHelp": {
     "message": "Genera una cuadrícula centrada en la vista actual con el número y tamaño de celdas que elijas. Se descarga en GeoJSON y se muestra automáticamente si iD está listo para editar. Si ya hay datos personalizados cargados, se pide confirmación antes de sustituirlos. Sirve para trabajar zona por zona o repartir un área entre varios mapeadores."
   },
+  "gridSource": {
+    "message": "Origen de la cuadrícula"
+  },
+  "gridSourceMap": {
+    "message": "Vista actual del mapa"
+  },
+  "gridSourceGpx": {
+    "message": "Archivo GPX"
+  },
+  "gridIncludeTrack": {
+    "message": "Incluir trazado"
+  },
+  "gridGpxHelp": {
+    "message": "Genera celdas numeradas a lo largo del GPX, con la primera celda centrada en el punto de inicio."
+  },
+  "gridGpxMissing": {
+    "message": "Selecciona un archivo GPX."
+  },
+  "gridGpxInvalid": {
+    "message": "Selecciona un archivo GPX válido que contenga un trazado o una ruta."
+  },
+  "gridGpxCoordinates": {
+    "message": "Las coordenadas de este GPX no se pueden cubrir con una sola cuadrícula."
+  },
   "gridCount": {
     "message": "Celdas por lado (1–10)"
   },

@@ -150,6 +150,9 @@
         .save-footer { flex-shrink: 0; padding: 12px 15px; background: #f5f5f5; border-top: 1px solid #ccc; }
         .save-footer button { margin: 0; }
         .feedback:empty { display: none; }
+        #gridSource { width: 100%; padding: 7px; margin-bottom: 12px; }
+        #gridGpxFile { max-width: 100%; margin-bottom: 8px; }
+        #gridGpxFields label[for="gridIncludeTrack"] { font-weight: normal; }
         #gridFeedback { margin: 12px 0 0; }
     </style>
 </head>
@@ -190,9 +193,26 @@
     </div>
 
 </div></details>
-<details class="feature-section" id="sectionGrid"><summary><span class="feature-heading">Grids<span class="feature-caption" data-i18n="captionGrid"></span></span></summary><div class="section-content"><p class="description" data-i18n="gridHelp"></p>
-<div class="input-group"><label for="gridSize" data-i18n="gridCount"></label><input id="gridSize" type="number" min="1" max="10" step="1" value="5">
-<label for="squareSize" data-i18n="gridMeters"></label><input id="squareSize" type="number" min="100" max="1000" step="any" value="100"></div>
+<details class="feature-section" id="sectionGrid"><summary><span class="feature-heading">Grids<span class="feature-caption" data-i18n="captionGrid"></span></span></summary><div class="section-content"><p id="gridHelp" class="description" data-i18n="gridHelp"></p>
+<p id="gridGpxHelp" class="description" data-i18n="gridGpxHelp" hidden></p>
+<div class="input-group">
+<label for="gridSource" data-i18n="gridSource"></label>
+<select id="gridSource">
+    <option value="map" data-i18n="gridSourceMap"></option>
+    <option value="gpx" data-i18n="gridSourceGpx"></option>
+</select>
+<div id="gridMapFields">
+    <label for="gridSize" data-i18n="gridCount"></label>
+    <input id="gridSize" type="number" min="1" max="10" step="1" value="5">
+</div>
+<div id="gridGpxFields" hidden>
+    <label for="gridGpxFile" data-i18n="gridSourceGpx"></label>
+    <input id="gridGpxFile" type="file" accept=".gpx,application/gpx+xml">
+    <label for="gridIncludeTrack"><input id="gridIncludeTrack" type="checkbox" autocomplete="off"> <span data-i18n="gridIncludeTrack"></span></label>
+</div>
+<label for="squareSize" data-i18n="gridMeters"></label>
+<input id="squareSize" type="number" min="100" max="1000" step="any" value="100">
+</div>
 <button id="generateGrid" type="button" data-i18n="gridDownload"></button><p id="gridFeedback" class="description" role="status" aria-live="polite"></p><div id="gridOffer" hidden>
 <p data-i18n="gridOffer"></p><p id="gridReplaceNotice" data-i18n="gridReplaceNotice" hidden></p>
 <button id="gridShow" type="button" data-i18n="gridShow"></button>
@@ -221,6 +241,7 @@
 
 </main><footer class="save-footer"><button id="saveButton" type="button" data-i18n="saveSettings"></button><div id="feedback" class="feedback" role="status" aria-live="polite"></div></footer>
     <script src="popup.js"></script>
+    <script src="gpx-grid.js"></script>
     <script src="popup-tools.js"></script>
     <script src="fixer-popup.js"></script>
 </body>

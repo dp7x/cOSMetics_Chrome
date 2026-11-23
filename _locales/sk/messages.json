@@ -416,6 +416,30 @@
   "gridHelp": {
     "message": "Vytvor mriežku so zvoleným počtom a veľkosťou buniek okolo aktuálneho stredu mapy. Stiahne sa ako GeoJSON a automaticky sa zobrazí, keď je iD pripravený na úpravy. Pred nahradením existujúcich vlastných údajov sa vyžiada potvrdenie. Mriežka pomáha mapovať postupne po zónach alebo rozdeliť oblasť medzi viacerých mapovateľov."
   },
+  "gridSource": {
+    "message": "Zdroj mriežky"
+  },
+  "gridSourceMap": {
+    "message": "Aktuálny pohľad na mapu"
+  },
+  "gridSourceGpx": {
+    "message": "Súbor GPX"
+  },
+  "gridIncludeTrack": {
+    "message": "Zahrnúť stopu"
+  },
+  "gridGpxHelp": {
+    "message": "Vytvorí očíslované bunky pozdĺž GPX. Prvá bunka má stred v počiatočnom bode."
+  },
+  "gridGpxMissing": {
+    "message": "Vyberte súbor GPX."
+  },
+  "gridGpxInvalid": {
+    "message": "Vyberte platný súbor GPX so stopou alebo trasou."
+  },
+  "gridGpxCoordinates": {
+    "message": "Súradnice v tomto súbore GPX nemožno pokryť jednou mriežkou."
+  },
   "gridCount": {
     "message": "Počet buniek na strane (1–10)"
   },

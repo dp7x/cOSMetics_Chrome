@@ -416,6 +416,30 @@
   "gridHelp": {
     "message": "Erzeuge ein Raster um die aktuelle Kartenansicht mit der gewünschten Anzahl und Größe der Zellen. Es wird als GeoJSON heruntergeladen und automatisch angezeigt, wenn iD zum Bearbeiten bereit ist. Bereits geladene eigene Daten werden erst nach Bestätigung ersetzt. Das Raster hilft, ein Gebiet abschnittsweise zu bearbeiten oder die Arbeit unter mehreren Kartierenden aufzuteilen."
   },
+  "gridSource": {
+    "message": "Quelle des Gitters"
+  },
+  "gridSourceMap": {
+    "message": "Aktueller Kartenausschnitt"
+  },
+  "gridSourceGpx": {
+    "message": "GPX-Datei"
+  },
+  "gridIncludeTrack": {
+    "message": "Track einschließen"
+  },
+  "gridGpxHelp": {
+    "message": "Erstellt nummerierte Zellen entlang des GPX-Tracks. Die erste Zelle ist auf den Startpunkt zentriert."
+  },
+  "gridGpxMissing": {
+    "message": "Wähle eine GPX-Datei aus."
+  },
+  "gridGpxInvalid": {
+    "message": "Wähle eine gültige GPX-Datei mit einem Track oder einer Route."
+  },
+  "gridGpxCoordinates": {
+    "message": "Die Koordinaten dieser GPX-Datei können nicht mit einem einzelnen Gitter abgedeckt werden."
+  },
   "gridCount": {
     "message": "Zellen pro Seite (1–10)"
   },

@@ -416,6 +416,30 @@
   "gridHelp": {
     "message": "Générez une grille centrée sur la vue courante avec le nombre et la taille de cellules souhaités. Elle est téléchargée en GeoJSON et affichée automatiquement si iD est prêt à modifier la carte. Les données personnalisées déjà chargées ne sont remplacées qu’après confirmation. La grille permet de travailler zone par zone ou de répartir une zone entre plusieurs contributeurs."
   },
+  "gridSource": {
+    "message": "Source de la grille"
+  },
+  "gridSourceMap": {
+    "message": "Vue actuelle de la carte"
+  },
+  "gridSourceGpx": {
+    "message": "Fichier GPX"
+  },
+  "gridIncludeTrack": {
+    "message": "Inclure la trace"
+  },
+  "gridGpxHelp": {
+    "message": "Génère des cellules numérotées le long du GPX, avec la première cellule centrée sur le point de départ."
+  },
+  "gridGpxMissing": {
+    "message": "Sélectionnez un fichier GPX."
+  },
+  "gridGpxInvalid": {
+    "message": "Sélectionnez un fichier GPX valide contenant une trace ou un itinéraire."
+  },
+  "gridGpxCoordinates": {
+    "message": "Les coordonnées de ce GPX ne peuvent pas être couvertes par une seule grille."
+  },
   "gridCount": {
     "message": "Cellules par côté (1–10)"
   },

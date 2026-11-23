@@ -416,6 +416,30 @@
   "gridHelp": {
     "message": "Genera una griglia centrata sulla visualizzazione corrente della mappa, con il numero e la dimensione di riquadri da te indicati. La griglia viene scaricata in formato GeoJSON e visualizzata automaticamente se iD è pronto per le modifiche. Se è già caricato un dato personalizzato, ti viene chiesto prima di sostituirlo. Può essere utile per mappare in modo più ordinato, concentrandosi su una zona alla volta, oppure per condividere l’area con altri mappatori suddividendosi le zone."
   },
+  "gridSource": {
+    "message": "Origine della griglia"
+  },
+  "gridSourceMap": {
+    "message": "Vista corrente della mappa"
+  },
+  "gridSourceGpx": {
+    "message": "File GPX"
+  },
+  "gridIncludeTrack": {
+    "message": "Includi traccia"
+  },
+  "gridGpxHelp": {
+    "message": "Genera celle numerate lungo il GPX, con la prima cella centrata sul punto di partenza."
+  },
+  "gridGpxMissing": {
+    "message": "Seleziona un file GPX."
+  },
+  "gridGpxInvalid": {
+    "message": "Seleziona un GPX valido che contenga una traccia o un itinerario."
+  },
+  "gridGpxCoordinates": {
+    "message": "Le coordinate di questo GPX non possono essere coperte da un’unica griglia."
+  },
   "gridCount": {
     "message": "Celle per lato (1–10)"
   },

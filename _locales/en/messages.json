@@ -416,6 +416,30 @@
   "gridHelp": {
     "message": "Generate a grid centred on the current map view, with your chosen cell count and size. It is downloaded as GeoJSON and displayed automatically when iD is ready for editing. If custom data is already loaded, you are asked before replacing it. Use the grid to work systematically on one zone at a time or to divide an area between several mappers."
   },
+  "gridSource": {
+    "message": "Grid source"
+  },
+  "gridSourceMap": {
+    "message": "Current map view"
+  },
+  "gridSourceGpx": {
+    "message": "GPX file"
+  },
+  "gridIncludeTrack": {
+    "message": "Include track"
+  },
+  "gridGpxHelp": {
+    "message": "Generate numbered cells along the GPX, starting with a cell centred on its first point."
+  },
+  "gridGpxMissing": {
+    "message": "Select a GPX file."
+  },
+  "gridGpxInvalid": {
+    "message": "Select a valid GPX containing a track or route."
+  },
+  "gridGpxCoordinates": {
+    "message": "The coordinates in this GPX cannot be covered by a single grid."
+  },
   "gridCount": {
     "message": "Cells per side (1–10)"
   },
